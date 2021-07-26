@@ -67,7 +67,7 @@
 /* Listado */
 .listado .productos_listado .col-md-4 {
 	position: relative;
-	margin-bottom: 30px!important;
+	margin-bottom: 60px!important;
 }
 .listado .productos_listado .col-md-4 div {
 	padding: 15px;
@@ -171,6 +171,12 @@
 	}
 	/* Listado end*/
 
+	/* Texto */
+	.listado .description {
+		margin-bottom: 60px;
+	}
+	/* Texto end*/
+
 }
 
 @media (min-width: 992px) {
@@ -182,6 +188,12 @@
 		font-size: 2.5REM;
 	}
 	/* Header end */
+
+	/* Texto */
+	.listado .description {
+		margin-top: 60px;
+	}
+	/* Texto end*/
 
 	/* Listado */
 	.listado .productos_listado .col-md-4 .background {

@@ -49,6 +49,22 @@ class RepoProductsSQL extends repoProducts
     return $images;
   }
 
+  public function getProductByCode($code) 
+  {
+
+    $sql = "
+      SELECT * FROM products 
+      WHERE code= '$code' 
+    ";
+
+    $stmt = $this->conexion->prepare($sql);
+    $stmt->execute();
+    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return $product;
+
+  }
+
 }
 
 ?>

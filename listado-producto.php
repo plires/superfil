@@ -14,7 +14,7 @@
   $galery_images = $db->getRepoProducts()->getGaleryImagesFromTheLines($products[0]['line']);
 
   // echo "<pre>";
-  // var_dump($products);exit;
+  // var_dump($products);
 
 ?>
 
@@ -52,18 +52,11 @@
 
   <section class="listado">
 
-    <!-- Header -->
-    <section class="header container-fluid p-0">
-      <div class="header_productos">
-        <img data-aos="zoom-out-up" class="img-fluid" src="img/productos/<?= $lines_extra['img_header'] ?>" alt="header <?= $lines_extra['name'] ?>">
-        <h1 data-aos="fade-right"><?= $lines_extra['h1'] ?></h1>
-      </div>
-      <img data-aos="zoom-out-up" class="img-fluid flecha" src="img/header/flecha.png" alt="flecha blanca">
-    </section>
-    <!-- Header end -->
+    <!-- Header Productos -->
+    <?php include('includes/header-productos.php'); ?>
 
     <!-- Texto -->
-    <section class="container">
+    <section class="container description">
       <div class="row">
         <div class="col-md-6 m-auto">
           <p data-aos="zoom-out-up">
@@ -92,7 +85,7 @@
               <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
               <div class="background">
                 <h2>CÓDIGO <br><?= $product['code'] ?></h2>
-                <a href="#" class="btn btn-primary transition">VER</a>
+                <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
               </div>
             </div>
 
@@ -104,29 +97,8 @@
     </section>
     <!-- Listado Productos end -->
 
-    <!-- Galeria de imagenes start -->
-    <section class="galeria slider-g">
-
-      <?php if (empty($products)): ?>
-
-        <div class="col-md-12">
-          <p>No hay productos para mostrar.</p>
-        </div>
-
-      <?php else: ?>
-
-        <?php foreach ($galery_images as $key => $galery_image): ?>
-          
-          <div>
-            <img src="img/productos/<?= $galery_image['url']  ?>" alt="Galería - <?= $lines_extra['name'] ?> - <?= $galery_image['id']  ?>">
-          </div>
-          
-        <?php endforeach ?>
-
-      <?php endif ?>
-
-    </section>
-    <!-- Galeria de imagenes end -->
+    <!-- Galeria de Imagenes -->
+    <?php include('includes/galeria-imagenes.php'); ?>
 
     <!-- Newsletter -->
     <div class="newsletter_listado_productos">

@@ -1,0 +1,212 @@
+/* Producto */
+.producto_detalle {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.producto_detalle .only_desktop {
+	display: none;
+}
+
+.producto_detalle h4 {
+	text-transform: lowercase;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+.producto_detalle h4 br {
+	display: none;
+}
+
+.producto_detalle h2 {
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.producto_detalle .image img:last-child {
+	margin-bottom: 30px;
+}
+
+.producto_detalle .datos p span {
+	font-weight: 700;
+}
+/* Producto */
+
+/* Necesitas un Presupuesto */
+.content_presupuesto {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.content_presupuesto p {
+	margin: 0;
+	color: var(--primary-color);
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+.content_presupuesto p:last-child {
+	margin-bottom: 15px;
+}
+/* Necesitas un Presupuesto end */
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+	/* Producto */
+	.producto_detalle .image {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	/* Producto end */
+
+	/* Producto */
+	.producto_detalle .image img {
+		max-width: 70%;
+	}
+
+	.producto_detalle .image .only_mobile {
+		align-self: flex-start;
+		width: 100%;
+	}
+	/* Producto end */
+	
+}
+
+@media (min-width: 768px) {
+	/* Producto */
+	.producto_detalle .datos {
+		background: linear-gradient(to left, #002B90, #002C65);
+		padding: 20px;
+	}
+
+	.producto_detalle .only_mobile {
+		display: none;
+	}
+
+	.producto_detalle .only_desktop {
+		display: inline-block!important;
+		width: 100%;
+	}
+
+	.producto_detalle .image hr {
+		display: inline-block;
+		width: 100%;
+	}
+
+	/* Producto */
+	.producto_detalle .image img {
+		max-width: 100%;
+	}
+
+	.producto_detalle .image img:last-child {
+		margin: 0;
+	}
+
+	.producto_detalle .datos {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.producto_detalle .datos h2,
+	.producto_detalle .datos h3,
+	.producto_detalle .datos p {
+		color: white;
+	}
+
+	.producto_detalle .datos h4 {
+		color: #369fd7;
+	}
+
+	.producto_detalle .datos hr {
+		background-color: white;
+	}
+
+	.producto_detalle .datos p {
+		font-size: 0.85rem;
+	}
+
+	.producto_detalle .datos p span {
+		font-size: 1rem;
+	}
+	/* Producto end */
+
+	/* Necesitas un Presupuesto */
+	.content_presupuesto .col-md-6 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+	}
+
+	.content_presupuesto .col-md-6:first-child {
+		padding-right: 30px;
+		align-items: flex-end;
+	}
+
+	.content_presupuesto .col-md-6:last-child {
+		align-items: flex-start;
+		padding-left: 30px;
+	}
+
+	.content_presupuesto .col-md-6 .dudas {
+		font-weight: 100;
+		position: relative;
+		margin-left: 60px;
+	}
+
+	.content_presupuesto .col-md-6 .presupuesto {
+		margin-left: 40px;
+		margin-bottom: 0;
+		font-size: 2rem;
+		line-height: 1.2;
+		text-align: left;
+	}
+
+	.content_presupuesto .col-md-6 .dudas:before {
+		content: "";
+		position: absolute;
+		background-color: var(--primary-color);
+		width: 8px;
+		height: 8px;
+		top: 10px;
+		left: -20px;
+	}
+	/* Necesitas un Presupuesto end */
+
+}
+
+@media (min-width: 992px) {
+	
+
+}
+
+@media (min-width: 1200px) {
+
+	/* Producto */
+	.producto_detalle .image img {
+		max-width: 60%!important;
+	}
+	/* Producto end */
+
+	/* Necesitas un Presupuesto */
+	.content_presupuesto .col-md-6:first-child {
+		padding-right: 80px;
+	}
+
+	.content_presupuesto .col-md-6:last-child {
+		padding-left: 80px;
+	}
+	/* Necesitas un Presupuesto end */
+
+}
+
+@media (min-width: 1400px) {
+	
+
+}
+

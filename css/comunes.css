@@ -36,3 +36,32 @@ body.margin {
 	margin-top: 80px;
 }
 /* Body end */
+
+/* Buttones */
+button,
+.btn-primary {
+  color: var(--primary-color);
+  background-color: white;
+  font-weight: 300;
+  border-color: var(--primary-color);
+  padding: 5px 30px;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus,
+.btn-check:active + .btn-primary, .btn-check:checked + .btn-primary, 
+.btn-primary.active, .btn-primary:active, .show > .btn-primary.dropdown-toggle,
+.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, 
+.btn-primary.active:focus, .btn-primary:active:focus, .show > 
+.btn-primary.dropdown-toggle:focus {
+  color: var(--primary-color);
+  background-color: white;
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+button:hover,
+.btn-primary:hover {
+  background: var(--primary-color);
+  color: white;
+}
+/* Buttones end */

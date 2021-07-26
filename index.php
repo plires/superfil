@@ -49,7 +49,7 @@
 	  			<h2>CIELORRASOS <br>DE PVC</h2>
 	  			<p>El Cielorraso Superfil, es un sistema de perfiles de encastre tipo machimbre obtenidos a partir de las más altas tecnologías en la extrusión de compuestos de PVC.</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">1</div>
 	  		</div>
@@ -62,11 +62,11 @@
 	  		<div data-aos="zoom-in" class="col-md-6">
 	  			<h2>TUBERÍAS <br>DE PVC</h2>
 	  			<p>
-	  				El tubo de PVC SUPERFIL® presenta aspectos revolucionarios en cuanto a su concepción y proceso de fabricación. El mismo esta 
+	  				El tubo de PVC SUPERFIL&copy; presenta aspectos revolucionarios en cuanto a su concepción y proceso de fabricación. El mismo esta 
 						formado por un tubo de pared exterior perfilado e interior liso, fabricado a base de PVC rígido no plastificado como materia prima.
 					</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= TUBOS . '/' . TUBOS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">2</div>
 	  		</div>
@@ -83,7 +83,7 @@
 	  				ante golpes en circunstancias de temperaturas bajo cero.
 					</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= CAMARAS . '/' . CAMARAS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">3</div>
 	  		</div>
@@ -99,7 +99,7 @@
 	  				Nuestras juntas Waterstop están elaboradas en PVC plastificado siendo un material sumamente flexible, con alta resistencia mecánica y química, debido a la excelente elasticidad de su composición.
 					</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= JUNTAS . '/' . JUNTAS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">4</div>
 	  		</div>
@@ -118,7 +118,7 @@
 	  				Los perfiles marcos de furgones térmicos están desarrollados y diseñados, para soportar bajas temperaturas exigidas por las cargas congeladas.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= FURGONES . '/' . FURGONES_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">5</div>
 	  		</div>
@@ -129,7 +129,7 @@
 	  				Quiebravista plástico tipo "z", presentado en diversas tonalidades, pigmentado en la masa. Se ofrece en dos alternativas de materiales, de acuerdo a las características climáticas a las cuales será sometido.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= REVESTIMIENTO . '/' . REVESTIMIENTO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">6</div>
 	  		</div>
@@ -142,7 +142,7 @@
 	  				Portaprecios en diferentes formatos. Largos standard en stock permanente. Producto ideal para supermercados, shoppings y retails. Consulte por medidas especiales.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= PUBLICIDAD . '/' . PUBLICIDAD_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">7</div>
 	  		</div>
@@ -153,7 +153,7 @@
 	  				Perfiles para unión y sellado en policarbonato, simple y práctico. Es una opción ideal para aplicaciones en donde se requiere unir "H", o sellar "U" en instalaciones de placas alveolares de policarbonato.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= POLICARBONATO . '/' . POLICARBONATO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">8</div>
 	  		</div>
@@ -167,7 +167,7 @@
 	  				Desarrollamos todo tipo de perfiles cobertores de policarbonato con UV para artefactos de iluminación bajo requerimientos específicos de clientes.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= ILUMINACION . '/' . ILUMINACION_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">9</div>
 	  		</div>
@@ -178,7 +178,7 @@
 	  				Molduras de madera sintética desarrolladas bajo procesos y acabados patentados, se fabrican con materiales sintéticos diseñados especialmente para obtener características similares a la madera natural.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= LISTEX . '/' . LISTEX_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">10</div>
 	  		</div>
@@ -191,7 +191,7 @@
 	  				Guardacantos de cerámicos, zócalos de PVC, naríz de escalón, juntas de dilatación entre otros productos para dar una excelente terminación, fáciles de colocar y libres de mantenimiento.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= TERMINACIONES . '/' . TERMINACIONES_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">11</div>
 	  		</div>
@@ -202,7 +202,7 @@
 	  				Botazos náuticos fabricados en PVC de alto impacto proporcionan una alta tolerancia a los golpes protegiendo tanto la integridad del muelle como de los barcos. Fáciles de instalar y de gran durabilidad.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">12</div>
 	  		</div>
