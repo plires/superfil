@@ -1,0 +1,6 @@
+/node_modules
+/.phpintel
+/vendor
+/img
+npm-debug.log
+yarn-error.log

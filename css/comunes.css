@@ -1,0 +1,38 @@
+/* Comunes */
+a {
+	text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.transition{
+  -webkit-transition: all ease-in-out .3s; /* Safari */
+  transition: all ease-in-out .3s;
+}
+
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+
+.pt {
+	font-family: 'PT Sans', sans-serif;
+}
+/* Comunes end */
+
+/* Variables */
+:root {
+  --primary-color: rgba(0,43,100,1);
+  --text-nav: #566d8f;
+  --text-color: #9a9a99;
+  --back-color-light: #f3f3f3;
+}
+/* Variables end */
+
+/* Body */
+body.margin {
+	margin-top: 80px;
+}
+/* Body end */

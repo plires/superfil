@@ -1,0 +1,409 @@
+/* Generales */
+.home p {
+	color: #9b9b9a;
+	font-weight: 300;
+}
+
+.home .btn-outline-primary {
+	color: var(--primary-color);
+	font-weight: 300;
+	border-color: var(--primary-color);
+	padding: 5px 30px;
+}
+
+.home .btn-outline-primary:hover {
+	background: var(--primary-color);
+	color: white;
+	border-color: none;
+}
+
+.home .lineas .row {
+	border-bottom: solid 1px var(--primary-color);
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+/* Generales end */
+
+/* Header */
+.home .header  {
+	background: url('../img/header/header.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	min-height: 295px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -80px;
+}
+
+.home .header h1  {
+	margin-top: 100px;
+	color: white;
+	font-size: 1.75rem;
+	font-weight: 700;
+	border-left: solid 5px #0083bd;
+	padding-left: 10px;
+}
+
+.home .header img {
+	margin-top: 30px;
+}
+/* Header end */
+
+/* Lineas */
+.home .lineas h2,
+.home .lineas_sin_imagen h2 {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.home .lineas .content_button {
+	text-align: center;
+}
+
+.home .lineas .col-md-6,
+.home .lineas_sin_imagen .col-md-6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.home .lineas .numero,
+.home .lineas_sin_imagen .numero {
+	position: absolute;
+	bottom: -42px;
+	left: 10px;
+	background: white;
+	width: 30px;
+	text-align: center;
+}
+/* Lineas end */
+
+/* Lineas Sin Imagen */
+.home .lineas_sin_imagen .col-md-6 {
+	border-bottom: solid 1px var(--primary-color);
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.home .lineas_sin_imagen .numero {
+	bottom: -12px;
+}
+/* Lineas Sin Imagen end */
+
+/* Vialplast */
+.vialplast {
+	text-align: center;
+}
+
+.vialplast .degrade {
+	background: url('../img/home/linea-vertical.jpg');
+	background-repeat: repeat-x;
+	background-position: 50% 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.vialplast h4 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+}
+
+.vialplast .btn-outline-primary {
+	margin-top: 30px;
+}
+/* Vialplast end */
+
+/* Newsletter */
+.newsletter {
+	text-align: center;
+	background: #002B90;
+	background: -webkit-linear-gradient(right, #002B90, #002C65);
+	background: -moz-linear-gradient(right, #002B90, #002C65);
+	background: linear-gradient(to left, #002B90, #002C65);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.newsletter p {
+	color: white;
+	font-size: 1.25rem;
+	margin: 0;
+}
+
+.newsletter .content_inputs {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.newsletter .content_inputs .form-control {
+	border-radius: 0;
+}
+
+.newsletter form {
+	width: 100%;
+}
+
+.newsletter .content_inputs button {
+	border-radius: 0;
+	font-size: 0.85rem;
+	height: 38px;
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+}
+/* Newsletter end*/
+
+/* Leyenda */
+.leyenda {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.leyenda h3 {
+	color: var(--primary-color);
+	margin-bottom: 30px;
+}
+/* Leyenda end */
+
+/* Confian */
+.confian {
+	text-align: center;
+	background: var(--back-color-light);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.confian h3 {
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+}
+
+.confian img {
+	mix-blend-mode: darken;
+}
+/* Confian end */
+
+/* Iconos */
+.iconos {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #002B90;
+	background: -webkit-linear-gradient(right, #002B90, #002C65);
+	background: -moz-linear-gradient(right, #002B90, #002C65);
+	background: linear-gradient(to left, #002B90, #002C65);
+}
+
+.iconos h4 {
+	color: white;
+	margin-top: 15px;
+	font-weight: 300!important;
+	font-size: 1rem;
+}
+
+.iconos h4 span {
+	font-weight: 700;
+}
+/* Iconos end */
+
+/* Leyenda Final */
+.leyenda_final {
+	background: url('../img/home/tubos-fondo.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 280px;
+}
+
+.leyenda_final p {
+	font-size: 2rem;
+	margin: 0;
+	color: var(--primary-color);
+}
+/* Leyenda Final end */
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+	/* Header */
+	.home .header  {
+		min-height: 500px;
+	}
+	.home .header h1  {
+		margin-top: 100px;
+		font-size: 2.25rem;
+	}
+	.home .header img {
+		margin-top: 100px;
+	}
+	/* Header end */
+
+	/* Lineas */
+	.home .lineas .col-md-6,
+	.home .lineas_sin_imagen .col-md-6 {
+		justify-content: space-between;
+	}
+	/* Lineas end */
+
+	/* Lineas Sin Imagen */
+	.home .lineas_sin_imagen h2 {
+		text-align: left;
+	}
+	.home .lineas_sin_imagen .col-md-6 {
+    align-items: flex-start;
+	}
+	/* Lineas Sin Imagen end */
+
+	/* Vialplast */
+	.vialplast .degrade {
+		border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: -100px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	}
+	.vialplast h4 {
+		font-size: 1.75rem;
+		margin-bottom: 0;
+		text-align: right;
+	}
+
+	.vialplast .col-md-6 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.vialplast .col-md-6 div {
+		border-left: solid 2px black;
+		padding-left: 20px;
+	}
+	/* Vialplast end */
+
+	/* Newsletter */
+	.newsletter {
+		padding-top: 150px;
+    padding-bottom: 60px;
+	}
+	.newsletter p {
+		font-size: 2rem;
+		text-align: left;
+	}
+	.newsletter .col-md-6 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.newsletter .content_inputs {
+		margin-top: 0;
+	}
+	/* Newsletter end*/
+
+	/* Leyenda */
+	.leyenda h3 {
+		font-size: 1.75rem;
+	}
+	/* Leyenda end */
+
+	/* Confian */
+	.confian {
+		padding-bottom: 150px;
+	}
+	.confian h3 {
+		font-size: 2rem;
+	}
+	/* Confian end */
+
+	/* Iconos */
+	.iconos {
+		margin-top: -120px;
+	}
+	.iconos h4 {
+		font-size: 1.25rem;
+	}
+	/* Iconos end */
+
+}
+
+@media (min-width: 992px) {
+	/* Header */
+	.home .header  {
+		min-height: 600px;
+	}
+	.home .header h1  {
+		margin-top: 150px;
+		font-size: 2.5rem;
+	}
+	/* Header end */
+
+	/* Lineas */
+	.home .lineas .col-md-6 {
+		justify-content: space-around;
+	}
+	.home .lineas h2,
+	.home .lineas_sin_imagen h2 {
+		font-size: 2rem;
+	}
+	/* Lineas end */
+
+	/* Leyenda */
+	.leyenda {
+		margin-top: 60px;
+	}
+	/* Leyenda end */
+
+}
+
+@media (min-width: 1200px) {
+	/* Header */
+	.home .header  {
+		min-height: 615px;
+	}
+	.home .header h1  {
+		margin-top: 200px;
+		font-size: 2.75rem;
+	}
+	.home .header img {
+		margin-top: 150px;
+	}
+	/* Header end */
+
+	/* Lineas */
+	.home .lineas .col-md-6 {
+		justify-content: center;
+	}
+	.home .lineas .col-md-6 h2 {
+		margin-bottom: 30px;
+	}
+	.home .lineas .col-md-6 p {
+		margin-bottom: 30px;
+	}
+	/* Lineas end */
+
+}
+
+@media (min-width: 1400px) {
+
+}
+

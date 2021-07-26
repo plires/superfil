@@ -1,0 +1,37 @@
+# ———————————————————————-
+
+# Better website experience for IE users
+
+# substituye meta que no valida:     <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1">
+
+# ———————————————————————-
+
+# Force the latest IE version, in various cases when it may fall back to IE7 mode
+
+#  github.com/rails/rails/commit/123eb25#commitcomment-118920
+
+# Use ChromeFrame if it’s installed for a better experience for the poor IE folk
+
+<IfModule mod_headers.c>
+
+# Header set X-UA-Compatible “IE=edge,chrome=1″
+
+# mod_headers can’t match by content-type, but we don’t want to send this header on *everything*…
+
+<FilesMatch “\.(appcache|crx|css|eot|gif|htc|ico|jpe?g|js|m4a|m4v|manifest|mp4|oex|oga|ogg|ogv|otf|pdf|png|safariextz|svg|svgz|ttf|vcf|webm|webp|woff|xml|xpi)$”>
+
+Header unset X-UA-Compatible
+
+</FilesMatch>
+
+
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.superfil.com.ar [NC]
+RewriteRule ^(.*)$ http://superfil.com.ar/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !^/towebmail/
+RewriteCond %{REQUEST_URI} !^/google-maps/superfil.html
+RewriteRule ^(.+)/(.+).html/?$ listado-producto.php?linea_rs=$1&ruta=$2 [NC]
+RewriteRule ^(.+)/(.+)/(.+).html/?$ detalle-producto.php?linea_rs=$1&url=$2&codigo=$3 [L,NC]
