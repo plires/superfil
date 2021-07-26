@@ -30,6 +30,21 @@
 .producto_detalle .datos p span {
 	font-weight: 700;
 }
+
+.producto_detalle .datos i {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.producto_detalle .datos .volver {
+	color: #369fd7;
+	font-size: 1.25rem;
+	width: 120px;
+}
+
+.producto_detalle .datos .volver:hover {
+	color: var(--primary-color);
+}
 /* Producto */
 
 /* Necesitas un Presupuesto */
@@ -60,9 +75,15 @@
 		justify-content: space-around;
 		align-items: center;
 	}
-	/* Producto end */
 
-	/* Producto */
+	.producto_detalle .datos .volver {
+		color: #369fd7;
+	}
+
+	.producto_detalle .datos .volver:hover {
+		color: white;
+	}
+
 	.producto_detalle .image img {
 		max-width: 70%;
 	}
@@ -96,7 +117,6 @@
 		width: 100%;
 	}
 
-	/* Producto */
 	.producto_detalle .image img {
 		max-width: 100%;
 	}
@@ -132,6 +152,7 @@
 	.producto_detalle .datos p span {
 		font-size: 1rem;
 	}
+
 	/* Producto end */
 
 	/* Necesitas un Presupuesto */

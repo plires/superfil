@@ -1,5 +1,5 @@
 <!-- Galeria de imagenes start -->
-<div class="container-fluid">
+<div class="container-fluid text-center mt-5">
   <div class="row">
     <div class="col-md-12">
       <h2 class="titulo_galeria">Galería de Imágenes</h2>

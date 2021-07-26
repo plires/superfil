@@ -13,9 +13,6 @@
   $lines_extra = $db->getRepoProducts()->getExtraDataFromTheLines($product['line']);
   $galery_images = $db->getRepoProducts()->getGaleryImagesFromTheLines($product['line']);
 
-  // echo "<pre>";
-  // var_dump($product);exit;
-
 ?>
 
 <!DOCTYPE html>
@@ -130,6 +127,8 @@
             <?php endif ?>
           </div>
 
+          <hr>
+          <a class="volver transition" href="javascript:history.back()"><i class="fas fa-backward mr-5"></i>Volver</a>
 
         </div>
 
