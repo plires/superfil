@@ -1,0 +1,180 @@
+/* Header Contacto */
+.contacto .header_contacto {
+	max-height: 300px;
+	margin-bottom: 0;
+}
+
+.contacto div {
+	position: relative;
+}
+
+.contacto .header_contacto .fondo {
+	mix-blend-mode: overlay;
+}
+
+.contacto h1 {
+	position: absolute;
+	width: 170px;
+	left: calc(50% - 85px);
+	top: 45%;
+	text-align: center;
+	/*z-index: 99;*/
+	margin: 0!important;
+}
+
+.contacto .flecha {
+	margin-top: -115px!important;
+}
+/* Header Contacto end */
+
+/* Texto */
+.contacto .texto {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.contacto .texto p {
+	text-align: center;
+	font-weight: 700;
+	margin: 0;
+}
+
+.contacto .texto p span {
+	font-weight: 100;
+}
+/* Texto end */
+
+/* Mapa */
+.contacto .mapa {
+	margin-bottom: 60px;
+}
+/* Mapa end */
+
+/* Formulario Header */
+.contacto .formulario_header img {
+	max-width: 50%;
+	margin-bottom: 15px;
+}
+
+.contacto .formulario_header p span {
+	font-weight: 700;
+}
+/* Formulario Header end */
+
+/* Formulario */
+.contacto .formulario {
+	margin-bottom: 30px;
+}
+
+.contacto .formulario img {
+	margin-bottom: 30px;
+}
+
+.contacto .formulario h3 {
+	margin-bottom: 15px;
+}
+
+.contacto .formulario .mb-3 {
+	margin-bottom: 30px!important;
+}
+
+.contacto .formulario label {
+	color: #c6c6c6;
+}
+
+.contacto .formulario .form-control {
+	border: none;
+	border-radius: 0;
+	border-bottom: solid 1px #c6c6c6;
+}
+
+.contacto .formulario .form-control:focus {
+	box-shadow: none;
+}
+
+.contacto .formulario button {
+	border: none;
+	background-color: white;
+	color: var(--primary-color);
+	float: right;
+	font-weight: 700;
+	padding: 10px;
+	font-size: 1.25rem;
+}
+/* Formulario end */
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+	
+}
+
+@media (min-width: 768px) {
+
+	/* Formulario Header */
+	.contacto .formulario_header {
+		margin-bottom: 60px;
+	}
+
+	.contacto .formulario_header .col-md-6 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	/* Formulario Header end */
+
+	/* Formulario */
+	.contacto .formulario .col-md-6:first-child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contacto .formulario .mb-3 {
+    margin-bottom: 0px!important;
+	}
+
+	.contacto .formulario label {
+		margin-bottom: 0;
+	}
+	/* Formulario end */
+
+}
+
+@media (min-width: 992px) {
+	/* Header Contacto */
+	.contacto .header_contacto {
+		max-height: 350px;
+		height: 350px;
+	}
+
+	.contacto h1 {
+		top: 40%;
+	}
+	/* Header Contacto end */
+
+	/* Formulario */
+
+	.contacto .formulario .mb-3 {
+    margin-bottom: 20px!important;
+	}
+
+	.contacto .formulario label {
+		margin-bottom: 20;
+	}
+
+	.contacto .formulario h3 {
+		margin-bottom: 70px;
+	}
+	/* Formulario end */
+	
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
