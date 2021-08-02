@@ -9,10 +9,9 @@
 			<div class="col-md-3">
 				<h5>MENÚ</h5>
 				<ul>
-					<li><a class="transition" href="#">Empresa</a></li>
+					<li><a class="transition" href="empresa.php">Empresa</a></li>
 					<li><a class="transition" href="#">Productos</a></li>
-					<li><a class="transition" href="#">Distribuidores</a></li>
-					<li><a class="transition" href="#">Descargas</a></li>
+					<li><a class="transition" href="distribuidores.php">Distribuidores</a></li>
 				</ul>
 			</div>
 

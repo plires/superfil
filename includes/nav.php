@@ -13,10 +13,9 @@
 		<nav>
 
 			<ul id="navigation">
-				<li><a id="btn_empresa" href="#">Empresa</a></li>
+				<li><a id="btn_empresa" href="empresa.php">Empresa</a></li>
 				<li><a id="btn_products" href="#">Productos</a></li>
-				<li><a id="btn_distribuidores" href="#">Distribuidores</a></li>
-				<li><a id="btn_descargas" href="#">descargas</a></li>
+				<li><a id="btn_distribuidores" href="distribuidores.php">Distribuidores</a></li>
 				<li><a id="btn_contacto" href="contacto.php">Contacto</a></li>
 				<li class="rrss">
 					<a href="#" target="_blank" rel="noopener noreferrer">seguinos en <i class="fab fa-facebook-f"></i></a>
