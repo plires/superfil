@@ -14,7 +14,7 @@
   $galery_images = $db->getRepoProducts()->getGaleryImagesFromTheLines($products[0]['line']);
 
   // echo "<pre>";
-  // var_dump($products);
+  // var_dump($products[0]);exit;
 
 ?>
 
@@ -79,17 +79,27 @@
 
         <?php else: ?>
 
-          <?php foreach ($products as $key => $product): ?>
+          <!-- Seccion diferenciada para tubos -->
+          <?php if ($products[0]['line_rs'] == TUBOS): ?>
             
-            <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
-              <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
-              <div class="background">
-                <h2>CÓDIGO <br><?= $product['code'] ?></h2>
-                <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
-              </div>
-            </div>
+            <?php include('includes/section-tubos.php'); ?>
+            
+          <?php else: ?>
+          <!-- Seccion diferenciada para tubos end -->
 
-          <?php endforeach ?>
+            <?php foreach ($products as $key => $product): ?>
+              
+              <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
+                <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
+                <div class="background">
+                  <h2>CÓDIGO <br><?= $product['code'] ?></h2>
+                  <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
+                </div>
+              </div>
+
+            <?php endforeach ?>
+
+          <?php endif ?>
 
         <?php endif ?>
 
@@ -106,24 +116,7 @@
     </div>
     <!-- Newsletter End -->
 
-    <!-- Iconos -->
-    <section class="iconos container">
-      <div data-aos="fade-left" class="row">
-        <div class="col-4 col-md-4">
-          <img class="img-fluid" src="img/home/calidad.png" alt="calidad">
-          <h4 class="lato">Calidad <br><span>Garantizada</span></h4>
-        </div>
-        <div class="col-4 col-md-4">
-          <img class="img-fluid" src="img/home/stock.png" alt="stock">
-          <h4 class="lato">Stock<br><span>Permanente</span></h4>
-        </div>
-        <div class="col-4 col-md-4">
-          <img class="img-fluid" src="img/home/atencion-personalizada.png" alt="atencion personalizada">
-          <h4 class="lato">Atención<br><span>Personalizada</span></h4>
-        </div>
-      </div>
-    </section>
-    <!-- Iconos end -->
+    <?php include('./includes/iconos.php'); ?>
 
   </section>
 

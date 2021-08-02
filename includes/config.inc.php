@@ -82,6 +82,6 @@ define('LISTEX_URL', 'zocalos-madera-sintetica-polimeros');
 
 define('JUNTAS', 'juntas');
 define('JUNTAS_TITLE', 'Juntas Waterstop');
-define('JUNTAS_URL', 'bandas-flexibles-pvc-sella-juntas-construccion-expansion');
+define('JUNTAS_URL', 'juntas-waterstop-bandas-flexibles-pvc-sella-juntas-construccion-expansion');
 
 ?>

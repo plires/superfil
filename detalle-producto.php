@@ -136,21 +136,7 @@
     </section>
     <!-- Producto end -->
 
-    <!-- Necesitas un Presupuesto -->
-    <section class="content_presupuesto container">
-      <div class="row">
-        <div class="col-md-6">
-          <div>
-            <p class="dudas">¿Tenés dudas?</p>
-            <p class="presupuesto">¿Necesitas <br>presupuesto?</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <a href="contacto.php" class="transition btn btn-primary">CONTACTO</a>
-        </div>
-      </div>
-    </section>
-    <!-- Necesitas un Presupuesto end -->
+    <?php include('./includes/necesitas-presupuesto.php') ?>
 
     <!-- Newsletter -->
     <div class="newsletter_listado_productos">
@@ -158,24 +144,7 @@
     </div>
     <!-- Newsletter End -->
 
-    <!-- Iconos -->
-    <section class="iconos container">
-      <div data-aos="fade-left" class="row">
-        <div class="col-4 col-md-4">
-          <img class="img-fluid" src="img/home/calidad.png" alt="calidad">
-          <h4 class="lato">Calidad <br><span>Garantizada</span></h4>
-        </div>
-        <div class="col-4 col-md-4">
-          <img class="img-fluid" src="img/home/stock.png" alt="stock">
-          <h4 class="lato">Stock<br><span>Permanente</span></h4>
-        </div>
-        <div class="col-4 col-md-4">
-          <img class="img-fluid" src="img/home/atencion-personalizada.png" alt="atencion personalizada">
-          <h4 class="lato">Atención<br><span>Personalizada</span></h4>
-        </div>
-      </div>
-    </section>
-    <!-- Iconos end -->
+    <?php include('./includes/iconos.php'); ?>
 
   </section>
 
