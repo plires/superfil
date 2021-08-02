@@ -13,18 +13,18 @@
 		<nav>
 
 			<ul id="navigation">
-				<li><a id="btn_empresa" href="empresa.php">Empresa</a></li>
-				<li><a id="btn_products" href="#">Productos</a></li>
-				<li><a id="btn_distribuidores" href="distribuidores.php">Distribuidores</a></li>
-				<li><a id="btn_contacto" href="contacto.php">Contacto</a></li>
+				<li><a class="trasition" id="btn_empresa" href="empresa.php">Empresa</a></li>
+				<li><a class="trasition" id="btn_products" href="#">Productos</a></li>
+				<li><a class="trasition" id="btn_distribuidores" href="distribuidores.php">Distribuidores</a></li>
+				<li><a class="trasition" id="btn_contacto" href="contacto.php">Contacto</a></li>
 				<li class="rrss">
-					<a href="#" target="_blank" rel="noopener noreferrer">seguinos en <i class="fab fa-facebook-f"></i></a>
+					<a class="trasition" href="#" target="_blank" rel="noopener noreferrer">seguinos en <i class="fab fa-facebook-f"></i></a>
 				</li>
 			</ul>
 
 			<ul id="sub_navigation">
 				<div class="images_desktop">
-					<img class="img-fluid" id="image" src="img/header/superfil-menu.png" alt="menu superfil">
+					<img class="img-fluid transition" id="image" src="img/header/superfil-menu.png" alt="menu superfil">
 				</div>
 				<div class="submenu_desktop">
 					<li><a id="close_products" href="#"><i class="fas fa-arrow-left"></i></a></li>
@@ -101,7 +101,7 @@
 
 					<li>
 						<a 
-							class="title_lines" data-image="listex" 
+							class="title_lines" data-image="terminaciones" 
 							href="<?= TERMINACIONES . '/' . TERMINACIONES_URL . '.html' ?>">Linea terminaciones
 						</a>
 					</li>

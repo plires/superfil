@@ -57,6 +57,14 @@ header.background {
 	transition: 0.5s;
 }
 
+.navigation_container nav #navigation a{
+	font-weight: 700;
+}
+
+.navigation_container nav #navigation a:hover {
+	color: #1d71b6;
+}
+
 .navigation_container nav #navigation.translate,
 .navigation_container nav #sub_navigation.translate {
 	transform: translateX(-100%);

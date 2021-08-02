@@ -7,7 +7,6 @@ const hamburger = document.getElementById('hamburger')
 const btnEmpresa = document.getElementById('btn_empresa')
 const btnProducts = document.getElementById('btn_products')
 const btnDistribuidores = document.getElementById('btn_distribuidores')
-const btnDescargas = document.getElementById('btn_descargas')
 const btnContacto = document.getElementById('btn_contacto')
 
 const btnCloseLinesProducts = document.getElementById('close_products')
@@ -41,7 +40,7 @@ function openProducts() {
 		subNavigation.classList.toggle('translate')
 		return
 	} else {
-		subNavigation.classList.toggle('open')
+		subNavigation.classList.add('open')
 		changeImage('img/header/superfil-menu.png', 'superfil menu')
 		return
 	}
@@ -67,18 +66,24 @@ function hidelHeader(){
 	header.classList.remove('background')
 }
 
-//funcion para cualquier clic en el documento
-document.addEventListener("click", function(e){
-//obtiendo informacion del DOM para  
-var clic = e.target;
-if(subNavigation.classList == "open" && clic != btnProducts && clic != imagesDesktop && clic != image  && clic != subMenuDesktop ){
- // subNavigation.classList.remove('open');
- subNavigation.classList.toggle('open')
-} 
+btnEmpresa.addEventListener("mouseover", function(e){
+subNavigation.classList.remove('open') 
 }, false);
 
-btnProducts.addEventListener('click', function(){
+btnDistribuidores.addEventListener("mouseover", function(e){
+subNavigation.classList.remove('open') 
+}, false);
+
+btnContacto.addEventListener("mouseover", function(e){
+subNavigation.classList.remove('open') 
+}, false);
+
+btnProducts.addEventListener('mouseenter', function(){
 	openProducts()
+});
+
+body.addEventListener('click', function(){
+	subNavigation.classList.remove('open') 
 });
 
 btnCloseLinesProducts.addEventListener('click', function(){
@@ -90,8 +95,8 @@ toggle.addEventListener('click', function(){
 });
 
 function changeImage(image, alt){
-  document.getElementById('image').src = image;
-  document.getElementById('image').alt = alt;
+  document.getElementById('image').src = image
+  document.getElementById('image').alt = alt
 }
 
 for (var i = 0; i < titleLines.length; i++) {
@@ -100,11 +105,11 @@ for (var i = 0; i < titleLines.length; i++) {
   	let image = 'img/header/' + e.target.attributes['data-image'].value + '-menu.png'
   	let alt = 'linea ' + e.target.attributes['data-image'].value
   	changeImage(image, alt)
-  });
+  })
 
 }
 
-AOS.init();
+AOS.init()
 
 // Validacion del Formulario
 (function() {
@@ -124,8 +129,3 @@ AOS.init();
     });
   }, false);
 })();
-
-
-
-
-

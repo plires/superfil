@@ -118,10 +118,10 @@
               <p><span>Usos y aplicaciones:</span> <br><?= $product['applications'] ?></p>
             <?php endif ?>
 
-            <hr>
 
             <!-- Usos y Aplicaciones -->
             <?php if ($product['observations']): ?>
+              <hr>
               <h3>Observaciones:</h3>
               <p><?= $product['observations'] ?></p>
             <?php endif ?>
