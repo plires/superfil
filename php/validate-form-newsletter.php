@@ -24,28 +24,17 @@
 	if($datos['success'] == 1 && $datos['score'] >= 0.5){
 
 		// Verificamos si hay errores en el formulario
-	  if (emptyInput($_POST['name'])){
-	    $errors['error_name']='Ingresa tu nombre';
+
+	  if (!emailCheck($_POST['email_newsletter'])){
+	    $errors_newsletter = 'Ingresa el mail :(';
 	  } else {
-	    $name = $_POST['name'];
+	    $email_newsletter = $_POST['email_newsletter'];
 	  }
 
-	  if (!emailCheck($_POST['email'])){
-	    $errors['error_email']='Ingresa el mail :(';
-	  } else {
-	    $email = $_POST['email'];
-	  }
-
-	  if (emptyInput($_POST['comments'])){
-	    $errors['error_comments']='Ingresa tu comentario';
-	  } else {
-	    $comments = $_POST['comments'];
-	  }
-
-	  if (!isset($errors)) {
+	  if (!isset($errors_newsletter)) {
 	  	
 	  	//grabamos en la base de datos
-		  $save = $db->getRepoContacts()->saveInBDD($_POST);
+		  $save = $db->getRepoContacts()->saveNewsletterInBDD($_POST);
 
 		  //Enviamos los mails al cliente y usuario
 		  $app = new App;
@@ -53,25 +42,22 @@
 		  // Registramos en Mailchimp el contacto
 		  // $app->registerEmailInMailchimp(API_KEY_MAILCHIMP, LIST_ID, $_POST);
 
-		  $sendClient = $app->sendEmail('Cliente', 'Contacto Cliente', $_POST);
-		  $sendUser = $app->sendEmail('Usuario', 'Contacto Usuario', $_POST);
+		  $sendClient = $app->sendEmail('Cliente', 'Newsletter Cliente', $_POST);
+		  $sendUser = $app->sendEmail('Usuario', 'Newsletter Usuario', $_POST);
 
 		  if ($sendClient) {
-		  	$msg_contacto = 'Mensaje recibido. Le contestaremos a la brevedad. Muchas gracias!';
+		    $msg_newsletter = 'Gracias por tu suscripción';
 		    $url = explode("?",$_SERVER['HTTP_REFERER']);
 
-		    header("Location: " . $url[0] ."?msg_contacto=". urlencode($msg_contacto) . "#msg_contacto" );
-	  	exit;
+		    header("Location: " . $url[0] ."?msg_newsletter=". urlencode($msg_newsletter) . "#msg_newsletter" );
 		  } else {
 		    exit('Error al enviar la consulta, por favor intente nuevamente');
 		  }
 
 	  } else {
-	  	$phone = $_POST['phone'];
-	  	$city = $_POST['city'];
 	  	$url = explode("?",$_SERVER['HTTP_REFERER']);
 
-	  	header("Location: " . $url[0] . "?name=$name&email=$email&phone=$phone&city=$city&comments=$comments&errors=" . urlencode(serialize($errors)) . "#error");
+	  	header("Location: " . $url[0] . "?email_newsletter=$email_newsletter&errors_newsletter=$errors_newsletter#error_newsletter");
 	  	exit;
 	  }
 	  

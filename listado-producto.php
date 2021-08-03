@@ -110,12 +110,8 @@
     <!-- Galeria de Imagenes -->
     <?php include('includes/galeria-imagenes.php'); ?>
 
-    <!-- Newsletter -->
-    <div class="newsletter_listado_productos">
-      <?php include('includes/newsletter.php'); ?>
-    </div>
-    <!-- Newsletter End -->
 
+    <!-- Iconos -->
     <?php include('./includes/iconos.php'); ?>
 
   </section>

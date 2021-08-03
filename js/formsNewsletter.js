@@ -1,13 +1,14 @@
 $(document).ready(function() {
 
-  $('#send').click(function() {
+  $('#send_newsletter').click(function() {
 
     var errorsInFieldsFront = false
 
     // Validacion del Formulario
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var form = document.getElementById('form-contacto');
-    
+    var form = document.getElementById('form-newsletter');
+
+    // Loop over them and prevent submission
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
@@ -18,11 +19,11 @@ $(document).ready(function() {
     if (!errorsInFieldsFront) {
       grecaptcha.ready(function() {
         grecaptcha.execute('6Lfjx9YbAAAAAD5dEWVt8q0w6-7WgbqSLj8mst6S', {
-          action: 'validarFormulario'
+          action: 'validarNewsletter'
           }).then(function(token) {
-          $('#form-contacto').prepend('<input type="hidden" name="token" value="' + token + '" >');
-          $('#form-contacto').prepend('<input type="hidden" name="action" value="validarFormulario" >');
-          $('#form-contacto').submit();
+          $('#form-newsletter').prepend('<input type="hidden" name="token" value="' + token + '" >');
+          $('#form-newsletter').prepend('<input type="hidden" name="action" value="validarNewsletter" >');
+          $('#form-newsletter').submit();
         });
       });
     } 

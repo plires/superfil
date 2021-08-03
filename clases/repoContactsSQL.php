@@ -30,6 +30,20 @@ class RepoContactsSQL extends repoContacts
 
   }
 
+  public function saveNewsletterInBDD($post)
+  {
+
+    $sql = "INSERT INTO newsletter values(default, :email, :date)";
+        $stmt = $this->conexion->prepare($sql);
+        $stmt->bindValue(":email", $post['email_newsletter'], PDO::PARAM_STR);
+        $stmt->bindValue(":date", date("F j, Y, g:i a"), PDO::PARAM_STR);
+        
+    $save = $stmt->execute();
+
+    return $save;
+
+  }
+
 }
 
 ?>

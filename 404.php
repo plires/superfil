@@ -27,7 +27,7 @@
 
   <section class="404">
   	
-  	404
+  	<p>404</p>
 
   </section>
 

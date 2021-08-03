@@ -48,15 +48,21 @@ use PHPMailer\PHPMailer\Exception;
               $emailAddReplyTo = $post['email'];
               $emailBCC = EMAIL_BCC;
             } else {
-              $nameShow = $post['email'];
-              $emailAddReplyTo = $post['email'];
+              $nameShow = $post['email_newsletter'];
+              $emailAddReplyTo = $post['email_newsletter'];
               $emailBCC = EMAIL_BCC;
             }
             $emailShow = EMAIL_SENDER;  // Mi cuenta de correo
             break;
           
           case 'Usuario':
-            $emailDestino = $post['email'];
+
+            if (isset($post['email'])) {
+              $emailDestino = $post['email'];
+            } else {
+              $emailDestino = $post['email_newsletter'];
+            }
+
             $nameShow = NAME_SENDER_SHOW;
             $emailShow = EMAIL_RECIPIENT;  // Mi cuenta de correo
             $emailAddReplyTo = EMAIL_SENDER_SHOW;
@@ -73,6 +79,16 @@ use PHPMailer\PHPMailer\Exception;
           case 'Contacto Usuario':
             include('../includes/emails/contacts/template-envio-usuario.inc.php'); // Cargo el contenido del email a enviar al usuario.
             $subject = 'Gracias por tu contacto.';
+            break;
+
+          case 'Newsletter Usuario':
+            include('../includes/emails/newsletter/template-envio-usuario.inc.php'); // Cargo el contenido del email a enviar al usuario.
+            $subject = 'Gracias por tu suscripción.';
+            break;
+
+          case 'Newsletter Cliente':
+            include('../includes/emails/newsletter/template-envio-cliente.inc.php'); // Cargo el contenido del email a enviar al usuario.
+            $subject = 'Nueva Suscripción al Newsletter.';
             break;
         }
 

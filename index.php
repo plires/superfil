@@ -300,6 +300,10 @@
   <!-- Footer -->
   <?php include('includes/footer.php'); ?>  
 
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=<?= RECAPTCHA_KEY_SITE ?>"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/formsNewsletter.js"></script>
 	<script src="node_modules/aos/dist/aos.js"></script>
 	<script src="js/app.js"></script>
 </body>
