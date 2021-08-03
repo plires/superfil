@@ -18,12 +18,13 @@ define('DB_PASS', 'secret');
 //////////////////////////////
 define('SMTP', 'c2260081.ferozo.com');
 define('EMAIL_SENDER', 'envios@jokerhotel.com.ar');
-define('EMAIL_SENDER_SHOW', 'info@jokerhotel.com.ar');
-define('NAME_SENDER_SHOW', 'Joker Hotel');
-define('EMAIL_RECIPIENT', 'info@jokerhotel.com.ar');
+define('EMAIL_SENDER_SHOW', 'carlos.castro.1975.2@gmail.com');
+define('NAME_SENDER_SHOW', 'Superfil');
+define('EMAIL_RECIPIENT', 'carlos.castro.1975.2@gmail.com');
+define('EMAIL_BCC', '');
 define('EMAIL_PASS', 'G*vGFns9rF');
 define('EMAIL_PORT', 25);
-define('EMAIL_NAME', 'Joker Hotel');
+define('EMAIL_NAME', 'Superfil');
 define('EMAIL_SUBJECT', 'Gracias por tu contacto');
 define('EMAIL_CHARSET', 'utf-8');
 define('EMAIL_ENCODING', 'quoted­printable');
@@ -31,8 +32,8 @@ define('EMAIL_ENCODING', 'quoted­printable');
 ////////////////////////
 ///API KEY RECAPTCHA
 ////////////////////////
-define('RECAPTCHA_KEY_SITE', '6LfYqLAUAAAAAHsPitTRU8L3a6PXpT5wp4BwGT0o');
-define('RECAPTCHA_KEY_SECRET', '6LfYqLAUAAAAAJUe5K1FgOrbugm4S6jPaDJLkkX-');
+define('RECAPTCHA_KEY_SITE', '6Lfjx9YbAAAAAD5dEWVt8q0w6-7WgbqSLj8mst6S');
+define('RECAPTCHA_KEY_SECRET', '6Lfjx9YbAAAAAMOrW1hSbBicsifEzyvD9XI0I3x2');
 
 ////////////////////////
 ///URL AMIGABLES

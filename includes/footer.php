@@ -10,7 +10,7 @@
 				<h5>MENÚ</h5>
 				<ul>
 					<li><a class="transition" href="empresa.php">Empresa</a></li>
-					<li><a class="transition" href="#">Productos</a></li>
+					<li><a class="transition" href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>">Productos</a></li>
 					<li><a class="transition" href="distribuidores.php">Distribuidores</a></li>
 				</ul>
 			</div>

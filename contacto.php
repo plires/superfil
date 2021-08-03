@@ -3,6 +3,43 @@
   include('includes/config.inc.php');
   include_once('includes/soporte.php');
 
+  if (isset($_GET['name'])) {
+    $name = $_GET['name'];
+  } else {
+    $name = '';
+  }
+
+  if (isset($_GET['email'])) {
+    $email = $_GET['email'];
+  } else {
+    $email = '';
+  }
+
+  if (isset($_GET['phone'])) {
+    $phone = $_GET['phone'];
+  } else {
+    $phone = '';
+  }
+
+  if (isset($_GET['city'])) {
+    $city = $_GET['city'];
+  } else {
+    $city = '';
+  }
+
+  if (isset($_GET['comments'])) {
+    $comments = $_GET['comments'];
+  } else {
+    $comments = '';
+  }
+
+  if (isset($_GET['errors'])) {
+
+    $errors = unserialize(urldecode($_GET['errors']));
+  } else {
+    $errors = '';
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +63,7 @@
 	<link rel="stylesheet" href="css/app.css">
 
 </head>
+
 <body class="margin">
 	<!-- Tag Manager Body -->
   <?php include_once("includes/tag_manager_body.php"); ?>
@@ -95,12 +133,31 @@
         <div data-aos="fade-left" class="col-md-6">
 
           <h3>¿DUDAS O CONSULTAS?</h3>
-          <form class="needs-validation" method="post" novalidate>
+
+          <!-- Errores Formulario -->
+          <?php if ($errors): ?>
+
+            <div id="error" class="alert alert-danger alert-dismissible fade show" role="alert">
+              <strong>¡Por favor verificá los datos!</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <ul style="padding: 0;">
+                <?php foreach ($errors as $error) { ?>
+                  <li>- <?php echo $error; ?></li>
+                <?php } ?>
+              </ul>
+            </div>
+
+          <?php endif ?>
+          <!-- Errores Formulario end -->
+
+          <form id="form-contacto" action="./php/validate-form.php" method="post" class="needs-validation" novalidate>
+
+            <input name="origin" type="hidden" value="Formulario de Contacto">
             
             <!-- Nombre -->
             <div class="mb-3">
               <label for="name" class="form-label">Nombre *</label>
-              <input required type="text" class="form-control" name="name">
+              <input required type="text" class="form-control" value="<?= $name ?>" name="name">
               <div class="invalid-feedback">
                 Ingresá tu nombre
               </div>
@@ -109,7 +166,7 @@
             <!-- Email -->
             <div class="mb-3">
               <label for="email" class="form-label">Email *</label>
-              <input required type="email" class="form-control" name="email">
+              <input required type="email" class="form-control" value="<?= $email ?>" name="email">
               <div class="invalid-feedback">
                 Ingresá tu email
               </div>
@@ -118,22 +175,26 @@
             <!-- Telefono -->
             <div class="mb-3">
               <label for="phone" class="form-label">Teléfono</label>
-              <input type="tel" class="form-control" name="phone">
+              <input type="tel" class="form-control" value="<?= $phone ?>" name="phone">
             </div>
 
             <!-- Ciudad -->
             <div class="mb-3">
               <label for="city" class="form-label">Ciudad</label>
-              <input type="text" class="form-control" name="city">
+              <input type="text" class="form-control" value="<?= $city ?>" name="city">
             </div>
 
             <!-- Comentarios -->
             <div class="mb-3">
-              <label for="comments" class="form-label">Comentarios</label>
-              <textarea class="form-control" name="comments"></textarea>
+              <label for="comments" class="form-label">Comentarios *</label>
+              <textarea required class="form-control" name="comments"><?= $comments ?></textarea>
+              <div class="invalid-feedback">
+                Ingresá tu comentario
+              </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">ENVIAR</button>
+            <button type="button" id="send" class="btn btn-primary">ENVIAR</button>
+
           </form>
 
         </div>
@@ -155,7 +216,11 @@
   <?php include('includes/footer.php'); ?>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=<?= RECAPTCHA_KEY_SITE ?>"></script>
   <script src="node_modules/aos/dist/aos.js"></script>
-	<script src="js/app.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+	<script src="js/formsContact.js"></script>
+
 </body>
 </html>

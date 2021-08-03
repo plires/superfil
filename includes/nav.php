@@ -119,7 +119,7 @@
 		</nav>
 
 		<div class="rrss_desktop">
-			<a href="#" target="_blank" rel="noopener noreferrer">seguinos en <i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.facebook.com/superfil.pvc/" target="_blank" rel="noopener noreferrer">seguinos en <i class="fab fa-facebook-f"></i></a>
 		</div>
 
 	</section>

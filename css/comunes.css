@@ -59,7 +59,6 @@ button,
   box-shadow: none;
 }
 
-button:hover,
 .btn-primary:hover {
   background: var(--primary-color);
   color: white;

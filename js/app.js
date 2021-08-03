@@ -51,9 +51,9 @@ var scrollPos = 0;
 window.addEventListener('scroll', function(){
 	if ( (document.body.getBoundingClientRect()).top > scrollPos)
 		showlHeader()
-  else
-  	hidelHeader()
-  	scrollPos = (document.body.getBoundingClientRect()).top
+	else
+		hidelHeader()
+	scrollPos = (document.body.getBoundingClientRect()).top
 });
 
 function showlHeader(){
@@ -67,15 +67,15 @@ function hidelHeader(){
 }
 
 btnEmpresa.addEventListener("mouseover", function(e){
-subNavigation.classList.remove('open') 
+	subNavigation.classList.remove('open') 
 }, false);
 
 btnDistribuidores.addEventListener("mouseover", function(e){
-subNavigation.classList.remove('open') 
+	subNavigation.classList.remove('open') 
 }, false);
 
 btnContacto.addEventListener("mouseover", function(e){
-subNavigation.classList.remove('open') 
+	subNavigation.classList.remove('open') 
 }, false);
 
 btnProducts.addEventListener('mouseenter', function(){
@@ -95,37 +95,34 @@ toggle.addEventListener('click', function(){
 });
 
 function changeImage(image, alt){
-  document.getElementById('image').src = image
-  document.getElementById('image').alt = alt
+	document.getElementById('image').src = image
+	document.getElementById('image').alt = alt
 }
 
 for (var i = 0; i < titleLines.length; i++) {
 
-  titleLines[i].addEventListener('mouseover', function(e) {
-  	let image = 'img/header/' + e.target.attributes['data-image'].value + '-menu.png'
-  	let alt = 'linea ' + e.target.attributes['data-image'].value
-  	changeImage(image, alt)
-  })
+	titleLines[i].addEventListener('mouseover', function(e) {
+		let image = 'img/header/' + e.target.attributes['data-image'].value + '-menu.png'
+		let alt = 'linea ' + e.target.attributes['data-image'].value
+		changeImage(image, alt)
+	})
 
 }
 
-AOS.init()
+AOS.init();
 
-// Validacion del Formulario
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+function validateForm() {
+	// Validacion del Formulario
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.getElementsByClassName('needs-validation');
+  // Loop over them and prevent submission
+  var validation = Array.prototype.filter.call(forms, function(form) {
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+      return true
+    }
+    form.classList.add('was-validated');
+      return false
+  });
+}

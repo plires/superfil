@@ -92,7 +92,7 @@
 	box-shadow: none;
 }
 
-.contacto .formulario button {
+.contacto .formulario .btn-primary {
 	border: none;
 	background-color: white;
 	color: var(--primary-color);
