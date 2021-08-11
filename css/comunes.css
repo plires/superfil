@@ -1,4 +1,8 @@
 /* Comunes */
+html, body { /* Para corregir el desbordamiento que causo la libreria AOS.js */
+ overflow-x: hidden
+}
+
 a {
 	text-decoration: none;
 }

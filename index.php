@@ -281,6 +281,7 @@
 	  </section>
 	  <!-- Confian en Nosotros end -->
 
+	  <!-- Iconos -->
 	  <?php include('./includes/iconos.php'); ?>
 
 	  <!-- Leyenda Final -->

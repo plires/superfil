@@ -123,7 +123,8 @@ header.background {
   font-size: 1.25rem;
 }
 
-.navigation_container ul li a {
+.navigation_container ul li a,
+.navigation_container ul li button {
 	position: relative;
 	text-decoration: none;
 	color: var(--text-nav);
@@ -136,6 +137,13 @@ header.background {
 	justify-content: center;
 	align-items: center;
 	transition: all ease-in-out .3s;
+}
+
+.navigation_container ul li button {
+	padding: 0;
+	background: transparent;
+	border: none;
+	margin: auto;
 }
 
 .navigation_container ul li a:hover {
@@ -287,10 +295,15 @@ header .rrss a i {
     font-size: 0.65rem;
 	}
 
-	.navigation_container ul li a {
+	.navigation_container ul li a,
+	.navigation_container ul li button {
 		color: white;
 		font-size: 0.85rem;
 		font-weight: 300;
+	}
+
+	.navigation_container ul li button {
+		font-weight: 700;
 	}
 
 	.navigation_container nav #sub_navigation li:nth-child(1) a {
