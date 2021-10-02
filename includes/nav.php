@@ -13,6 +13,7 @@
 		<nav>
 
 			<ul id="navigation">
+				<li><a class="trasition" id="btn_empresa" href="./">Home</a></li>
 				<li><a class="trasition" id="btn_empresa" href="empresa.php">Empresa</a></li>
 				<li><button class="trasition" id="btn_products">Productos</button></li>
 				<li><a class="trasition" id="btn_distribuidores" href="distribuidores.php">Distribuidores</a></li>

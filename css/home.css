@@ -1,6 +1,6 @@
 /* Generales */
 .home p {
-	color: #9b9b9a;
+	color: #3c3c3b;
 	font-weight: 300;
 }
 
@@ -104,14 +104,13 @@
 }
 
 .vialplast .degrade {
-	background: url('../img/home/linea-vertical.jpg');
-	background-repeat: repeat-x;
-	background-position: 50% 100%;
+	background-color: black;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
 .vialplast h4 {
+	color: white;
 	font-weight: 700;
 	font-size: 1.5rem;
 	margin-bottom: 30px;
@@ -119,6 +118,14 @@
 
 .vialplast .btn-outline-primary {
 	margin-top: 30px;
+	color: white;
+	border-color: white;
+}
+
+.vialplast .btn-outline-primary:hover {
+	color: black;
+	border-color: black;
+	background-color: white;
 }
 /* Vialplast end */
 
@@ -186,12 +193,12 @@
 }
 
 .confian h3 {
-	margin-bottom: 15px;
+	margin-bottom: 50px;
 	font-size: 1.5rem;
 }
 
 .confian img {
-	mix-blend-mode: darken;
+	margin-bottom: 20px;
 }
 /* Confian end */
 
@@ -243,6 +250,18 @@
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
 
+	/* Vialplast */
+	.vialplast {
+		margin: 30px auto;
+	}
+	/* Vialplast end */
+
+	/* Iconos */
+	.iconos {
+		margin: 30px auto;
+	}
+	/* Iconos end */
+
 }
 
 @media (min-width: 768px) {
@@ -289,14 +308,20 @@
 		text-align: right;
 	}
 
-	.vialplast .col-md-6 {
+	.vialplast .col-md-7 {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 		align-items: center;
 	}
 
-	.vialplast .col-md-6 div {
-		border-left: solid 2px black;
+	.vialplast .col-md-5 {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.vialplast .col-md-5 div {
+		border-left: solid 2px white;
 		padding-left: 20px;
 	}
 	/* Vialplast end */
@@ -367,6 +392,14 @@
 	}
 	/* Lineas end */
 
+	/* Vialplast */
+
+	.vialplast h4 {
+		margin-right: 30px;
+		font-size: 2rem;
+	}
+	/* Vialplast end */
+
 	/* Leyenda */
 	.leyenda {
 		margin-top: 60px;
@@ -390,6 +423,10 @@
 	/* Header end */
 
 	/* Lineas */
+	.home .lineas {
+		margin-bottom: 60px;
+	}
+
 	.home .lineas .col-md-6 {
 		justify-content: center;
 	}

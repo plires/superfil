@@ -33,7 +33,7 @@
   	
   	<!-- Header -->
 	  <section class="header container-fluid p-0">
-	  	<h1>LÍDERES <br>EN LA INDUSTRIA <br>DEL PVC</h1> 
+	  	<h1>LÍDERES <br>EN LA INDUSTRIA <br>PLÁSTICO</h1> 
       <img data-aos="zoom-out-up" class="img-fluid" src="img/header/flecha.png" alt="flecha blanca">
 	  </section>
   	<!-- Header end -->
@@ -46,7 +46,7 @@
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/cielorraso-home.jpg" alt="linea cielorrasos">
 	  		</div>
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>CIELORRASOS <br>DE PVC</h2>
+	  			<h2>LÍNEA CIELORRASOS <br>DE PVC</h2>
 	  			<p>El Cielorraso Superfil, es un sistema de perfiles de encastre tipo machimbre obtenidos a partir de las más altas tecnologías en la extrusión de compuestos de PVC.</p>
 	  			<div class="content_button">
 	  				<a href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
@@ -60,10 +60,9 @@
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/tubos-home.jpg" alt="linea tubos">
 	  		</div>
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>TUBERÍAS <br>DE PVC</h2>
+	  			<h2>LÍNEA TUBERÍAS <br>DE PVC</h2>
 	  			<p>
-	  				El tubo de PVC SUPERFIL&copy; presenta aspectos revolucionarios en cuanto a su concepción y proceso de fabricación. El mismo esta 
-						formado por un tubo de pared exterior perfilado e interior liso, fabricado a base de PVC rígido no plastificado como materia prima.
+	  				El tubo de PVC SUPERFIL&reg; está conformado por una cinta cuya estructura exterior está compuesta por nervios en forma de "T" que le confieren rigidez anular y en su interior lisa, fabricados a base de PVC rígido no plastificaco.
 					</p>
 	  			<div class="content_button">
 	  				<a href="<?= TUBOS . '/' . TUBOS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
@@ -77,7 +76,7 @@
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/camaras-home.jpg" alt="linea camaras">
 	  		</div>
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>CÁMARAS <br>FRIGORÍFICAS</h2>
+	  			<h2>LÍNEA CÁMARAS <br>FRIGORÍFICAS</h2>
 	  			<p>
 	  				Los zócalos sanitarios de Superfil SA están fabricados en PVC con mejorador de impacto, lo que permite una alta resistencia 
 	  				ante golpes en circunstancias de temperaturas bajo cero.
@@ -94,7 +93,7 @@
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/juntas-home.jpg" alt="linea juntas">
 	  		</div>
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>JUNTAS <br>WATERSTOP</h2>
+	  			<h2>LÍNEA JUNTAS <br>WATERSTOP</h2>
 	  			<p>
 	  				Nuestras juntas Waterstop están elaboradas en PVC plastificado siendo un material sumamente flexible, con alta resistencia mecánica y química, debido a la excelente elasticidad de su composición.
 					</p>
@@ -113,7 +112,8 @@
 
 	  	<div class="row">
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>FURGONES <br>TÉRMICOS</h2>
+	  			<h2>LÍNEA FURGONES <br>TÉRMICOS</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/furgones-home.jpg" alt="linea furgones">
 	  			<p>
 	  				Los perfiles marcos de furgones térmicos están desarrollados y diseñados, para soportar bajas temperaturas exigidas por las cargas congeladas.
 	  			</p>
@@ -124,9 +124,10 @@
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>REVESTIMIENTO <br>EXTERIOR</h2>
+	  			<h2>LÍNEA REVESTIMIENTO <br>EXTERIOR</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/revestimientos-home.jpg" alt="linea revestimientos">
 	  			<p>
-	  				Quiebravista plástico tipo "z", presentado en diversas tonalidades, pigmentado en la masa. Se ofrece en dos alternativas de materiales, de acuerdo a las características climáticas a las cuales será sometido.
+	  				Parasol plástico tipo "z", presentado en diversas tonalidades, pigmentado en la masa. Se ofrece en dos alternativas de materiales, de acuerdo a las características climáticas a las cuales será sometido.
 	  			</p>
 	  			<div class="content_button">
 	  				<a href="<?= REVESTIMIENTO . '/' . REVESTIMIENTO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
@@ -137,7 +138,8 @@
 
 	  	<div class="row">
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>PUBLICIDAD</h2>
+	  			<h2>LÍNEA PUBLICIDAD</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/revestimientos-home.jpg" alt="linea revestimientos">
 	  			<p>
 	  				Portaprecios en diferentes formatos. Largos standard en stock permanente. Producto ideal para supermercados, shoppings y retails. Consulte por medidas especiales.
 	  			</p>
@@ -148,7 +150,8 @@
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>POLICARBONATO</h2>
+	  			<h2>LÍNEA POLICARBONATO</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/policarbonato-home.jpg" alt="linea policarbonato">
 	  			<p>
 	  				Perfiles para unión y sellado en policarbonato, simple y práctico. Es una opción ideal para aplicaciones en donde se requiere unir "H", o sellar "U" en instalaciones de placas alveolares de policarbonato.
 	  			</p>
@@ -162,7 +165,8 @@
 
 	  	<div class="row">
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>ILUMINACIÓN</h2>
+	  			<h2>LÍNEA ILUMINACIÓN</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/iluminacion-home.jpg" alt="linea iluminacion">
 	  			<p>
 	  				Desarrollamos todo tipo de perfiles cobertores de policarbonato con UV para artefactos de iluminación bajo requerimientos específicos de clientes.
 	  			</p>
@@ -173,7 +177,8 @@
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>LISTEX</h2>
+	  			<h2>LÍNEA LISTEX</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/listex-home.jpg" alt="linea listex">
 	  			<p>
 	  				Molduras de madera sintética desarrolladas bajo procesos y acabados patentados, se fabrican con materiales sintéticos diseñados especialmente para obtener características similares a la madera natural.
 	  			</p>
@@ -186,7 +191,8 @@
 
 	  	<div class="row">
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>TERMINACIONES</h2>
+	  			<h2>LÍNEA TERMINACIONES</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/terminaciones-home.jpg" alt="linea terminaciones">
 	  			<p>
 	  				Guardacantos de cerámicos, zócalos de PVC, naríz de escalón, juntas de dilatación entre otros productos para dar una excelente terminación, fáciles de colocar y libres de mantenimiento.
 	  			</p>
@@ -197,7 +203,8 @@
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>NÁUTICA</h2>
+	  			<h2>LÍNEA NÁUTICA</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/nautica-home.jpg" alt="linea nautica">
 	  			<p>
 	  				Botazos náuticos fabricados en PVC de alto impacto proporcionan una alta tolerancia a los golpes protegiendo tanto la integridad del muelle como de los barcos. Fáciles de instalar y de gran durabilidad.
 	  			</p>
@@ -206,6 +213,31 @@
 	  			</div>
 	  			<div class="numero">12</div>
 	  		</div>
+
+	  		<div data-aos="zoom-in" class="col-md-6">
+	  			<h2>LÍNEA GUARDACAMILLAS</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/guardacamillas-home.jpg" alt="linea guardacamillas">
+	  			<p>
+	  				Guardacamillas hospitalario de PVC rígido, utilizado para la protección de paredes expuestas a agresiones y golpes causados por el tráfico de camillas en clínicas, hospitales, etc.
+	  			</p>
+	  			<div class="content_button">
+	  				<a href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
+	  			</div>
+	  			<div class="numero">13</div>
+	  		</div>
+
+	  		<div data-aos="zoom-in" class="col-md-6">
+	  			<h2>LÍNEA PALET PLÁSTICO</h2>
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/pallet-home.jpg" alt="linea pallet">
+	  			<p>
+	  				Fabricados a través de la conformación de dos perfiles plásticos, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesasdas.
+	  			</p>
+	  			<div class="content_button">
+	  				<a href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
+	  			</div>
+	  			<div class="numero">14</div>
+	  		</div>
+
 	  	</div>
 
 	  </section>
@@ -217,14 +249,14 @@
 	  		<div data-aos="fade-left" class="col-md-12 degrade">
 
 	  			<div class="row">
-	  				<div class="col-md-6">
+	  				<div class="col-md-7">
 	  					<h4>
-	  						Conocé nuestra división de productos viales.
+	  						Conocé nuestra división <br>de productos viales.
 	  					</h4>
 	  				</div>
-	  				<div class="col-md-6">
+	  				<div class="col-md-5">
 	  					<div>
-	  						<img class="img-fluid" src="img/home/logo-vialplast.png" alt="logo vialplast">
+	  						<img class="img-fluid" src="img/home/logo-vialplast-bl.png" alt="logo vialplast">
 	  					</div>
 	  				</div>
 	  			</div>
@@ -254,30 +286,30 @@
 
 	  <!-- Confian en Nosotros -->
 	  <section class="confian container-fluid">
-	  	<div class="container">
 		  	<div class="row">
 		  		<div class="col-md-12">
-		  			<h3>Confían en nosotros</h3>
+		  			<h3>Nuestras Marcas</h3>
 		  		</div>
 		  	</div>
 		  	<div class="row">
-		  		<div class="col-6 col-md-2 offset-md-1">
-		  			<img class="img-fluid" src="img/home/logo-summit.jpg" alt="logo summit">
+		  		<div class="col-6 col-lg-2 offset-lg-1">
+		  			<a href="#">
+		  				<img class="img-fluid" src="img/home/logo-depisos.png" alt="logo depisos">
+		  			</a>
 		  		</div>
-		  		<div class="col-6 col-md-2">
-		  			<img class="img-fluid" src="img/home/logo-todomax.jpg" alt="logo todomax">
+		  		<div class="col-6 col-lg-2">
+		  			<img class="img-fluid" src="img/home/logo-vialplast-2.png" alt="logo vialplast">
 		  		</div>
-		  		<div class="col-6 col-md-2">
-		  			<img class="img-fluid" src="img/home/logo-distribuidora.jpg" alt="logo distribuidora">
+		  		<div class="col-6 col-lg-2">
+		  			<img class="img-fluid" src="img/home/logo-summit.png" alt="logo summit">
 		  		</div>
-		  		<div class="col-6 col-md-2">
-		  			<img class="img-fluid" src="img/home/logo-aldeas.jpg" alt="logo aldeas">
+		  		<div class="col-6 col-lg-2">
+		  			<img class="img-fluid" src="img/home/logo-cantofil.png" alt="logo cantofil">
 		  		</div>
-		  		<div class="col-12 col-md-2">
-		  			<img class="img-fluid" src="img/home/logo-ba.jpg" alt="logo ba">
+		  		<div class="col-12 col-lg-2">
+		  			<img class="img-fluid" src="img/home/logo-nordeco.png" alt="logo nordeco">
 		  		</div>
 		  	</div>
-	  	</div>
 	  </section>
 	  <!-- Confian en Nosotros end -->
 

@@ -1,6 +1,7 @@
 /node_modules
 /.phpintel
 /vendor
+/vendor/config.inc.php
 /img
 npm-debug.log
 yarn-error.log

@@ -9,25 +9,26 @@ define('BASE', 'http://superfil.test/');
 ////////////////////////
 ///Valores de DB 
 ////////////////////////
-define('DSN', 'mysql:host=localhost;dbname=superfil;charset=utf8;port:3306');
+define('DSN', 'mysql:host=localhost;dbname=lc_superfil;charset=utf8;port:3306');
 define('DB_USER', 'homestead');
 define('DB_PASS', 'secret');
 
 //////////////////////////////
 ///Valores de Envio de emails
 //////////////////////////////
-define('SMTP', 'c2260081.ferozo.com');
-define('EMAIL_SENDER', 'envios@jokerhotel.com.ar');
-define('EMAIL_SENDER_SHOW', 'carlos.castro.1975.2@gmail.com');
+define('SMTP', '0.0.0.0'); 
+define('USERNAME', 'testuser');
+define('PASSWORD', 'testpwd'); 
+define('EMAIL_ONTARGET', 'info@superfil.com.ar');
+define('EMAIL_SENDER_SHOW', 'info@superfil.com.ar');
+define('NAME_ONTARGET', 'Superfil');
 define('NAME_SENDER_SHOW', 'Superfil');
-define('EMAIL_RECIPIENT', 'carlos.castro.1975.2@gmail.com');
 define('EMAIL_BCC', '');
-define('EMAIL_PASS', 'G*vGFns9rF');
-define('EMAIL_PORT', 25);
+define('EMAIL_PORT', 1025);
 define('EMAIL_NAME', 'Superfil');
 define('EMAIL_SUBJECT', 'Gracias por tu contacto');
 define('EMAIL_CHARSET', 'utf-8');
-define('EMAIL_ENCODING', 'quoted­printable');
+define('EMAIL_ENCODING', 'quoted printable');
 
 ////////////////////////
 ///API KEY RECAPTCHA
