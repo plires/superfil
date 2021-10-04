@@ -233,7 +233,7 @@
 	  				Fabricados a través de la conformación de dos perfiles plásticos, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesasdas.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= PALLETS . '/' . PALLETS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">14</div>
 	  		</div>

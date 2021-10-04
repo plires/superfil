@@ -121,6 +121,13 @@
 						</a>
 					</li>
 
+					<li>
+						<a 
+							class="title_lines" data-image="pallets" 
+							href="<?= PALLETS . '/' . PALLETS_URL . '.html' ?>">Linea pallets
+						</a>
+					</li>
+
 				</div>
 			</ul>
 
