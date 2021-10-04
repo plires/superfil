@@ -24,8 +24,8 @@
 			</ul>
 
 			<ul id="sub_navigation">
-				<div class="images_desktop">
-					<img class="img-fluid transition" id="image" src="img/header/superfil-menu.png" alt="menu superfil">
+				<div class="images_desktop transition">
+					<img class="img-fluid transition img_menu" id="image" src="img/header/superfil-menu.png" alt="menu superfil">
 				</div>
 				<div class="submenu_desktop">
 					<li><a id="close_products" href="#"><i class="fas fa-arrow-left"></i></a></li>

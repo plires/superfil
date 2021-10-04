@@ -33,7 +33,6 @@ header.background {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--primary-color);
-	/*overflow-y: auto;*/
 	transform: scale(0);
 	transition: 0.5s;
 }
@@ -231,7 +230,6 @@ header .rrss a i {
 	.navigation_container nav #sub_navigation {
 		position: absolute;
 		top: -650px;
-		/*top: 50px;*/
 		left: -150px;
 		width: calc( 100% + 170px );
 		display: flex;
@@ -244,17 +242,36 @@ header .rrss a i {
 	.navigation_container nav #sub_navigation.open {
 		transform: translateY(700px);
 		opacity: 1;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	}
 
 	.navigation_container nav #sub_navigation .images_desktop {
 		display: inline-block;
 		width: 50%;
-		background-color: rgb(255, 255, 255, 0.9);
+		background-color: rgb(245, 245, 245, 0.9);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
 		padding-right: 30px;
+	}
+
+	@keyframes animateImgSubmenu {
+	  0% {
+	    opacity: 0;
+	  }
+	  100% {
+	    opacity: 1;
+	  }
+	}
+
+	.navigation_container nav #sub_navigation.open .img_menu {
+		opacity: 0;		
+	}
+
+	.navigation_container nav #sub_navigation .img_menu.show_image {
+		opacity: 100;
+		animation: animateImgSubmenu 1s forwards;
 	}
 
 	.navigation_container nav #sub_navigation .submenu_desktop {

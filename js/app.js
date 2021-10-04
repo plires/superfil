@@ -97,6 +97,10 @@ toggle.addEventListener('click', function(){
 function changeImage(image, alt){
 	document.getElementById('image').src = image
 	document.getElementById('image').alt = alt
+	document.getElementById('image').classList.remove('show_image')
+	setTimeout(function(){ 
+		document.getElementById('image').classList.add('show_image')
+	}, 100);
 }
 
 for (var i = 0; i < titleLines.length; i++) {
