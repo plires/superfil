@@ -18,14 +18,15 @@ define('DB_PASS', 'secret');
 //////////////////////////////
 define('SMTP', '0.0.0.0'); 
 define('USERNAME', 'testuser');
-define('PASSWORD', 'testpwd'); 
-define('EMAIL_ONTARGET', 'info@superfil.com.ar');
-define('EMAIL_SENDER_SHOW', 'info@superfil.com.ar');
-define('NAME_ONTARGET', 'Superfil');
-define('NAME_SENDER_SHOW', 'Superfil');
-define('EMAIL_BCC', '');
+define('EMAIL_PASS', 'testpwd'); 
 define('EMAIL_PORT', 1025);
-define('EMAIL_NAME', 'Superfil');
+
+define('EMAIL_SENDER', 'envios@jokerhotel.com.ar');
+define('EMAIL_SENDER_SHOW', 'carlos.castro.1975.2@gmail.com');
+define('EMAIL_RECIPIENT', 'carlos.castro.1975.2@gmail.com');
+define('EMAIL_BCC', 'pablolires@gmail.com');
+
+define('NAME_SENDER_SHOW', 'Superfil');
 define('EMAIL_SUBJECT', 'Gracias por tu contacto');
 define('EMAIL_CHARSET', 'utf-8');
 define('EMAIL_ENCODING', 'quoted printable');

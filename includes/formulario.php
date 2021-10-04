@@ -38,7 +38,7 @@
 
       <form id="form-contacto" action="./php/validate-form.php" method="post" class="needs-validation" novalidate>
 
-        <input name="origin" type="hidden" value="Formulario de Contacto">
+        <input name="origin" type="hidden" value="Formulario de Distribuidores">
         
         <!-- Nombre -->
         <div class="mb-3">

@@ -261,7 +261,7 @@
 	  				</div>
 	  			</div>
   				
-  				<a href="#" class="transition btn btn-outline-primary">VER</a>
+  				<a href="https://issuu.com/superfil/docs/catalogo_vialplast_2021_-_issuu" target="_blank" rel="noopener noreferrer" class="transition btn btn-outline-primary">VER</a>
 	  			
 	  		</div>
 	  	</div>
@@ -278,7 +278,7 @@
 	  			<h3>
 	  				Desde 1982 enfocados en crear productos innovadores y de primera calidad.
 	  			</h3>
-	  			<a href="#" class="transition btn btn-outline-primary">CONOCÉ MÁS</a>
+	  			<a href="empresa.php" class="transition btn btn-outline-primary">CONOCÉ MÁS</a>
 	  		</div>
 	  	</div>
 	  </section>
