@@ -114,6 +114,13 @@
 						</a>
 					</li>
 
+					<li>
+						<a 
+							class="title_lines" data-image="guardacamillas" 
+							href="<?= GUARDACAMILLAS . '/' . GUARDACAMILLAS_URL . '.html' ?>">Linea guardacamillas
+						</a>
+					</li>
+
 				</div>
 			</ul>
 

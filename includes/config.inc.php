@@ -86,4 +86,8 @@ define('JUNTAS', 'juntas');
 define('JUNTAS_TITLE', 'Juntas Waterstop');
 define('JUNTAS_URL', 'juntas-waterstop-bandas-flexibles-pvc-sella-juntas-construccion-expansion');
 
+define('GUARDACAMILLAS', 'guardacamillas');
+define('GUARDACAMILLAS_TITLE', 'Guardacamillas');
+define('GUARDACAMILLAS_URL', 'guardacamillas-hospitales-clinicas');
+
 ?>

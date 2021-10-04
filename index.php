@@ -221,7 +221,7 @@
 	  				Guardacamillas hospitalario de PVC rígido, utilizado para la protección de paredes expuestas a agresiones y golpes causados por el tráfico de camillas en clínicas, hospitales, etc.
 	  			</p>
 	  			<div class="content_button">
-	  				<a href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
+	  				<a href="<?= GUARDACAMILLAS . '/' . GUARDACAMILLAS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
 	  			<div class="numero">13</div>
 	  		</div>
