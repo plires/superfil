@@ -1,0 +1,264 @@
+/* Texto */
+.empresa .texto p {
+	text-align: left;
+	margin-bottom: 15px;
+}
+/* Texto end */
+
+/* Counter */
+.empresa .counter .row {
+	background: url('../img/empresa/fondo-empresa.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 230%;
+	margin-bottom: 30px;
+}
+
+.empresa .counter .col-md-4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.empresa .counter .col-md-4 .number {
+	margin: 0;
+	font-weight: 700;
+	font-size: 4rem;
+	color: var(--primary-color);
+	border-bottom: solid 3px var(--primary-color);
+}
+
+.empresa .counter .col-md-4 .description {
+	margin: 0;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: var(--primary-color);
+	text-align: center;
+	line-height: 1.1;
+	margin-top: 5px;
+}
+/* Counter end */
+
+/* Info */
+.empresa .info {
+	margin-bottom: 30px;
+}
+
+.empresa .info .row {
+	margin-bottom: 15px;
+}
+
+.empresa .info .row:last-child {
+	margin-bottom: 0;
+}
+
+.empresa .info .col-md-6,
+.empresa .info .gradient {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.empresa .info .gradient {
+	background: -webkit-linear-gradient(right, #002B90, #002C65);
+	background: -moz-linear-gradient(right, #002B90, #002C65);
+	background: linear-gradient(to left, #002B90, #002C65);
+	padding: 30px;
+	height: 100%;
+	margin-bottom: 30px;
+}
+
+.empresa .info .gradient:last-child {
+	margin-bottom: 0;
+}
+
+.empresa .info .gradient p {
+	color: white;
+	margin: 0;
+}
+
+.empresa .info .gradient p:first-child {
+	margin-bottom: 15px;
+}
+
+.empresa .info .row:last-child .col-md-6:last-child {
+	order: 0;
+}
+
+.empresa .info .row:last-child .col-md-6:first-child {
+	order: 1;
+}
+/* Info end */
+
+/* Lideres */
+.empresa .lideres {
+	background: url('../img/empresa/fondo-empresa.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 150%;
+	margin-bottom: 30px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.empresa .lideres p {
+	margin: 0;
+	font-weight: 700!important;
+	font-size: 1.25rem;
+	color: var(--primary-color);
+}
+/* Lideres end */
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+	/* Counter */
+	.empresa .counter .row {
+		background: url('../img/empresa/fondo.jpg');
+		background-size: 100%;
+		width: 100%;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.empresa .counter .col-md-4 .description {
+		font-size: 1.25rem;
+	}
+	/* Counter end */
+
+	/* Info */
+	.empresa .info .col-md-6,
+	.empresa .info .gradient {
+		max-height: 250px;
+		height: 250px;
+	}
+
+	.empresa .info .row {
+		margin-bottom: 30px;
+	}
+
+	.empresa .info .row:last-child .col-md-6:last-child {
+		order: 1;
+	}
+
+	.empresa .info .row:last-child .col-md-6:first-child {
+		order: 0;
+	}
+
+	.empresa .info .gradient p {
+		font-size: 0.95rem;
+	}
+	/* Info end */
+
+	/* Lideres */
+	.empresa .lideres {
+		background: url('../img/empresa/fondo.jpg');
+		background-size: 100%;
+		width: 696px;
+		max-width: 696px;
+	}
+
+	.empresa .lideres p {
+		font-size: 1.5rem;
+	}
+	/* Lideres end */
+
+}
+
+@media (min-width: 992px) {
+	/* Counter */
+	.empresa .counter {
+		margin-bottom: 60px;
+	}
+	/* Counter end */
+
+	/* Info */
+	.empresa .info .col-md-6,
+	.empresa .info .gradient {
+		max-height: 340px;
+		height: 340px;
+	}
+
+	.empresa .info .gradient {
+		justify-content: space-around;
+	}
+
+	.empresa .info .gradient p {
+		font-size: 1.125rem;
+	}
+	/* Info end */
+
+	/* Lideres */
+	.empresa .lideres {
+		max-width: 936px;
+		width: 936px;
+		height: 150px;
+	}
+
+	.empresa .lideres p {
+		font-size: 2rem;
+	}
+	/* Lideres end */
+	
+}
+
+@media (min-width: 1200px) {
+	/* Info */
+	.empresa .info .col-md-6,
+	.empresa .info .gradient {
+		max-height: 407px;
+		height: 407px;
+	}
+
+	.empresa .info .gradient {
+		justify-content: space-around;
+	}
+
+	.empresa .info .gradient p {
+		font-size: 1.25rem;
+	}
+	/* Info end */
+
+	/* Lideres */
+	.empresa .lideres {
+		max-width: 1116px;
+		width: 1116px;
+	}
+	/* Lideres end */
+
+}
+
+@media (min-width: 1400px) {
+
+	/* Info */
+	.empresa .info .col-md-6,
+	.empresa .info .gradient {
+		max-height: 474px;
+		height: 474px;
+	}
+
+	/* Lideres */
+	.empresa .lideres {
+		max-width: 1296px;
+		width: 1296px;
+	}
+
+	.empresa .info .gradient {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	/* Lideres end */
+
+}
+
