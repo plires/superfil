@@ -1,6 +1,6 @@
 /* Generales */
 .listado p {
-	color: #9b9b9a;
+	color: #3c3c3b;
 	font-weight: 300;
 }
 
@@ -92,6 +92,59 @@
 }
 /* Listado end*/
 
+/* Necesitas Presupuesto */
+.necesitas_presupuesto {
+	margin-bottom: 60px;
+}
+
+.necesitas_presupuesto .col-md-6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.necesitas_presupuesto .col-md-6:last-child {
+	margin-bottom: 0;
+}
+
+.necesitas_presupuesto .dudas,
+.necesitas_presupuesto .presupuesto {
+	line-height: 1.1;
+	color: var(--primary-color);
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	width: 200px;
+	max-width: 200px;
+	margin: 0;
+}
+
+.necesitas_presupuesto .dudas::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 8px;
+	height: 8px;
+	background-color: var(--primary-color);
+}
+
+.necesitas_presupuesto .dudas {
+	margin-bottom: 5px;
+}
+
+.necesitas_presupuesto .presupuesto {
+	padding: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	width: 200px;
+	max-width: 200px;
+}
+/* Necesitas Presupuesto end */
+
 /* Galeria */
 .listado .galeria {
 	margin-bottom: -6px;
@@ -177,6 +230,18 @@
 	}
 	/* Texto end*/
 
+	/* Necesitas Presupuesto */
+	.necesitas_presupuesto .col-md-6 {
+		align-items: flex-end;
+		padding-right: 20px;
+	}
+
+	.necesitas_presupuesto .col-md-6:last-child {
+		align-items: flex-start;
+		padding-left: 20px;
+	}
+	/* Necesitas Presupuesto end */
+
 }
 
 @media (min-width: 992px) {
@@ -244,6 +309,23 @@
 		padding-top: 100px;
 	}
 	/* Listado end*/
+
+	/* Necesitas Presupuesto */
+	.necesitas_presupuesto {
+		margin-bottom: 60px;
+		margin-top: 60px;
+	}
+
+	.necesitas_presupuesto .dudas,
+	.necesitas_presupuesto .presupuesto {
+		width:300px;
+		max-width:300px;
+	}
+
+	.necesitas_presupuesto .presupuesto {
+		font-size: 2.75rem;
+	}
+	/* Necesitas Presupuesto end */
 
 	/* Newsletter */
 	.listado .newsletter {

@@ -92,7 +92,11 @@
       <div class="row">
         <div class="col-md-6 m-auto">
           <p data-aos="zoom-out-up">
-            Calle 56 N° 4575 - San Martín (CP 1560) <br><span>Buenos Aires - Argentina</span>
+            Tel: <span>(+54) 11 4752 7297</span><br>
+            Email: <span>info@superfil.com.ar</span><br>
+            Dirección: <span>Calle 56 N° 4575 - San Martín (CP 1560)</span><br>
+            Buenos Aires, Argentina.<br>
+            Atención: <span>Lunes a Viernes de 9 a 18 hs.</span>
           </p>
         </div>
       </div>
@@ -109,42 +113,8 @@
     </section>
     <!-- Mapa end -->
 
-    <!-- Formulario Header -->
-    <section class="container formulario_header">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="img-fluid" src="img/contacto/logo-superfil.gif" alt="logo superfil contactos">
-        </div>
-        <div class="col-md-6">
-          <p>
-            <span>Tel:</span> (+54) 11 4752 7297 <br>
-            <span>Email:</span> info@superfil.com.ar <br>
-            <span>Dirección:</span> Calle 56 N° 4575 - San Martín (CP 1560) <br>
-            Buenos Aires, Argentina. <br>
-            <span>Atención:</span> Lunes a Viernes de 9 a 18 hs.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Formulario Header end -->
-
-    <!-- Formulario -->
-    <section class="container formulario">
-      <div class="row">
-        <div data-aos="fade-right" class="col-md-6">
-          <img class="img-fluid" src="img/contacto/almacen.jpg" alt="almacen superfil">
-        </div>
-        <div data-aos="fade-left" class="col-md-6">
-
-          <h3>¿DUDAS O CONSULTAS?</h3>
-
-          <!-- Formulario -->
-          <?php include('./includes/formulario.php') ?>
-
-        </div>
-      </div>
-    </section>
-    <!-- Formulario Header end -->
+    <!-- Formularios Contactos -->
+    <?php include('./includes/formulario-contactos.php'); ?>
 
     <!-- Newsletter -->
     <div class="newsletter_listado_productos">

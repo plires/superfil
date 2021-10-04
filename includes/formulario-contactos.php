@@ -6,7 +6,7 @@
     </div>
     <div data-aos="fade-left" class="col-lg-4">
 
-      <h3>¿QUERÉS SER DISTRIBUIDOR?</h3>
+      <h3>¿TENÉS CONSULTAS? Escribínos</h3>
 
       <!-- Mensaje Exito -->
       <?php if (isset($msg_contacto)): ?>
@@ -39,7 +39,7 @@
       <form id="form-contacto" action="./php/validate-form.php" method="post" class="needs-validation" novalidate>
 
         <input name="origin" type="hidden" value="Formulario de Contacto">
-        
+
         <!-- Nombre -->
         <div class="mb-3">
           <label for="name" class="form-label">Nombre *</label>
@@ -64,7 +64,7 @@
           <input type="tel" class="form-control" value="<?= $phone ?>" name="phone">
         </div>
 
-        <!-- Ciudad -->
+         <!-- Ciudad -->
         <div class="mb-3">
           <label for="city" class="form-label">Ciudad</label>
           <input type="text" class="form-control" value="<?= $city ?>" name="city">
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <button type="button" id="send" class="btn btn-primary">ENVIAR</button>
+         <button type="button" id="send" class="btn btn-primary">ENVIAR</button>
 
       </form>
 

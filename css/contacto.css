@@ -40,7 +40,7 @@
 }
 
 .contacto .texto p span {
-	font-weight: 100;
+	font-weight: 300;
 }
 /* Texto end */
 
@@ -116,7 +116,7 @@
 		margin-bottom: 60px;
 	}
 
-	.contacto .formulario_header .col-md-6 {
+	.contacto .formulario_header .col-lg-6 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -124,7 +124,7 @@
 	/* Formulario Header end */
 
 	/* Formulario */
-	.contacto .formulario .col-md-6:first-child {
+	.contacto .formulario .col-lg-6:first-child {
 		display: flex;
 		justify-content: center;
 		align-items: center;

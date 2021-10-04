@@ -142,7 +142,7 @@
 }
 
 .newsletter p {
-	color: white;
+	color: white!important;
 	font-size: 1.25rem;
 	margin: 0;
 }

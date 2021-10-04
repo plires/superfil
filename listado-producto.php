@@ -13,9 +13,6 @@
   $lines_extra = $db->getRepoProducts()->getExtraDataFromTheLines($products[0]['line']);
   $galery_images = $db->getRepoProducts()->getGaleryImagesFromTheLines($products[0]['line']);
 
-  // echo "<pre>";
-  // var_dump($products[0]);exit;
-
 ?>
 
 <!DOCTYPE html>
@@ -107,10 +104,26 @@
     </section>
     <!-- Listado Productos end -->
 
+    <!-- Necesitas Presupuesto -->
+    <div class="container necesitas_presupuesto">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="dudas">¿Tenés dudas?</p>
+          <p class="presupuesto">¿Necesitas <br>presupuesto?</p>
+        </div>
+        <div class="col-md-6">
+          <a href="contacto.php" class="btn btn-primary">CONTACTO</a>
+        </div>
+      </div>
+    </div>
+    <!-- Necesitas Presupuesto end -->
+
     <!-- Galeria de Imagenes -->
     <?php include('includes/galeria-imagenes.php'); ?>
 
-
+    <!-- Newsletter -->
+    <?php include('./includes/newsletter.php'); ?>
+    
     <!-- Iconos -->
     <?php include('./includes/iconos.php'); ?>
 

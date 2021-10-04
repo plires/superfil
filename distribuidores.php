@@ -212,42 +212,8 @@
     </section>
     <!-- Distribuidores end -->
 
-    <!-- Formulario Header -->
-    <section class="container formulario_header">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="img-fluid" src="img/contacto/logo-superfil.gif" alt="logo superfil contactos">
-        </div>
-        <div class="col-md-6">
-          <p>
-            <span>Tel:</span> (+54) 11 4752 7297 <br>
-            <span>Email:</span> info@superfil.com.ar <br>
-            <span>Dirección:</span> Calle 56 N° 4575 - San Martín (CP 1560) <br>
-            Buenos Aires, Argentina. <br>
-            <span>Atención:</span> Lunes a Viernes de 9 a 18 hs.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Formulario Header end -->
-
     <!-- Formulario -->
-    <section class="container formulario">
-      <div class="row">
-        <div data-aos="fade-right" class="col-md-6">
-          <img class="img-fluid" src="img/contacto/almacen.jpg" alt="almacen superfil">
-        </div>
-        <div data-aos="fade-left" class="col-md-6">
-
-          <h3>¿QUERÉS SER DISTRIBUIDOR?</h3>
-
-          <!-- Formulario -->
-          <?php include('./includes/formulario.php') ?>
-
-        </div>
-      </div>
-    </section>
-    <!-- Formulario Header end -->
+    <?php include('./includes/formulario.php') ?>
 
     <!-- Newsletter -->
     <div class="newsletter_listado_productos">
