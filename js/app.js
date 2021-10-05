@@ -6,7 +6,6 @@ const hamburger = document.getElementById('hamburger')
 
 const btnEmpresa = document.getElementById('btn_empresa')
 const btnProducts = document.getElementById('btn_products')
-const btnDistribuidores = document.getElementById('btn_distribuidores')
 const btnContacto = document.getElementById('btn_contacto')
 
 const btnCloseLinesProducts = document.getElementById('close_products')
@@ -67,10 +66,6 @@ function hidelHeader(){
 }
 
 btnEmpresa.addEventListener("mouseover", function(e){
-	subNavigation.classList.remove('open') 
-}, false);
-
-btnDistribuidores.addEventListener("mouseover", function(e){
 	subNavigation.classList.remove('open') 
 }, false);
 
