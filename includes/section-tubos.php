@@ -21,9 +21,3 @@
 	<img class="img-fluid" src="./img/productos/tubos/fondo-tubos.jpg" alt="tubos de pvc">
 	<p><span>Disponible en diámetros de: </span> <br>de 400 mm a 2000 mm</p>
 </div>
-
-<div class="tubos_presupuesto">
-	<?php include('./includes/necesitas-presupuesto.php') ?>
-</div>
-
-
