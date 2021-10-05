@@ -24,6 +24,30 @@ ul {
 .pt {
 	font-family: 'PT Sans', sans-serif;
 }
+
+.btn_destacado {
+  animation: animate_btn 2s infinite;
+}
+
+@keyframes animate_btn {
+  0% {
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    color: white;
+  }
+
+  50% {
+    background-color: var(--text-color);
+    border: solid 1px var(--text-color);
+    color: var(--primary-color);
+  }
+
+  100% {
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    color: white;
+  }
+}
 /* Comunes end */
 
 /* Variables */

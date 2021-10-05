@@ -90,7 +90,17 @@
                 <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
                 <div class="background">
                   <h2>CÓDIGO <br><?= $product['code'] ?></h2>
-                  <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
+
+                  <!-- Destacar codigos 9017 y 9030 de cielorrasos -->
+                  <?php if ($product['code'] == '9017' || $product['code'] == '9030'): ?>
+                    <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary btn_destacado transition">VER</a>
+
+                  <?php else: ?>
+
+                    <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
+
+                  <?php endif ?>
+
                 </div>
               </div>
 
