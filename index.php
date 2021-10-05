@@ -33,7 +33,7 @@
   	
   	<!-- Header -->
 	  <section class="header container-fluid p-0">
-	  	<h1>LÍDERES <br>EN LA INDUSTRIA <br>PLÁSTICO</h1> 
+	  	<h1>LÍDERES <br>EN LA INDÚSTRIA <br>DEL PLÁSTICO</h1> 
       <img data-aos="zoom-out-up" class="img-fluid" src="img/header/flecha.png" alt="flecha blanca">
 	  </section>
   	<!-- Header end -->
@@ -293,21 +293,29 @@
 		  	</div>
 		  	<div class="row">
 		  		<div class="col-6 col-lg-2 offset-lg-1">
-		  			<a href="#">
+		  			<a target="_blank" rel="noopener" href="https://depisos.com/">
 		  				<img class="img-fluid" src="img/home/logo-depisos.png" alt="logo depisos">
 		  			</a>
 		  		</div>
 		  		<div class="col-6 col-lg-2">
-		  			<img class="img-fluid" src="img/home/logo-vialplast-2.png" alt="logo vialplast">
+		  			<a target="_blank" rel="noopener" href="https://issuu.com/superfil/docs/catalogo_vialplast_2021_-_issuu">
+		  				<img class="img-fluid" src="img/home/logo-vialplast-2.png" alt="logo vialplast">
+		  			</a>
 		  		</div>
 		  		<div class="col-6 col-lg-2">
-		  			<img class="img-fluid" src="img/home/logo-summit.png" alt="logo summit">
+		  			<a target="_blank" rel="noopener" href="http://summit-plastic.net/">
+		  				<img class="img-fluid" src="img/home/logo-summit.png" alt="logo summit">
+		  			</a>
 		  		</div>
 		  		<div class="col-6 col-lg-2">
-		  			<img class="img-fluid" src="img/home/logo-cantofil.png" alt="logo cantofil">
+		  			<a target="_blank" rel="noopener" href="http://cantofil.com.ar/">
+		  				<img class="img-fluid" src="img/home/logo-cantofil.png" alt="logo cantofil">
+		  			</a>
 		  		</div>
 		  		<div class="col-12 col-lg-2">
-		  			<img class="img-fluid" src="img/home/logo-nordeco.png" alt="logo nordeco">
+		  			<a target="_blank" rel="noopener" href="http://nordeco.com.ar/">
+		  				<img class="img-fluid" src="img/home/logo-nordeco.png" alt="logo nordeco">
+		  			</a>
 		  		</div>
 		  	</div>
 	  </section>

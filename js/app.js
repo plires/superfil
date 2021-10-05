@@ -4,6 +4,7 @@ const nav = document.getElementById('menu')
 const toggle = document.getElementById('toggleIcon')
 const hamburger = document.getElementById('hamburger')
 
+const btnHome = document.getElementById('btn_home')
 const btnEmpresa = document.getElementById('btn_empresa')
 const btnProducts = document.getElementById('btn_products')
 const btnContacto = document.getElementById('btn_contacto')
@@ -46,14 +47,16 @@ function openProducts() {
 	
 }
 
-var scrollPos = 0;
-window.addEventListener('scroll', function(){
-	if ( (document.body.getBoundingClientRect()).top > scrollPos)
-		showlHeader()
-	else
-		hidelHeader()
-	scrollPos = (document.body.getBoundingClientRect()).top
-});
+// HABILITAR ESTA FUNCION PARA QUE EL HEADER APAREZCA Y DESAPAREZCA EN FUNCION
+// DEL SCROLL HACIA ARRIBA O ABAJO
+// var scrollPos = 0;
+// window.addEventListener('scroll', function(){
+// 	if ( (document.body.getBoundingClientRect()).top > scrollPos)
+// 		showlHeader()
+// 	else
+// 		hidelHeader()
+// 	scrollPos = (document.body.getBoundingClientRect()).top
+// });
 
 function showlHeader(){
 	header.classList.remove('hide')
@@ -64,6 +67,10 @@ function hidelHeader(){
 	header.classList.add('hide')
 	header.classList.remove('background')
 }
+
+btnHome.addEventListener("mouseover", function(e){
+	subNavigation.classList.remove('open') 
+}, false);
 
 btnEmpresa.addEventListener("mouseover", function(e){
 	subNavigation.classList.remove('open') 

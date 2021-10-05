@@ -13,7 +13,7 @@
 		<nav>
 
 			<ul id="navigation">
-				<li><a class="trasition" id="btn_empresa" href="./">Home</a></li>
+				<li><a class="trasition" id="btn_home" href="./">Home</a></li>
 				<li><a class="trasition" id="btn_empresa" href="empresa.php">Empresa</a></li>
 				<li><button class="trasition" id="btn_products">Productos</button></li>
 				<li><a class="trasition" id="btn_contacto" href="contacto.php">Contacto</a></li>
@@ -32,21 +32,21 @@
 					<li>
 						<a 
 							class="title_lines" data-image="cielorraso" 
-							href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>">Linea cielorrasos
+							href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>">Línea cielorrasos
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="tubos" 
-							href="<?= TUBOS . '/' . TUBOS_URL . '.html' ?>">Linea tubos de pvc
+							href="<?= TUBOS . '/' . TUBOS_URL . '.html' ?>">Línea tubos de pvc
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="camaras" 
-							href="<?= CAMARAS . '/' . CAMARAS_URL . '.html' ?>">Linea cámaras frigorificas
+							href="<?= CAMARAS . '/' . CAMARAS_URL . '.html' ?>">Línea cámaras frigorificas
 						</a>
 					</li>
 
@@ -60,70 +60,70 @@
 					<li>
 						<a 
 							class="title_lines" data-image="furgones" 
-							href="<?= FURGONES . '/' . FURGONES_URL . '.html' ?>">Linea furgones termicos
+							href="<?= FURGONES . '/' . FURGONES_URL . '.html' ?>">Línea furgones termicos
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="revestimiento" 
-							href="<?= REVESTIMIENTO . '/' . REVESTIMIENTO_URL . '.html' ?>">Linea revestimiento exterior
+							href="<?= REVESTIMIENTO . '/' . REVESTIMIENTO_URL . '.html' ?>">Línea revestimiento exterior
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="publicidad" 
-							href="<?= PUBLICIDAD . '/' . PUBLICIDAD_URL . '.html' ?>">Linea publicidad
+							href="<?= PUBLICIDAD . '/' . PUBLICIDAD_URL . '.html' ?>">Línea publicidad
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="policarbonato" 
-							href="<?= POLICARBONATO . '/' . POLICARBONATO_URL . '.html' ?>">Linea policarbonato
+							href="<?= POLICARBONATO . '/' . POLICARBONATO_URL . '.html' ?>">Línea policarbonato
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="iluminacion" 
-							href="<?= ILUMINACION . '/' . ILUMINACION_URL . '.html' ?>">Linea iluminacion
+							href="<?= ILUMINACION . '/' . ILUMINACION_URL . '.html' ?>">Línea iluminacion
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="listex" 
-							href="<?= LISTEX . '/' . LISTEX_URL . '.html' ?>">Linea listex
+							href="<?= LISTEX . '/' . LISTEX_URL . '.html' ?>">Línea listex
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="terminaciones" 
-							href="<?= TERMINACIONES . '/' . TERMINACIONES_URL . '.html' ?>">Linea terminaciones
+							href="<?= TERMINACIONES . '/' . TERMINACIONES_URL . '.html' ?>">Línea terminaciones
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="nautica" 
-							href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>">Linea náutica
+							href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>">Línea náutica
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="guardacamillas" 
-							href="<?= GUARDACAMILLAS . '/' . GUARDACAMILLAS_URL . '.html' ?>">Linea guardacamillas
+							href="<?= GUARDACAMILLAS . '/' . GUARDACAMILLAS_URL . '.html' ?>">Línea guardacamillas
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="pallets" 
-							href="<?= PALLETS . '/' . PALLETS_URL . '.html' ?>">Linea pallets
+							href="<?= PALLETS . '/' . PALLETS_URL . '.html' ?>">Línea palets
 						</a>
 					</li>
 
