@@ -1,8 +1,8 @@
 <!-- Header -->
-<section class="header container-fluid p-0">
+<section class="header header_listex container-fluid p-0">
   <div class="header_productos">
     <img data-aos="zoom-out-up" class="img-fluid" src="img/productos/<?= $lines_extra['img_header'] ?>" alt="header <?= $lines_extra['name'] ?>">
-    <h1 data-aos="fade-right">NARANJAAALÍNEA <br><?= $lines_extra['h1'] ?></h1>
+    <h1 data-aos="fade-right">LÍNEA <br><?= $lines_extra['h1'] ?></h1>
   </div>
   <img data-aos="zoom-out-up" class="img-fluid flecha" src="img/header/flecha.png" alt="flecha blanca">
 </section>
@@ -29,27 +29,38 @@
           <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
           <div class="background">
             <h2>CÓDIGO <br><?= $product['code'] ?></h2>
-
-            <!-- Destacar codigos 9017 y 9030 de cielorrasos -->
-            <?php if ($product['code'] == '9017' || $product['code'] == '9030'): ?>
-              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary btn_destacado transition">VER</a>
-
-            <?php else: ?>
-
-              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
-
-            <?php endif ?>
-
+            <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
           </div>
         </div>
 
       <?php endforeach ?>
+
+      <!-- Icono Consulta -->
+      <?php include('./includes/icono-consulta-producto.php'); ?>
 
     <?php endif ?>
 
   </div>
 </section>
 <!-- Listado Productos end -->
+
+<!-- Faja Productos Ecológicos -->
+<section class="container-fluid faja_ecologica">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div>
+          <img class="img-fluid" src="img/productos/listex/icono-producto-ecologico.png" alt="icono producto ecologico">
+          <h3>Producto <br>Ecológico</h3>
+        </div>
+        <p>
+          Tenemos como premisa fabricar productos de calidad y que respeten el medioambiente por eso utilizamos materiales reciclados.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Faja Productos Ecológicos end -->
 
 <!-- Necesitas Presupuesto? -->
 <?php include('./includes/necesitas-presupuesto.php'); ?>

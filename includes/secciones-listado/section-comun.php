@@ -30,6 +30,9 @@
 
       <?php endforeach ?>
 
+      <!-- Icono Consulta -->
+      <?php include('./includes/icono-consulta-producto.php'); ?>
+
     <?php endif ?>
 
   </div>

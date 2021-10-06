@@ -64,16 +64,81 @@
 }
 /* Header end */
 
+/* Header Listex */
+.listado .header_listex  {
+	background: rgb(128,128,128);
+	background: linear-gradient(-90deg, rgba(128,128,128,1) 26%, rgba(187,187,187,1) 100%);
+}
+/* Header Listex end */
+
+/* Header Listex */
+.listado .header_juntas  {
+	background: rgb(187,187,187);
+	background: linear-gradient(90deg, rgba(187,187,187,1) 27%, rgba(128,128,128,1) 100%);
+}
+
+.listado .header_listex h1  {
+	border-left: solid 5px white;
+}
+/* Header Listex end */
+
+/* Faja Ecológica Listex */
+.listado .faja_ecologica  {
+	background-color: #1e964c;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 60px;
+}
+
+.listado .faja_ecologica .col-md-6  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.listado .faja_ecologica .col-md-6 div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.listado .faja_ecologica .col-md-6 div img {
+	max-width: 28%;
+	margin-right: 15px;
+}
+
+.listado .faja_ecologica .col-md-6 div h3 {
+	color: white;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.listado .faja_ecologica .col-md-6 p {
+	color: white;
+	text-align: center;
+}
+/* Faja Ecológica Listex end */
+
 /* Listado */
 .listado .productos_listado .col-md-4 {
 	position: relative;
 	margin-bottom: 60px!important;
 }
+
 .listado .productos_listado .col-md-4 div {
 	padding: 15px;
 	background: #ececec;
 	text-align: center;
+	height: 118px;
+	max-height: 118px;
+	min-height: 118px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
+
 .listado .productos_listado .col-md-4 div h2 {
 	font-size: 1.2rem;
 	margin-bottom: 15px;
@@ -91,6 +156,12 @@
 	background: var(--primary-color);
 }
 /* Listado end*/
+
+/* Producto no encontrado  */
+.listado .no_encontras_producto {
+	font-size: 0.75rem!important;
+}
+/* Producto no encontrado end  */
 
 /* Necesitas Presupuesto */
 .necesitas_presupuesto {
@@ -186,6 +257,11 @@
 		margin: 0!important;
 		margin-bottom: 50px!important;
 	}
+	.listado .productos_listado .col-md-4 div {
+		height: 180px;
+		max-height: 180px;
+		min-height: 180px;
+	}
 	.listado .productos_listado .col-md-4 img {
 		position: absolute;
 		top: 0;
@@ -250,7 +326,7 @@
 		max-width: 100%;
 	}
 	.listado .header .header_productos H1  {
-		font-size: 2.5REM;
+		font-size: 2.5rem;
 	}
 	/* Header end */
 
@@ -266,6 +342,11 @@
 		padding-top: 85px;
 		padding-bottom: 30px;
 	}
+	.listado .productos_listado .col-md-4 div {
+		height: 225px;
+		max-height: 225px;
+		min-height: 225px;
+	}
 	.listado .productos_listado .col-md-4 div h2 {
 		font-size: 1.25rem;
 		margin-bottom: 30px;
@@ -274,6 +355,18 @@
 		font-size: 1rem;
 	}
 	/* Listado end*/
+
+	/* Producto no encontrado  */
+	.listado .no_encontras_producto {
+		font-size: 1rem!important;
+	}
+	/* Producto no encontrado end  */
+
+	/* Faja Ecológica Listex */
+	.listado .faja_ecologica .col-md-6 div img {
+		max-width: 35%;
+	}
+	/* Faja Ecológica Listex end */
 
 	/* Newsletter */
 	.listado .newsletter {

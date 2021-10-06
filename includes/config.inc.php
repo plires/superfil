@@ -91,8 +91,8 @@ define('GUARDACAMILLAS', 'guardacamillas');
 define('GUARDACAMILLAS_TITLE', 'Guardacamillas');
 define('GUARDACAMILLAS_URL', 'guardacamillas-hospitales-clinicas');
 
-define('PALLETS', 'pallets');
-define('PALLETS_TITLE', 'Pallets');
-define('PALLETS_URL', 'pallets-plasticos-pvc');
+define('PALLETS', 'palets');
+define('PALLETS_TITLE', 'palets');
+define('PALLETS_URL', 'palets-plasticos-pvc');
 
 ?>
