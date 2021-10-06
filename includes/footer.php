@@ -11,7 +11,6 @@
 				<ul>
 					<li><a class="transition" href="empresa.php">Empresa</a></li>
 					<li><a class="transition" href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>">Productos</a></li>
-					<li><a class="transition" href="distribuidores.php">Distribuidores</a></li>
 				</ul>
 			</div>
 
@@ -33,6 +32,9 @@
 							Calle 56 N° 4575 - San Martín . (CP 1560)
 						</a>
 					</li>
+					<li>
+						<a class="transition" href="./">&copy; <?= date('Y') ?> Superfil S.A.</a>
+					</li>
 				</ul>
 			</div>
 
@@ -40,7 +42,7 @@
 
 		<div class="row">
 			<div class="col-md-12 libre">
-				<a href="https://librecomunicacion.net/" target="_blank" rel="noopener">&copy; <?= date('Y') ?> Superfil S.A. by LIBRE</a>
+				<a href="https://librecomunicacion.net/" target="_blank" rel="noopener">by LIBRE</a>
 			</div>	
 		</div>
 

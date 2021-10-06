@@ -49,8 +49,8 @@
 
   <section class="listado detalle_producto">
 
-    <!-- Header Productos -->
-    <?php include('includes/header-productos.php'); ?>
+    <!-- Header -->
+    <?php include('./includes/header-productos.php'); ?>
 
     <!-- Producto -->
     <section class="container-fluid producto_detalle">

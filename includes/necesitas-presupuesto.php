@@ -1,15 +1,13 @@
-<!-- Necesitas un Presupuesto -->
-<section class="content_presupuesto container">
+<!-- Necesitas Presupuesto -->
+<div class="container necesitas_presupuesto">
   <div class="row">
     <div class="col-md-6">
-      <div>
-        <p class="dudas">¿Tenés dudas?</p>
-        <p class="presupuesto">¿Necesitas <br>presupuesto?</p>
-      </div>
+      <p class="dudas">¿Tenés dudas?</p>
+      <p class="presupuesto">¿Necesitas <br>presupuesto?</p>
     </div>
     <div class="col-md-6">
-      <a href="contacto.php" class="transition btn btn-primary">CONTACTO</a>
+      <a href="contacto.php" class="btn btn-primary">CONTACTO</a>
     </div>
   </div>
-</section>
-<!-- Necesitas un Presupuesto end -->
+</div>
+<!-- Necesitas Presupuesto end -->

@@ -49,93 +49,27 @@
 
   <section class="listado">
 
-    <!-- Header Productos -->
-    <?php include('includes/header-productos.php'); ?>
+    <?php switch ($products[0]['line_rs']) {
+      case TUBOS:
+          include('includes/secciones-listado/section-tubos.php'); 
+        break;
 
-    <!-- Texto -->
-    <section class="container description">
-      <div class="row">
-        <div class="col-md-6 m-auto">
-          <p data-aos="zoom-out-up">
-            <?= $lines_extra['description'] ?>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Texto end -->
+      case CIELORRASO:
+          include('includes/secciones-listado/section-cielorraso.php'); 
+        break;
 
-    <!-- Listado Productos -->
-    <section class="container productos_listado">
-      <div class="row">
+      case LISTEX:
+          include('includes/secciones-listado/section-listex.php'); 
+        break;
 
-        <?php if (empty($products)): ?>
-
-          <div class="col-md-12">
-            <p>No hay productos para mostrar.</p>
-          </div>
-
-        <?php else: ?>
-
-          <!-- Seccion diferenciada para tubos -->
-          <?php if ($products[0]['line_rs'] == TUBOS): ?>
-            
-            <?php include('includes/section-tubos.php'); ?>
-            
-          <?php else: ?>
-          <!-- Seccion diferenciada para tubos end -->
-
-            <?php foreach ($products as $key => $product): ?>
-              
-              <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
-                <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
-                <div class="background">
-                  <h2>CÓDIGO <br><?= $product['code'] ?></h2>
-
-                  <!-- Destacar codigos 9017 y 9030 de cielorrasos -->
-                  <?php if ($product['code'] == '9017' || $product['code'] == '9030'): ?>
-                    <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary btn_destacado transition">VER</a>
-
-                  <?php else: ?>
-
-                    <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
-
-                  <?php endif ?>
-
-                </div>
-              </div>
-
-            <?php endforeach ?>
-
-          <?php endif ?>
-
-        <?php endif ?>
-
-      </div>
-    </section>
-    <!-- Listado Productos end -->
-
-    <!-- Necesitas Presupuesto -->
-    <div class="container necesitas_presupuesto">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="dudas">¿Tenés dudas?</p>
-          <p class="presupuesto">¿Necesitas <br>presupuesto?</p>
-        </div>
-        <div class="col-md-6">
-          <a href="contacto.php" class="btn btn-primary">CONTACTO</a>
-        </div>
-      </div>
-    </div>
-    <!-- Necesitas Presupuesto end -->
-
-    <!-- Galeria de Imagenes -->
-    <?php include('includes/galeria-imagenes.php'); ?>
-
-    <!-- Newsletter -->
-    <?php include('./includes/newsletter.php'); ?>
-    
-    <!-- Iconos -->
-    <?php include('./includes/iconos.php'); ?>
+      case JUNTAS:
+          include('includes/secciones-listado/section-juntas.php'); 
+        break;
+      
+      default:
+        include('includes/secciones-listado/section-comun.php');
+        break;
+    } ?>
 
   </section>
 
@@ -145,6 +79,7 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/aos/dist/aos.js"></script>
   <script src="node_modules/slick-carousel/slick/slick.js"></script>
+  <script src="js/formsNewsletter.js"></script>
   <script src="js/galeria.js"></script>
 	<script src="js/app.js"></script>
 </body>
