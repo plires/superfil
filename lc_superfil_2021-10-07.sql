@@ -7,7 +7,7 @@
 #
 # Equipo: 192.168.10.10 (MySQL 8.0.26-0ubuntu0.20.04.2)
 # Base de datos: lc_superfil
-# Generation Time: 2021-10-07 15:14:51 +0000
+# Generation Time: 2021-10-07 17:06:02 +0000
 # ************************************************************
 
 
@@ -157,7 +157,19 @@ VALUES
 	(68,14,'pallets/galeria/pallets-galeria-b.jpg'),
 	(69,14,'pallets/galeria/pallets-galeria-c.jpg'),
 	(70,14,'pallets/galeria/pallets-galeria-d.jpg'),
-	(71,14,'pallets/galeria/pallets-galeria-e.jpg');
+	(71,14,'pallets/galeria/pallets-galeria-e.jpg'),
+	(72,15,'../empresa/galeria/galeria-1.jpg'),
+	(73,15,'../empresa/galeria/galeria-2.jpg'),
+	(74,15,'../empresa/galeria/galeria-3.jpg'),
+	(75,15,'../empresa/galeria/galeria-4.jpg'),
+	(76,15,'../empresa/galeria/galeria-5.jpg'),
+	(77,15,'../empresa/galeria/galeria-6.jpg'),
+	(78,15,'../empresa/galeria/galeria-7.jpg'),
+	(79,15,'../empresa/galeria/galeria-8.jpg'),
+	(80,15,'../empresa/galeria/galeria-9.jpg'),
+	(81,15,'../empresa/galeria/galeria-10.jpg'),
+	(82,15,'../empresa/galeria/galeria-11.jpg'),
+	(83,15,'../empresa/galeria/galeria-12.jpg');
 
 /*!40000 ALTER TABLE `img_galeries` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -195,7 +207,8 @@ VALUES
 	(11,'TUBERÍAS<br>DE PVC','Tuberias de PVC','El tubo de PVC SUPERFIL&copy; presenta aspectos revolucionarios en cuanto a su concepción y proceso de fabricación. El mismo esta formado por un tubo de pared exterior perfilado e interior liso, fabricado a base de PVC rígido no plastificado como materia prima.','tubos/header-tubos.png'),
 	(12,'JUNTAS <br>WATERSTOP','Juntas Waterstop','Nuestras juntas Waterstop están elaboradas en PVC plastificado siendo un material sumamente flexible, con alta resistencia mecánica y química, debido a la excelente elasticidad de su composición.','juntas-waterstop/header-juntas.png'),
 	(13,'GUARDACAMILLAS','Guardacamillas','Guardacamillas hospitalario de PVC rígido, utilizado para la protección de paredes expuestas a agresiones y golpes causados por el tráfico de camillas en clínicas, hospitales, etc.','guardacamillas/header-guardacamillas.png'),
-	(14,'PALLETS<br>PLÁSTICO','Pallets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas. El palet plástico desarrollado por Superfil, es ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','pallets/header-pallets.png');
+	(14,'PALLETS<br>PLÁSTICO','Pallets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas. El palet plástico desarrollado por Superfil, es ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','pallets/header-pallets.png'),
+	(15,'EMPRESA','Empresa','','');
 
 /*!40000 ALTER TABLE `lines_extra` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -478,7 +491,8 @@ VALUES
 	(186,'3246','guardacamillas','Guardacamillas','Guardacamillas Hospitalario de PVC rígido, utilizado para la protección de paredes expuestas a agresiones y golpes causado por el tráfico de camillas en clínicas y hospitales.',13,'guardacamillas','PVC rígido','9 x 175 mm','Guardacamillas Hospitalario de PVC rígido, utilizado para la protección de paredes expuestas a agresiones y golpes causado por el tráfico de camillas en clínicas, hospitales, etc..','3, 4 y 5 metros.','Gris Oscuro; Gris Claro; Azul Acero; Beige. ','Hospitales, clínicas, laboratorios, etc.','Fácil de instalar, mayor duración y más económico que el aluminio, no requiere mantención, resistencia y solidez a la luz solar directa.','guardacamillas/3246.png','guardacamillas/3246-t.jpg'),
 	(187,'1000x1200','palets','Palets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas.',14,'palets','PVC','1000 x 1200 mm (entrada uñas autoelevador por lado de 1000 mm). Peso 25,20 kg','Palets plásticos para el transporte y almacenaje de cargas.','','Blanco, Gris y Negro (Colores especiales bajo pedido).','Ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.\r','Soportan 1250 kilos, son lavables, no juntan hongos, son ignifugos, antedeslizantes, no se astillan, no se deforman, tienen alta vida útil al exterior, alta resistencia mecánica para uso en cámaras frigoríficas.','pallets/1000x1200.png','pallets/1000x1200-t.jpg'),
 	(188,'1200x1000','palets','Palets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas.',14,'palets','PVC','1200 x 1000 mm (entrada uñas autoelevador por lado de 1200 mm). Peso 25,40 kg','Palets plásticos para el transporte y almacenaje de cargas.','','Blanco, Gris y Negro (Colores especiales bajo pedido).','Ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','Soportan 1250 kilos, son lavables, no juntan hongos, son ignifugos, antedeslizantes, no se astillan,\rno se deforman, tienen alta vida útil al exterior, alta resistencia mecánica para uso en cámaras frigoríficas.','pallets/1000x1200b.png','pallets/1000x1200b-t.jpg'),
-	(189,'1100x1100','palets','Palets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas.',14,'palets','PVC','1100 x 1100 mm. Peso 26,25 kg','Palets plásticos para el transporte y almacenaje de cargas.','','Blanco, Gris y Negro (Colores especiales bajo pedido).','Ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','Soportan 1250 kilos, son lavables, no juntan hongos, son ignifugos, antedeslizantes, no se astillan, no se deforman, tienen alta vida útil al exterior, alta resistencia mecánica para uso en cámaras frigoríficas.','pallets/1100x1100.png','pallets/1100x1100-t.jpg');
+	(189,'1100x1100','palets','Palets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas.',14,'palets','PVC','1100 x 1100 mm. Peso 26,25 kg','Palets plásticos para el transporte y almacenaje de cargas.','','Blanco, Gris y Negro (Colores especiales bajo pedido).','Ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','Soportan 1250 kilos, son lavables, no juntan hongos, son ignifugos, antedeslizantes, no se astillan, no se deforman, tienen alta vida útil al exterior, alta resistencia mecánica para uso en cámaras frigoríficas.','pallets/1100x1100.png','pallets/1100x1100-t.jpg'),
+	(190,'DOBLE ENTRADA','palets','Palets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas.',14,'palets','PVC','DOBLE ENTRADA. Todas las medidas','Palets plásticos para el transporte y almacenaje de cargas.','','Blanco, Gris y Negro (Colores especiales bajo pedido).','Ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','Soportan 1250 kilos, son lavables, no juntan hongos, son ignifugos, antedeslizantes, no se astillan, no se deforman, tienen alta vida útil al exterior, alta resistencia mecánica para uso en cámaras frigoríficas.','pallets/doble-entrada.png','pallets/doble-entrada-t.jpg');
 
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;

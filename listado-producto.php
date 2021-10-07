@@ -65,6 +65,10 @@
       case JUNTAS:
           include('includes/secciones-listado/section-juntas.php'); 
         break;
+
+      case PALLETS:
+          include('includes/secciones-listado/section-pallets.php'); 
+        break;
       
       default:
         include('includes/secciones-listado/section-comun.php');
