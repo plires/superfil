@@ -49,92 +49,23 @@
 
   <section class="listado detalle_producto">
 
-    <!-- Header -->
-    <?php include('./includes/header-productos.php'); ?>
 
-    <!-- Producto -->
-    <section class="container-fluid producto_detalle">
-      <div class="row">
+    <?php switch ($product['line_rs']) {
+      case LISTEX:
+        include('./includes/header-productos-listex.php');
+        include('includes/detalles-producto/detalle-producto-listex.php');
+        break;
 
-        <div class="col-md-6 image">
+      case JUNTAS:
+        include('./includes/header-productos-juntas.php');
+        include('includes/detalles-producto/detalle-producto-comun.php');
+        break;
 
-          <div class="only_mobile">
-            <h4>Productos / <?= $lines_extra['h1'] ?>  / Código <?= $product['code'] ?></h4>
-            <h2>código <?= $product['code'] ?></h2>
-            <hr>  
-          </div>
-
-          <img 
-            class="img-fluid" 
-            src="img/productos/<?= $product['img'] ?>" 
-            alt="Producto linea - <?= $product['line_rs'] .'- Código: '. $product['code'] ?>"
-          >
-          <hr class="only_desktop">
-          <img 
-            class="img-fluid" 
-            src="img/productos/<?= $product['img_t'] ?>" 
-            alt="Producto linea - <?= $product['line_rs'] .'- Código: '. $product['code'] ?>"
-          >
-        </div>
-
-        <div class="col-md-6 datos">
-
-          <div class="only_desktop">
-            <h4>Productos / <?= $lines_extra['h1'] ?>  / Código <?= $product['code'] ?></h4>
-            <h2>código <?= $product['code'] ?></h2>
-            <hr>  
-          </div>
-
-          <div>
-            <h3>Especificaciones:</h3>
-
-            <!-- Material -->
-            <?php if ($product['material']): ?>
-              <p><span>Material:</span> <br><?= $product['material'] ?></p>
-            <?php endif ?>
-
-            <!-- Medidas -->
-            <?php if ($product['measures']): ?>
-              <p><span>Medida:</span> <br><?= $product['measures'] ?></p>
-            <?php endif ?>
-
-            <!-- Descripcion -->
-            <?php if ($product['description']): ?>
-              <p><span>Descripción:</span> <br><?= $product['description'] ?></p>
-            <?php endif ?>
-
-            <!-- Largo Standard -->
-            <?php if ($product['long']): ?>
-              <p><span>Largo Standard:</span> <br><?= $product['long'] ?></p>
-            <?php endif ?>
-
-            <!-- Colores -->
-            <?php if ($product['color']): ?>
-              <p><span>Colores:</span> <br><?= $product['color'] ?></p>
-            <?php endif ?>
-
-            <!-- Usos y Aplicaciones -->
-            <?php if ($product['applications']): ?>
-              <p><span>Usos y aplicaciones:</span> <br><?= $product['applications'] ?></p>
-            <?php endif ?>
-
-
-            <!-- Usos y Aplicaciones -->
-            <?php if ($product['observations']): ?>
-              <hr>
-              <h3>Observaciones:</h3>
-              <p><?= $product['observations'] ?></p>
-            <?php endif ?>
-          </div>
-
-          <hr>
-          <a class="volver transition" href="javascript:history.back()"><i class="fas fa-backward mr-5"></i>Volver</a>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- Producto end -->
+      default:
+        include('./includes/header-productos.php');
+        include('includes/detalles-producto/detalle-producto-comun.php');
+        break;
+    } ?>    
 
     <?php include('./includes/necesitas-presupuesto.php') ?>
 

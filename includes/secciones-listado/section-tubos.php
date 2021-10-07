@@ -58,9 +58,21 @@
     <?php endif ?>
 
   </div>
+
 </section>
 <!-- Listado Productos end -->
 
+<!-- Necesitas Presupuesto? -->
+<?php include('./includes/necesitas-presupuesto.php'); ?>
+
+<!-- Galeria -->
+<?php include('./includes/galeria-imagenes.php'); ?>
+
+<!-- Newsletter -->
+<?php include('./includes/newsletter.php'); ?>
+
+<!-- Iconos -->
+<?php include('./includes/iconos.php'); ?>
 
 
 

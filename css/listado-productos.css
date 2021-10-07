@@ -66,8 +66,8 @@
 
 /* Header Listex */
 .listado .header_listex  {
-	background: rgb(128,128,128);
-	background: linear-gradient(-90deg, rgba(128,128,128,1) 26%, rgba(187,187,187,1) 100%);
+	background: rgb(243,124,32);
+	background: linear-gradient(-90deg, rgba(243,124,32,1) 0%, rgba(182,85,31,1) 100%);
 }
 /* Header Listex end */
 
@@ -81,6 +81,28 @@
 	border-left: solid 5px white;
 }
 /* Header Listex end */
+
+/* Listado Listex */
+.listado .productos_listado .col-md-4 .background_listex {
+	background: rgb(243,124,32);
+}
+
+.listado .productos_listado .col-md-4 .background_listex a {
+	color: white;
+	border-color: white;
+}
+
+.listado .productos_listado .col-md-4 .background_listex a:hover {
+	background-color: white;
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+}
+
+.listado .productos_listado .col-md-4 .background_listex h2 {
+	color: white;
+}
+/* Listado Listex end */
+
 
 /* Faja Ecológica Listex */
 .listado .faja_ecologica  {

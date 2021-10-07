@@ -1,12 +1,5 @@
-<!-- Header -->
-<section class="header header_listex container-fluid p-0">
-  <div class="header_productos">
-    <img data-aos="zoom-out-up" class="img-fluid" src="img/productos/<?= $lines_extra['img_header'] ?>" alt="header <?= $lines_extra['name'] ?>">
-    <h1 data-aos="fade-right">LÍNEA <br><?= $lines_extra['h1'] ?></h1>
-  </div>
-  <img data-aos="zoom-out-up" class="img-fluid flecha" src="img/header/flecha.png" alt="flecha blanca">
-</section>
-<!-- Header end -->
+<!-- Header Listex -->
+<?php include('./includes/header-productos-listex.php'); ?>
 
 <!-- Texto -->
 <?php include('./includes/texto-descripcion-lineas.php'); ?>
@@ -27,7 +20,7 @@
 
         <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
           <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
-          <div class="background">
+          <div class="background background_listex">
             <h2>CÓDIGO <br><?= $product['code'] ?></h2>
             <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
           </div>
@@ -35,8 +28,15 @@
 
       <?php endforeach ?>
 
-      <!-- Icono Consulta -->
-      <?php include('./includes/icono-consulta-producto.php'); ?>
+      <!-- Icono no encontras tu producto -->
+      <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
+        <img class="img-fluid" src="img/productos/icono-consulta.png" alt="icono de consulta">
+        <div class="background background_listex">
+          <h2 class="no_encontras_producto">¿NO ENCONTRÁS EL PRODUCTO QUE BUSCABAS?</h2>
+          <a href="./contacto.php" class="btn btn-primary transition">CONSULTAR</a>
+        </div>
+      </div>
+      <!-- Icono no encontras tu producto end -->
 
     <?php endif ?>
 
