@@ -1,5 +1,9 @@
 <?php
   require('includes/config.inc.php');
+  include_once('includes/soporte.php');
+
+  $galery_images = $db->getRepoProducts()->getGaleryImagesFromTheLines(15);
+
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +24,8 @@
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 	<link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/app.css">
   
 </head>
@@ -142,6 +148,9 @@
     </section>
     <!-- Lideres end -->
 
+    <!-- Galeria -->
+    <?php include('./includes/galeria-imagenes.php'); ?>
+
     <!-- Newsletter -->
     <div class="newsletter_listado_productos">
       <?php include('includes/newsletter.php'); ?>
@@ -160,6 +169,8 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/formsNewsletter.js"></script>
   <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="node_modules/slick-carousel/slick/slick.js"></script>
+  <script src="js/galeria.js"></script>
   <!-- CountUP (efecto JS para numeros) -->
   <script src="js/countUp.min.js"></script>
 	<script src="js/app.js"></script>
