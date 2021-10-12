@@ -5,9 +5,9 @@
 # https://sequel-ace.com/
 # https://github.com/Sequel-Ace/Sequel-Ace
 #
-# Equipo: 192.168.10.10 (MySQL 8.0.26-0ubuntu0.20.04.2)
-# Base de datos: lc_superfil
-# Generation Time: 2021-10-07 17:06:02 +0000
+# Equipo: superfil.com.ar (MySQL 5.5.62-cll)
+# Base de datos: duck9_site2021
+# Generation Time: 2021-10-07 17:33:50 +0000
 # ************************************************************
 
 
@@ -26,14 +26,14 @@ SET NAMES utf8mb4;
 DROP TABLE IF EXISTS `contacts`;
 
 CREATE TABLE `contacts` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `city` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `comments` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-  `origin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `comments` text COLLATE utf8mb4_unicode_ci,
+  `origin` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -76,11 +76,11 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `img_galeries`;
 
 CREATE TABLE `img_galeries` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `lines_extra_id` int DEFAULT NULL,
-  `url` varchar(500) DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `lines_extra_id` int(11) DEFAULT NULL,
+  `url` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 LOCK TABLES `img_galeries` WRITE;
 /*!40000 ALTER TABLE `img_galeries` DISABLE KEYS */;
@@ -181,13 +181,13 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `lines_extra`;
 
 CREATE TABLE `lines_extra` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `h1` varchar(500) DEFAULT NULL,
-  `name` varchar(500) DEFAULT NULL,
-  `description` text,
-  `img_header` varchar(500) DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `h1` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `img_header` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 LOCK TABLES `lines_extra` WRITE;
 /*!40000 ALTER TABLE `lines_extra` DISABLE KEYS */;
@@ -220,9 +220,9 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `newsletter`;
 
 CREATE TABLE `newsletter` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -279,24 +279,24 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `products`;
 
 CREATE TABLE `products` (
-  `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `url` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `title` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `meta_description` text CHARACTER SET utf8 COLLATE utf8_general_ci,
-  `line` int DEFAULT NULL,
-  `line_rs` varchar(500) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
-  `material` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `measures` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `description` text CHARACTER SET utf8 COLLATE utf8_general_ci,
-  `long` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `color` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `applications` text CHARACTER SET utf8 COLLATE utf8_general_ci,
-  `observations` text CHARACTER SET utf8 COLLATE utf8_general_ci,
-  `img` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
-  `img_t` varchar(500) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `url` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `title` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `meta_description` text CHARACTER SET utf8,
+  `line` int(11) DEFAULT NULL,
+  `line_rs` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `material` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `measures` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `description` text CHARACTER SET utf8,
+  `long` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `color` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `applications` text CHARACTER SET utf8,
+  `observations` text CHARACTER SET utf8,
+  `img` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `img_t` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;

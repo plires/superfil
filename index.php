@@ -139,7 +139,7 @@
 	  	<div class="row">
 	  		<div data-aos="zoom-in" class="col-md-6">
 	  			<h2>LÍNEA PUBLICIDAD</h2>
-	  			<img data-aos="flip-left" class="img-fluid" src="img/home/revestimientos-home.jpg" alt="linea revestimientos">
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/publicidad-home.jpg" alt="linea publicidad">
 	  			<p>
 	  				Portaprecios en diferentes formatos. Largos standard en stock permanente. Producto ideal para supermercados, shoppings y retails. Consulte por medidas especiales.
 	  			</p>
