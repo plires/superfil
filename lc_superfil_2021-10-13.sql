@@ -5,9 +5,9 @@
 # https://sequel-ace.com/
 # https://github.com/Sequel-Ace/Sequel-Ace
 #
-# Equipo: superfil.com.ar (MySQL 5.5.62-cll)
-# Base de datos: duck9_site2021
-# Generation Time: 2021-10-07 17:33:50 +0000
+# Equipo: 192.168.10.10 (MySQL 8.0.26-0ubuntu0.20.04.2)
+# Base de datos: lc_superfil
+# Generation Time: 2021-10-13 12:33:57 +0000
 # ************************************************************
 
 
@@ -26,14 +26,14 @@ SET NAMES utf8mb4;
 DROP TABLE IF EXISTS `contacts`;
 
 CREATE TABLE `contacts` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `city` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `comments` text COLLATE utf8mb4_unicode_ci,
-  `origin` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT '',
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `comments` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `origin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -76,9 +76,9 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `img_galeries`;
 
 CREATE TABLE `img_galeries` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `lines_extra_id` int(11) DEFAULT NULL,
-  `url` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `lines_extra_id` int DEFAULT NULL,
+  `url` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -169,7 +169,20 @@ VALUES
 	(80,15,'../empresa/galeria/galeria-9.jpg'),
 	(81,15,'../empresa/galeria/galeria-10.jpg'),
 	(82,15,'../empresa/galeria/galeria-11.jpg'),
-	(83,15,'../empresa/galeria/galeria-12.jpg');
+	(83,15,'../empresa/galeria/galeria-12.jpg'),
+	(84,1,'camaras-frigorificas/galeria/camaras-galeria-f.jpg'),
+	(85,1,'camaras-frigorificas/galeria/camaras-galeria-g.jpg'),
+	(86,13,'guardacamillas/galeria/guardacamillas-galeria-f.jpg'),
+	(87,13,'guardacamillas/galeria/guardacamillas-galeria-g.jpg'),
+	(88,12,'juntas-waterstop/galeria/juntas-galeria-f.jpg'),
+	(89,12,'juntas-waterstop/galeria/juntas-galeria-g.jpg'),
+	(90,7,'listex/galeria/listex-galeria-f.jpg'),
+	(91,7,'listex/galeria/listex-galeria-g.jpg'),
+	(92,7,'listex/galeria/listex-galeria-h.jpg'),
+	(93,7,'listex/galeria/listex-galeria-i.jpg'),
+	(94,9,'nautica/galeria/nautica-galeria-f.jpg'),
+	(95,11,'tubos/galeria/tubos-galeria-f.jpg'),
+	(96,11,'tubos/galeria/tubos-galeria-g.jpg');
 
 /*!40000 ALTER TABLE `img_galeries` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -181,11 +194,11 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `lines_extra`;
 
 CREATE TABLE `lines_extra` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `h1` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `name` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci,
-  `img_header` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `h1` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `img_header` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -199,7 +212,7 @@ VALUES
 	(3,'FURGONES <br>TÉRMICOS','Línea Furgones Térmicos','Los perfiles marcos de furgones térmicos están desarrollados y diseñados, para soportar bajas temperaturas exigidas por las cargas congeladas.','furgones-termicos/header-furgones-termicos.png'),
 	(4,'ILUMINACIÓN','Línea Iluminación','Desarrollamos todo tipo de perfiles cobertores de policarbonato con UV para artefactos de iluminación bajo requerimientos específicos de clientes.','iluminacion/header-iluminacion.png'),
 	(5,'POLICARBONATO','Línea Policarbonato','Perfiles para unión y sellado en policarbonato, simple y práctico. Es una opción ideal para aplicaciones en donde \rse requiere unir “H”, o sellar “U” en instalaciones de placas alveolares de policarbonato.','policarbonato/header-policarbonato.png'),
-	(6,'REVESTIMIENTO <br>EXTERIOR','Línea Revestimiento Exterior','Quiebravista plástico tipo \"z\", presentado en diversas tonalidades, pigmentado en la masa. Se ofrece en dos alternativas de materiales, de acuerdo a las características climáticas a las cuales será sometido.','revestimiento-exterior/header-revestimiento.png'),
+	(6,'REVESTIMIENTO <br>EXTERIOR','Línea Revestimiento Exterior','Parasol plástico tipo \"z\", presentado en diversas tonalidades, pigmentado en la masa. Se ofrece en dos alternativas de materiales, de acuerdo a las características climáticas a las cuales será sometido.','revestimiento-exterior/header-revestimiento.png'),
 	(7,'LISTEX','Listex','Molduras de madera sintética desarrolladas bajo procesos y acabados patentados, se fabrican con materiales sintéticos diseñados especialmente para obtener características similares a la madera natural.','listex/header-listex.png'),
 	(8,'PUBLICIDAD','Publicidad','Portaprecios en diferentes formatos. Largos standard en stock permanente. Producto ideal para supermercados, shoppings y retails. Consulte por medidas especiales.','publicidad/header-publicidad.png'),
 	(9,'NÁUTICA','Náutica','Botazos náuticos fabricados en PVC de alto impacto proporcionan una alta tolerancia a los golpes protegiendo tanto la integridad del muelle como de los barcos. Fáciles de instalar y de gran durabilidad.','nautica/header-nautica.png'),
@@ -207,7 +220,7 @@ VALUES
 	(11,'TUBERÍAS<br>DE PVC','Tuberias de PVC','El tubo de PVC SUPERFIL&copy; presenta aspectos revolucionarios en cuanto a su concepción y proceso de fabricación. El mismo esta formado por un tubo de pared exterior perfilado e interior liso, fabricado a base de PVC rígido no plastificado como materia prima.','tubos/header-tubos.png'),
 	(12,'JUNTAS <br>WATERSTOP','Juntas Waterstop','Nuestras juntas Waterstop están elaboradas en PVC plastificado siendo un material sumamente flexible, con alta resistencia mecánica y química, debido a la excelente elasticidad de su composición.','juntas-waterstop/header-juntas.png'),
 	(13,'GUARDACAMILLAS','Guardacamillas','Guardacamillas hospitalario de PVC rígido, utilizado para la protección de paredes expuestas a agresiones y golpes causados por el tráfico de camillas en clínicas, hospitales, etc.','guardacamillas/header-guardacamillas.png'),
-	(14,'PALLETS<br>PLÁSTICO','Pallets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas. El palet plástico desarrollado por Superfil, es ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','pallets/header-pallets.png'),
+	(14,'PALETS<br>PLÁSTICO','Palets Plásticos','Fabricados a través de la conformación de dos perfiles plásticos, bajo estrictos controles de calidad, los cuales se unen en una cuadrícula que provee al producto una estructura muy fuerte, que le permite soportar cargas pesadas. El palet plástico desarrollado por Superfil, es ideal para lugares de extrema higiene (industrias alimenticias, farmacéuticas, laboratorios y la industria química) por tratarse de PVC y el formato de sus perfiles, hacen que el mismo sea higiénico y el mantenimiento extremadamente sencillo.','pallets/header-pallets.png'),
 	(15,'EMPRESA','Empresa','','');
 
 /*!40000 ALTER TABLE `lines_extra` ENABLE KEYS */;
@@ -220,9 +233,9 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `newsletter`;
 
 CREATE TABLE `newsletter` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -279,24 +292,24 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `products`;
 
 CREATE TABLE `products` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `code` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
-  `url` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
-  `title` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
-  `meta_description` text CHARACTER SET utf8,
-  `line` int(11) DEFAULT NULL,
-  `line_rs` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `material` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
-  `measures` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
-  `description` text CHARACTER SET utf8,
-  `long` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
-  `color` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
-  `applications` text CHARACTER SET utf8,
-  `observations` text CHARACTER SET utf8,
-  `img` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
-  `img_t` varchar(500) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `url` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `title` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `meta_description` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  `line` int DEFAULT NULL,
+  `line_rs` varchar(500) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `material` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `measures` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  `long` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `color` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `applications` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  `observations` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  `img` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `img_t` varchar(500) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_spanish_ci;
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
@@ -360,7 +373,7 @@ VALUES
 	(55,'3033','policarbonato-pvc-perfiles-union','Perfiles para union y sellado en policarbonato - cod 3033','Perfiles para union y sellado en policarbonato, simple y practico. 3033',5,'policarbonato','Policarbonato con UV','11.5 mm x 15.5 mm','Perfiles para unión y sellado en policarbonato, simple y práctico.','','','Es una opción ideal para aplicaciones en donde se requiere unir \"H\"\", o sellar U en instalaciones de placas Alveolares de policarbonato.\"','2,10 mts / Tiras por paquete: 70. Perfiles de sellado que contienen en su masa aditivos que lo hacen resistentes a los rayos ultravioletas. Terminal para plancha de 8 a 10 mm.','policarbonato/3033.png','policarbonato/3033-t.jpg\r'),
 	(56,'3184','policarbonato-pvc-perfiles-union','Perfiles para union y sellado en policarbonato - cod 3184','Perfiles para union y sellado en policarbonato, simple y practico.',5,'policarbonato','Policarbonato con UV','59.3 mm de base','Perfiles para unión y sellado en policarbonato, simple y práctico.','','','Se utiliza en conjunto con el art. 3185 para unir planchas de policarbonato','Perfiles de unión clip que contienen en su masa aditivos que lo hacen resistentes a los rayos ultravioletas. Dos posiciones: Para plancha de 5 a 10 mm y de 12 a 16 mm.','policarbonato/3184.png','policarbonato/3184-t.jpg\r'),
 	(57,'3185','policarbonato-pvc-perfiles-union','Perfiles para union y sellado en policarbonato - cod 3185','Perfiles para union y sellado en policarbonato',5,'policarbonato','Policarbonato con UV','59.8 mm de base','Perfiles para unión y sellado en policarbonato, simple y práctico.','','','Se utiliza en conjunto con el art. 3184 para unir planchas de policarbonato','Perfiles de unión clip que contienen en su masa aditivos que lo hacen resistentes a los rayos ultravioletas. Dos posiciones: Para plancha de 5 a 10 mm y de 12 a 16 mm.','policarbonato/3185.png','policarbonato/3185-t.jpg\r'),
-	(58,'3150-POL','revestimiento-exterior-fachada-quiebravista-policarbonato-uv','revestimiento fachada quiebravista policarbonato uv','quiebravista para revestir fachadas exteriores. Permite su utilizacion como elemento decorativo.',6,'revestimiento-exterior','Policarbonato','34 mm x 75 mm','Permite su utilización como elemento decorativo de contraste en las grandes superficies de revestimiento realizadas con textura lisa.','','','Revestimiento exterior de fachadas, Ventilación para galpones industriales, Oculta escaleras, Muro falso, Cerca divisoria, Control del paso de luz.','Fácil de instalar,Mayor duración y más económico que el aluminio, No requiere mantención, resistencia y solidez a la luz solar directa.','revestimiento-exterior/3150-pol.png','revestimiento-exterior/3150-pol-t.jpg\r'),
+	(58,'3150-PC','revestimiento-exterior-fachada-quiebravista-policarbonato-uv','revestimiento fachada quiebravista policarbonato uv','quiebravista para revestir fachadas exteriores. Permite su utilizacion como elemento decorativo.',6,'revestimiento-exterior','Policarbonato','34 mm x 75 mm','Permite su utilización como elemento decorativo de contraste en las grandes superficies de revestimiento realizadas con textura lisa.','','','Revestimiento exterior de fachadas, Ventilación para galpones industriales, Oculta escaleras, Muro falso, Cerca divisoria, Control del paso de luz.','Fácil de instalar,Mayor duración y más económico que el aluminio, No requiere mantención, resistencia y solidez a la luz solar directa.','revestimiento-exterior/3150-pol.png','revestimiento-exterior/3150-pol-t.jpg\r'),
 	(59,'3150-PVC','revestimiento-exterior-fachada-quiebravista-policarbonato-uv','revestimiento fachada quiebravista policarbonato ','quiebravista para revestir fachadas exteriores. ',6,'revestimiento-exterior','PVC','4 mm x 75 mm','Permite su utilización como elemento decorativo de contraste en las grandes superficies de revestimiento realizadas con textura lisa.','6 Metros ','','Revestimiento exterior de fachadas, Ventilación para galpones industriales, Oculta escaleras, Muro falso, Cerca divisoria, Control del paso de luz.','Fácil de instalar,Mayor duración y más económico que el aluminio, No requiere mantención, resistencia y solidez a la luz solar directa.','revestimiento-exterior/3150-pvc.png','revestimiento-exterior/3150-pvc-t.jpg\r'),
 	(60,'5001','moldura-madera-sintetica-polimeros','moldura de madera sintetica,polimeros y sinteticos - Cod 5001','Moldura de madera sintetica. Admiten lustrado y pintado con barnices y pinturas convencionales.5001',7,'listex','Polímeros / Sintético','8 mm x 7 mm','Zócalos de madera sintética','A pedido. Sus medidas son constantes y calibradas, ideales para aplicaciones industriales y para la decoración.','','Listones - Se manipulan igual que la madera, pudiéndose clavar, aserrar, lijar, pintar, lusrar, etc. Entre las ventajas, no son afectadas por la humedad, son inalterables al paso del tiempo, sus superficies son lisas y sin astillas, no son atacadas por microorganismos, insectos ni roedores y no se deterioran por las aguas salinas','Admiten lustrado y pintado con barnices y pinturas convencionales, siendo necesario en algunos casos, la aplicación de un Prymer para mejorar la adherencia.','listex/5001.png','listex/5001-t.jpg\r'),
 	(61,'5002','moldura-madera-sintetica-polimeros','moldura de madera sintetica,polimeros y sinteticos - Cod 5002','Moldura de madera sintetica. Admiten lustrado y pintado con barnices y pinturas convencionales.5002',7,'listex','Polímeros / Sintético','9 mm x 9 mm','Zócalos de madera sintética','A pedido. Sus medidas son constantes y calibradas, ideales para aplicaciones industriales y para la decoración.','','Terminaciones - Se manipulan igual que la madera, pudiéndose clavar, aserrar, lijar, pintar, lusrar, etc. Entre las ventajas, no son afectadas por la humedad, son inalterables al paso del tiempo, sus superficies son lisas y sin astillas, no son atacadas por microorganismos, insectos ni roedores y no se deterioran por las aguas salinas','Admiten lustrado y pintado con barnices y pinturas convencionales, siendo necesario en algunos casos, la aplicación de un Prymer para mejorar la adherencia.','listex/5002.png','listex/5002-t.jpg\r'),

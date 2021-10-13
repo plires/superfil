@@ -46,21 +46,21 @@
 					<li>
 						<a 
 							class="title_lines" data-image="camaras" 
-							href="<?= CAMARAS . '/' . CAMARAS_URL . '.html' ?>">Línea cámaras frigorificas
+							href="<?= CAMARAS . '/' . CAMARAS_URL . '.html' ?>">Línea cámaras frigoríficas
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="juntas" 
-							href="<?= JUNTAS . '/' . JUNTAS_URL . '.html' ?>">juntas waterstop
+							href="<?= JUNTAS . '/' . JUNTAS_URL . '.html' ?>">Línea juntas waterstop
 						</a>
 					</li>
 
 					<li>
 						<a 
 							class="title_lines" data-image="furgones" 
-							href="<?= FURGONES . '/' . FURGONES_URL . '.html' ?>">Línea furgones termicos
+							href="<?= FURGONES . '/' . FURGONES_URL . '.html' ?>">Línea furgones térmicos
 						</a>
 					</li>
 
@@ -88,7 +88,7 @@
 					<li>
 						<a 
 							class="title_lines" data-image="iluminacion" 
-							href="<?= ILUMINACION . '/' . ILUMINACION_URL . '.html' ?>">Línea iluminacion
+							href="<?= ILUMINACION . '/' . ILUMINACION_URL . '.html' ?>">Línea iluminación
 						</a>
 					</li>
 
@@ -123,7 +123,7 @@
 					<li>
 						<a 
 							class="title_lines" data-image="pallets" 
-							href="<?= PALLETS . '/' . PALLETS_URL . '.html' ?>">Línea palets
+							href="<?= PALLETS . '/' . PALLETS_URL . '.html' ?>">Línea palets plásticos
 						</a>
 					</li>
 
