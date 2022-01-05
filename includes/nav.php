@@ -81,7 +81,7 @@
 					<li>
 						<a 
 							class="title_lines" data-image="policarbonato" 
-							href="<?= POLICARBONATO . '/' . POLICARBONATO_URL . '.html' ?>">Línea policarbonato
+							href="<?= POLICARBONATO . '/' . POLICARBONATO_URL . '.html' ?>">Línea conectores de policarbonato
 						</a>
 					</li>
 
