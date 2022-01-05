@@ -10,12 +10,12 @@
         <hr>  
       </div>
 
-      <img 
+      <!-- <img 
         class="img-fluid" 
-        src="img/productos/<?= $product['img'] ?>" 
-        alt="Producto linea - <?= $product['line_rs'] .'- Código: '. $product['code'] ?>"
-      >
-      <hr class="only_desktop">
+        src="img/productos/<?//= $product['img'] ?>" 
+        alt="Producto linea - <?//= $product['line_rs'] .'- Código: '. $product['code'] ?>"
+      > -->
+      <!-- <hr class="only_desktop"> -->
       <img 
         class="img-fluid" 
         src="img/productos/<?= $product['img_t'] ?>" 
