@@ -150,7 +150,7 @@
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
-	  			<h2>LÍNEA POLICARBONATO</h2>
+	  			<h2>LÍNEA CONECTORES <br>DE POLICARBONATO</h2>
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/policarbonato-home.jpg" alt="linea policarbonato">
 	  			<p>
 	  				Perfiles para unión y sellado en policarbonato, simple y práctico. Es una opción ideal para aplicaciones en donde se requiere unir "H", o sellar "U" en instalaciones de placas alveolares de policarbonato.

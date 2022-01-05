@@ -4,7 +4,7 @@
 ///Valores URI
 ////////////////////////
 define('URI', $_SERVER['REQUEST_URI']);
-define('BASE', 'http://superfil.test/');
+define('BASE', (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/' );
 
 ////////////////////////
 ///Valores de DB 
@@ -65,7 +65,7 @@ define('NAUTICA_TITLE', 'Náutica');
 define('NAUTICA_URL', 'botazo-nautico-botazo-protector-para-marina');
 
 define('POLICARBONATO', 'policarbonato');
-define('POLICARBONATO_TITLE', 'Línea Policarbonato');
+define('POLICARBONATO_TITLE', 'Línea Conectores de Policarbonato');
 define('POLICARBONATO_URL', 'policarbonato-pvc-perfiles-union');
 
 define('TERMINACIONES', 'terminaciones');
