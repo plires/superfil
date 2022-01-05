@@ -16,25 +16,35 @@
 
     <?php else: ?>
 
+      <?php
+      // Ordeno el array productos por el campo destacados
+      array_multisort(array_column($products, 'destacado'), SORT_DESC, $products);
+      ?>
+
       <?php foreach ($products as $key => $product): ?>
 
-        <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
-          <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
-          <div class="background">
-            <h2>CÓDIGO <br><?= $product['code'] ?></h2>
+        <!-- Destacar codigos 9017 y 9030 de cielorrasos -->
+        <?php if ($product['code'] == '9017' || $product['code'] == '9030'): ?>
 
-            <!-- Destacar codigos 9017 y 9030 de cielorrasos -->
-            <?php if ($product['code'] == '9017' || $product['code'] == '9030'): ?>
+          <div data-aos="zoom-in" class="col-12 col-md-6 m-auto contenido">
+            <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
+            <div class="background">
+              <h2>CÓDIGO <br><?= $product['code'] ?></h2>
               <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary btn_destacado transition">VER</a>
-
-            <?php else: ?>
-
-              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
-
-            <?php endif ?>
-
+            </div>
           </div>
-        </div>
+
+        <?php else: ?>
+
+          <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
+            <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
+            <div class="background">
+              <h2>CÓDIGO <br><?= $product['code'] ?></h2>
+              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
+            </div>
+          </div>
+
+        <?php endif ?>
 
       <?php endforeach ?>
 

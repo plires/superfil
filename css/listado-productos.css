@@ -144,12 +144,14 @@
 /* Faja Ecológica Listex end */
 
 /* Listado */
-.listado .productos_listado .col-md-4 {
+.listado .productos_listado .col-md-4,
+.listado .productos_listado .col-md-6 {
 	position: relative;
 	margin-bottom: 60px!important;
 }
 
-.listado .productos_listado .col-md-4 div {
+.listado .productos_listado .col-md-4 div,
+.listado .productos_listado .col-md-6 div {
 	padding: 15px;
 	background: #ececec;
 	text-align: center;
@@ -161,11 +163,13 @@
 	flex-direction: column;
 }
 
-.listado .productos_listado .col-md-4 div h2 {
+.listado .productos_listado .col-md-4 div h2,
+.listado .productos_listado .col-md-6 div h2 {
 	font-size: 1.2rem;
 	margin-bottom: 15px;
 }
-.listado .productos_listado .col-md-4 div a {
+.listado .productos_listado .col-md-4 div a,
+.listado .productos_listado .col-md-6 div a {
 	font-size: 0.75rem;
 	color: var(--primary-color);
 	font-weight: 300;
@@ -173,7 +177,8 @@
 	padding: 3px 30px;
 	background: transparent;
 }
-.listado .productos_listado .col-md-4 div a:hover {
+.listado .productos_listado .col-md-4 div a:hover,
+.listado .productos_listado .col-md-6 div a:hover {
 	color: white;
 	background: var(--primary-color);
 }
@@ -275,16 +280,19 @@
 	/* Header end */
 
 	/* Listado */
-	.listado .productos_listado .col-md-4 {
+	.listado .productos_listado .col-md-4,
+	.listado .productos_listado .col-md-6 {
 		margin: 0!important;
 		margin-bottom: 50px!important;
 	}
-	.listado .productos_listado .col-md-4 div {
+	.listado .productos_listado .col-md-4 div,
+	.listado .productos_listado .col-md-6 div {
 		height: 180px;
 		max-height: 180px;
 		min-height: 180px;
 	}
-	.listado .productos_listado .col-md-4 img {
+	.listado .productos_listado .col-md-4 img,
+	.listado .productos_listado .col-md-6 img {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -293,11 +301,21 @@
 		margin-top: 80px;
 		padding-top: 70px;
 	}
-	.listado .productos_listado .col-md-4 div h2 {
+	.listado .productos_listado .col-md-6 .background {
+		margin-top: 120px;
+		padding-top: 0;
+	}
+	.listado .productos_listado .col-md-4 div h2,
+	.listado .productos_listado .col-md-6 div h2 {
 		font-size: 1.25rem;
 	}
 	.listado .productos_listado .col-md-4 div a {
 		font-size: 1rem;
+	}
+	.listado .productos_listado .col-md-6 div a {
+		font-size: 1rem;
+		display: inline-block;
+		margin-bottom: -65px;
 	}
 	/* Listado end*/
 
@@ -317,8 +335,12 @@
 @media (min-width: 768px) {
 
 	/* Listado */
-	.listado .productos_listado .col-md-4 .background {
+	.listado .productos_listado .col-md-4 .background,
+	.listado .productos_listado .col-md-6 .background {
 		margin-top: 63px;
+	}
+	.listado .productos_listado .col-md-6 div a {
+		margin-bottom: -55px;
 	}
 	/* Listado end*/
 
@@ -359,24 +381,31 @@
 	/* Texto end*/
 
 	/* Listado */
-	.listado .productos_listado .col-md-4 .background {
+	.listado .productos_listado .col-md-4 .background,
+	.listado .productos_listado .col-md-6 .background {
 		margin-top: 65px;
 		padding-top: 85px;
 		padding-bottom: 30px;
 	}
-	.listado .productos_listado .col-md-4 div {
+	.listado .productos_listado .col-md-4 div,
+	.listado .productos_listado .col-md-6 div {
 		height: 225px;
 		max-height: 225px;
 		min-height: 225px;
 	}
-	.listado .productos_listado .col-md-4 div h2 {
+	.listado .productos_listado .col-md-4 div h2,
+	.listado .productos_listado .col-md-6 div h2 {
 		font-size: 1.25rem;
 		margin-bottom: 30px;
 	}
-	.listado .productos_listado .col-md-4 div a {
+	.listado .productos_listado .col-md-4 div a{
 		font-size: 1rem;
 	}
-	/* Listado end*/
+	.listado .productos_listado .col-md-6 div a {
+		font-size: 1rem;
+		margin-bottom: -35px;
+	}
+	/* Listado end */
 
 	/* Producto no encontrado  */
 	.listado .no_encontras_producto {
@@ -406,22 +435,52 @@
 
 @media (min-width: 1200px) {
 	/* Listado */
-	.listado .productos_listado .col-md-4 .background {
+	.listado .productos_listado .col-md-4 .background,
+	.listado .productos_listado .col-md-6 .background {
 		margin-top: 80px;
 		padding-top: 90px;
 	}
-	.listado .productos_listado .col-md-4 div h2 {
+	.listado .productos_listado .col-md-4 div h2,
+	.listado .productos_listado .col-md-6 div h2 {
 		font-size: 1.5rem;
 		margin-bottom: 30px;
+	}
+	.listado .productos_listado .col-md-6 .background {
+		margin-top: 140px;
+		padding-top: 40px;
+	}
+	.listado .productos_listado .col-md-6 div {
+		height: 200px;
+		max-height: 200px;
+		min-height: 200px;
+	}
+	.listado .productos_listado .col-md-6 div a {
+		font-size: 1rem;
+		margin-bottom: -35px;
 	}
 	/* Listado end*/
 }
 
 @media (min-width: 1400px) {
 	/* Listado */
-	.listado .productos_listado .col-md-4 .background {
+	.listado .productos_listado .col-md-4 .background,
+	.listado .productos_listado .col-md-6 .background {
 		margin-top: 90px;
 		padding-top: 100px;
+	}
+
+	.listado .productos_listado .col-md-6 .background {
+		margin-top: 195px;
+		padding-top: 40px;
+	}
+	.listado .productos_listado .col-md-6 div {
+		height: 200px;
+		max-height: 200px;
+		min-height: 200px;
+	}
+	.listado .productos_listado .col-md-6 div a {
+		font-size: 1rem;
+		margin-bottom: -35px;
 	}
 	/* Listado end*/
 
