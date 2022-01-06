@@ -83,23 +83,9 @@
 /* Header Listex end */
 
 /* Listado Listex */
-.listado .productos_listado .col-md-4 .background_listex {
-	background: rgb(243,124,32);
-}
-
-.listado .productos_listado .col-md-4 .background_listex a {
-	color: white;
-	border-color: white;
-}
-
-.listado .productos_listado .col-md-4 .background_listex a:hover {
-	background-color: white;
-	border-color: var(--primary-color);
-	color: var(--primary-color);
-}
-
-.listado .productos_listado .col-md-4 .background_listex h2 {
-	color: white;
+.logo_listex {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 /* Listado Listex end */
 

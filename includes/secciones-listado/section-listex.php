@@ -1,6 +1,16 @@
 <!-- Header Listex -->
 <?php include('./includes/header-productos-listex.php'); ?>
 
+<!-- Logo Listex -->
+<section class="container logo_listex">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <img class="img-fluid" src="./img/productos/listex/logo-listex.jpg" alt="logo listex">
+    </div>
+  </div>
+</section>
+<!-- Logo Listex end -->
+
 <!-- Texto -->
 <?php include('./includes/texto-descripcion-lineas.php'); ?>
 
@@ -20,7 +30,7 @@
 
         <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
           <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
-          <div class="background background_listex">
+          <div class="background">
             <h2>CÓDIGO <br><?= $product['code'] ?></h2>
             <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
           </div>
@@ -31,7 +41,7 @@
       <!-- Icono no encontras tu producto -->
       <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
         <img class="img-fluid" src="img/productos/icono-consulta.png" alt="icono de consulta">
-        <div class="background background_listex">
+        <div class="background">
           <h2 class="no_encontras_producto">¿NO ENCONTRÁS EL PRODUCTO QUE BUSCABAS?</h2>
           <a href="./contacto.php" class="btn btn-primary transition">CONSULTAR</a>
         </div>
