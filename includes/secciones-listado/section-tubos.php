@@ -13,6 +13,18 @@
 </section>
 <!-- Texto end -->
 
+<!-- Icono PDF -->
+<section class="container">
+	<div class="row icono_pdf icono_pdf_tubos">
+    <div class="col-md-12">
+      <a title="descargá el catalogo de esta línea" target="_blank" rel="noopener noreferrer" href="catalogos/<?= $lines_extra['catalogo'] ?>">
+        <img class="img-fluid transition" src="./img/productos/icono-pdf.png" alt="icono pdf">
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Icono PDF end -->
+
 <!-- Listado Productos -->
 <section class="container productos_listado">
   <div class="row">

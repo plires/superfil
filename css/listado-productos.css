@@ -4,6 +4,18 @@
 	font-weight: 300;
 }
 
+.listado .icono_pdf img {
+	float: right;
+}
+
+.listado .icono_pdf_tubos {
+	margin-bottom: 60px;
+}
+
+.listado .icono_pdf img:hover {
+	opacity: 0.8;
+}
+
 .listado .btn-outline-primary {
 	color: var(--primary-color);
 	font-weight: 300;
