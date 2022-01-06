@@ -69,6 +69,10 @@
       case PALLETS:
           include('includes/secciones-listado/section-pallets.php'); 
         break;
+
+      case ILUMINACION:
+          include('includes/secciones-listado/section-iluminacion.php'); 
+        break;
       
       default:
         include('includes/secciones-listado/section-comun.php');

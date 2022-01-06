@@ -103,7 +103,6 @@
 }
 /* Listado Listex end */
 
-
 /* Faja Ecológica Listex */
 .listado .faja_ecologica  {
 	background-color: #1e964c;
@@ -142,6 +141,44 @@
 	text-align: center;
 }
 /* Faja Ecológica Listex end */
+
+/* Otros Productos Iluminacion */
+.otros_productos_iluminacion {
+	background: #4d9ad2;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.otros_productos_iluminacion .col-md-6 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.otros_productos_iluminacion h5 {
+	font-size: 1.5rem;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.otros_productos_iluminacion p {
+	color: white;
+	margin-bottom: 30px;
+}
+
+.otros_productos_iluminacion a {
+	background: transparent;
+	border-color: white;
+	color: white;
+}
+
+.otros_productos_iluminacion a:hover {
+	border-color: transparent;
+}
+/* Otros Productos Iluminacion end */
 
 /* Listado */
 .listado .productos_listado .col-md-4,
@@ -362,6 +399,20 @@
 	}
 	/* Necesitas Presupuesto end */
 
+	/* Otros Productos Iluminacion */
+	.otros_productos_iluminacion {
+		margin-bottom: 60px;
+	}
+
+	.otros_productos_iluminacion h5 {
+		font-size: 1.75rem;
+	}
+
+	.otros_productos_iluminacion p {
+		margin-bottom: 40px;
+	}
+	/* Otros Productos Iluminacion end */
+
 }
 
 @media (min-width: 992px) {
@@ -459,6 +510,15 @@
 		margin-bottom: -35px;
 	}
 	/* Listado end*/
+
+	/* Otros Productos Iluminacion */
+	.otros_productos_iluminacion {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	/* Otros Productos Iluminacion end */
+
 }
 
 @media (min-width: 1400px) {
