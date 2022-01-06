@@ -3,6 +3,7 @@
 /vendor
 /vendor/config.inc.php
 /img
+/catalogos
 /includes/config.inc.php
 npm-debug.log
 yarn-error.log
