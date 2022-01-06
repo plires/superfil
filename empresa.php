@@ -116,13 +116,15 @@
 
         <div class="col-md-6">
           <div class="gradient">
+
             <p>
-              Los productos son comercializados en toda la República Argentina; y exportados mayoritariamente a todo el continente Americano.
+              Los productos son fabricados en nuestra planta industrial, abasteciendo el mercado nacional y también con fuerte presencia en diversos países de Latinoamérica.
             </p>
 
             <p>
               En Diciembre de 1995, Superfil S.A. fue seleccionada entre 700 empresas por la fundación AMIL Internacional, como una de las 20 empresas más emprendedoras en el ámbito del MERCOSUR.
             </p> 
+            
           </div>
         </div>
 
