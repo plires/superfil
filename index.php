@@ -47,7 +47,9 @@
 	  		</div>
 	  		<div data-aos="zoom-in" class="col-md-6">
 	  			<h2>LÍNEA CIELORRASOS <br>DE PVC</h2>
-	  			<p>El Cielorraso Superfil, es un sistema de perfiles de encastre tipo machimbre obtenidos a partir de las más altas tecnologías en la extrusión de compuestos de PVC.</p>
+	  			<p>
+	  				La línea de cielorraso de pvc machimbrado se presenta como una solución práctica, estética y económica para la renovación e instalación de techos. Cuenta con los beneficios otorgados por el PVC y su estética es moderna y limpia.
+	  			</p>
 	  			<div class="content_button">
 	  				<a href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
@@ -62,7 +64,7 @@
 	  		<div data-aos="zoom-in" class="col-md-6">
 	  			<h2>LÍNEA TUBERÍAS <br>DE PVC</h2>
 	  			<p>
-	  				El tubo de PVC SUPERFIL&reg; está conformado por una cinta cuya estructura exterior está compuesta por nervios en forma de "T" que le confieren rigidez anular y en su interior lisa, fabricados a base de PVC rígido no plastificaco.
+	  				Los tubos helicoidales de pvc, están constituidos por una cinta cuya estructura de exterior está compuesta por nervios en forma de T. Esto le confiere rigidez anular y en su interior lisa. Fabricados a base de PVC rígido no plastificado.
 					</p>
 	  			<div class="content_button">
 	  				<a href="<?= TUBOS . '/' . TUBOS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
@@ -78,8 +80,7 @@
 	  		<div data-aos="zoom-in" class="col-md-6">
 	  			<h2>LÍNEA CÁMARAS <br>FRIGORÍFICAS</h2>
 	  			<p>
-	  				Los zócalos sanitarios de Superfil SA están fabricados en PVC con mejorador de impacto, lo que permite una alta resistencia 
-	  				ante golpes en circunstancias de temperaturas bajo cero.
+	  				La línea de perfiles plásticos para cámaras frigoríficas, abarca desde zócalos sanitarios, perfiles U para paneles, ángulos de terminacion y otros, que constituyen una solución intergral al diseño y dinámica de las salas de congelados y cámaras frigoríficas en general.
 					</p>
 	  			<div class="content_button">
 	  				<a href="<?= CAMARAS . '/' . CAMARAS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
@@ -153,7 +154,7 @@
 	  			<h2>LÍNEA CONECTORES <br>DE POLICARBONATO</h2>
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/policarbonato-home.jpg" alt="linea policarbonato">
 	  			<p>
-	  				Perfiles para unión y sellado en policarbonato, simple y práctico. Es una opción ideal para aplicaciones en donde se requiere unir "H", o sellar "U" en instalaciones de placas alveolares de policarbonato.
+	  				Conectores de Policarbonato para la unión y terminación de planchas alveolares de Policarbonato alveolar. Desarrollados con materiales con filtro UV para asegurar una vida útil prolongada del producto, y de libre mantenimiento.
 	  			</p>
 	  			<div class="content_button">
 	  				<a href="<?= POLICARBONATO . '/' . POLICARBONATO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
