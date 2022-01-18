@@ -211,6 +211,7 @@
 	border-color: var(--primary-color);
 	padding: 3px 30px;
 	background: transparent;
+	z-index: 1;
 }
 .listado .productos_listado .col-md-4 div a:hover,
 .listado .productos_listado .col-md-6 div a:hover {
