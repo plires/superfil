@@ -35,8 +35,6 @@ use PHPMailer\PHPMailer\Exception;
           'reference'             => 'Superfil'
         ], GRUPO_TODOS_SUPERFIL);
 
-        var_dump($result);exit;
-
         return $result;
       }
 
