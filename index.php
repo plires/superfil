@@ -279,7 +279,7 @@
 	  			<h3>
 	  				Desde 1982 enfocados en crear productos innovadores y de primera calidad.
 	  			</h3>
-	  			<a href="empresa.php" class="transition btn btn-outline-primary">CONOCÉ MÁS</a>
+	  			<a href="empresa" class="transition btn btn-outline-primary">CONOCÉ MÁS</a>
 	  		</div>
 	  	</div>
 	  </section>

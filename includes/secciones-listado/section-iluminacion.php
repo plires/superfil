@@ -46,7 +46,7 @@
         <p>
           Nuestras líneas están en constante actualización para brindar soluciones a todos los requerimientos del mercado incorporando nuevos productos constantemente.
         </p>
-        <a href="./contacto.php" class="btn btn-primary">CONSULTAR</a>
+        <a href="./contacto" class="btn btn-primary">CONSULTAR</a>
       </div>
     </div>
   </div>
