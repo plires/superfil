@@ -1,8 +1,10 @@
 <?php
 //incluimos la clase PHPMailer
 require_once '../vendor/autoload.php';
+require '../clases/mailchimp.php';
 
 use \DrewM\MailChimp\MailChimp;
+use \DrewM\MailChimp\Batch;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -12,22 +14,28 @@ use PHPMailer\PHPMailer\Exception;
       public function registerNewsletterInMailchimp($api, $listId, $data)
       {
 
+        $date = date("d-M-y H:i");
+
         if (isset($data['name']) != '') {
           $name = $data['name'];
         } else {
           $name = 'Suscriptor web';
         }
 
-        $MailChimp = new MailChimp($api);
+        $MailChimp = new MailChimpClient($api);
 
-        $result = $MailChimp->post("lists/$listId/members", [
-          'email_address' => $data['email_newsletter'],
-          'status'        => 'subscribed',
-          'merge_fields'    => [
-              'FNAME'           => $name,
-              'MMERGE2'         => 'Suscripción en sitio Web'
-          ]
-        ]);
+        // Alta
+        $result = $MailChimp->subscribe([
+          'listId'                => $listId, 
+          'email'                 => $data['email_newsletter'], 
+          'status'                => 'subscribed',
+          'first_name'            => $name,
+          'observations'          => 'Inscripto desde newsletter web ' . $date,
+          'interests'             => 'Todos',
+          'reference'             => 'Superfil'
+        ], GRUPO_TODOS_SUPERFIL);
+
+        var_dump($result);exit;
 
         return $result;
       }
