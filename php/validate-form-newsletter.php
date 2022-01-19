@@ -40,7 +40,7 @@
 		  $app = new App;
 
 		  // Registramos en Mailchimp el contacto
-		  // $app->registerEmailInMailchimp(API_KEY_MAILCHIMP, LIST_ID, $_POST);
+		  $app->registerNewsletterInMailchimp(API_KEY_MAILCHIMP, LIST_ID, $_POST);
 
 		  $sendClient = $app->sendEmail('Cliente', 'Newsletter Cliente', $_POST);
 		  $sendUser = $app->sendEmail('Usuario', 'Newsletter Usuario', $_POST);

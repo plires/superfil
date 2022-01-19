@@ -9,17 +9,13 @@ use PHPMailer\PHPMailer\Exception;
   class App 
     {
 
-      public function registerEmailInMailchimp($api, $listId, $data)
+      public function registerNewsletterInMailchimp($api, $listId, $data)
       {
 
-        if (isset($data['newsletter']) != 'on') {
-          return false;
-        }
-
-        if (isset($data['phone']) != '') {
-          $phone = $data['phone'];
+        if (isset($data['name']) != '') {
+          $name = $data['name'];
         } else {
-          $phone = '-';
+          $name = 'Suscriptor web';
         }
 
         $MailChimp = new MailChimp($api);
@@ -28,9 +24,8 @@ use PHPMailer\PHPMailer\Exception;
           'email_address' => $data['email'],
           'status'        => 'subscribed',
           'merge_fields'    => [
-              'FNAME'           => $data['name'],
-              'MMERGE2'         => $data['origin'],
-              'MMERGE3'         => $phone
+              'FNAME'           => $name,
+              'MMERGE2'         => 'Suscripción en sitio Web'
           ]
         ]);
 
