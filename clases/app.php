@@ -21,7 +21,7 @@ use PHPMailer\PHPMailer\Exception;
         $MailChimp = new MailChimp($api);
 
         $result = $MailChimp->post("lists/$listId/members", [
-          'email_address' => $data['email'],
+          'email_address' => $data['email_newsletter'],
           'status'        => 'subscribed',
           'merge_fields'    => [
               'FNAME'           => $name,
