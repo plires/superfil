@@ -87,6 +87,10 @@ button,
   box-shadow: none;
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 .btn-primary:hover {
   background: var(--primary-color);
   color: white;
