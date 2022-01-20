@@ -44,6 +44,9 @@
 	<!-- Tag Manager Body -->
   <?php include_once("includes/tag_manager_body.php"); ?>
 
+  <!-- WhatsApp -->
+  <?php include_once("includes/wapp.php") ?>
+
 	<!-- Navegacion -->
   <?php include('includes/nav.php'); ?>
 

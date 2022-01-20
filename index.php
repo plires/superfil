@@ -23,14 +23,16 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body class="margin">
+	<!-- Tag Manager Body -->
+  <?php include_once("includes/tag_manager_body.php"); ?>
+
+	<!-- WhatsApp -->
+  <?php include_once("includes/wapp.php") ?>
 
 	<!-- Navegacion -->
   <?php include('includes/nav.php'); ?>
 
   <section class="home">
-  	<!-- Tag Manager Body -->
-    <?php include_once("includes/tag_manager_body.php"); ?>
-  	
   	<!-- Header -->
 	  <section class="header container-fluid p-0">
 	  	<h1>LÍDERES <br>EN LA INDÚSTRIA <br>DEL PLÁSTICO</h1> 

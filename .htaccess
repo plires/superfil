@@ -35,3 +35,7 @@ RewriteCond %{REQUEST_URI} !^/towebmail/
 RewriteCond %{REQUEST_URI} !^/google-maps/superfil.html
 RewriteRule ^(.+)/(.+).html/?$ listado-producto.php?linea_rs=$1&ruta=$2 [NC]
 RewriteRule ^(.+)/(.+)/(.+).html/?$ detalle-producto.php?linea_rs=$1&url=$2&codigo=$3 [L,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php 

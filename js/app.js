@@ -18,6 +18,15 @@ const image = document.getElementById('image')
 const navigation = document.getElementById('navigation')
 const subNavigation = document.getElementById('sub_navigation')
 
+/* Cierra el seguidor de "Te llamamos ahora" */
+$('#cerrar-seguidor').on('click', function(){
+  $('#seguidor').slideToggle('slow');
+});
+
+$('#cerrar-seguidor-tel').on('click', function(){
+  $('#seguidor-tel').slideToggle('slow');
+});
+
 function menuToggle() {
 	nav.classList.toggle('active')
 	toggle.classList.toggle('active')
