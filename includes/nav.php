@@ -127,6 +127,15 @@
 						</a>
 					</li>
 
+					<li>
+						<a 
+							class="title_lines" 
+							target="_blank" 
+							rel="noopener noreferrer" 
+							href="https://issuu.com/superfil/docs/catalogo_vialplast_2021_-_issuu">Vialplast
+						</a>
+					</li>
+
 				</div>
 			</ul>
 
