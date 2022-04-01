@@ -20,6 +20,24 @@
 					<li>
 						<a class="transition" href="tel:1147527297">
 							Tel. (+54) 11 4752 7297
+						</a>						
+					</li>
+					<li>
+						<a 
+					    class="transition" 
+					    href="https://api.whatsapp.com/send?phone=+541138889308&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
+					    target="_blank"
+					    rel="noopener">
+					      Whatsapp: +54 9 11 3888-9308
+						</a>
+					</li>
+					<li>
+						<a 
+					    class="transition" 
+					    href="https://api.whatsapp.com/send?phone=+541158094444&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
+					    target="_blank"
+					    rel="noopener">
+					      Whatsapp: +54 9 11 5809-4444
 						</a>
 					</li>
 					<li>

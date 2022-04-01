@@ -93,14 +93,44 @@
     <!-- Texto -->
     <section class="container texto">
       <div class="row">
-        <div class="col-md-6 m-auto">
-          <p data-aos="zoom-out-up">
+        <div data-aos="zoom-out-up" class="col-md-6 m-auto">
+          <a 
+            class="transition" 
+            href="tel:541147527297" 
+            target="_blank"
+            rel="noopener">
             Tel: <span>(+54) 11 4752 7297</span><br>
+          </a>
+          <a 
+            class="transition" 
+            href="https://api.whatsapp.com/send?phone=+541138889308&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
+            target="_blank"
+            rel="noopener">
+            Whatsapp: <span>+54 9 11 3888-9308</span><br>
+          </a>
+          <a 
+            class="transition" 
+            href="https://api.whatsapp.com/send?phone=+541158094444&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
+            target="_blank"
+            rel="noopener">
+            Whatsapp: <span>(+54) 9 11 5809-4444</span><br>
+          </a>
+          <a 
+            class="transition" 
+            href="mailto:info@superfil.com.ar" 
+            target="_blank"
+            rel="noopener">
             Email: <span>info@superfil.com.ar</span><br>
+          </a>
+          <a 
+            class="transition" 
+            href="https://g.page/superfil-san-martin?share" 
+            target="_blank"
+            rel="noopener">
             Dirección: <span>Calle 56 N° 4575 - San Martín (CP 1560)</span><br>
-            Buenos Aires, Argentina.<br>
-            Atención: <span>Lunes a Viernes de 9 a 18 hs.</span>
-          </p>
+            Buenos Aires, Argentina.
+          </a>
+          <p>Atención: <span>Lunes a Viernes de 9 a 18 hs.</span></p>
         </div>
       </div>
     </section>
