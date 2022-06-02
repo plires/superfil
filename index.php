@@ -35,7 +35,7 @@
   <section class="home">
   	<!-- Header -->
 	  <section class="header container-fluid p-0">
-	  	<h1>LÍDERES <br>EN LA INDÚSTRIA <br>DEL PLÁSTICO</h1> 
+	  	<h1>LÍDERES <br>EN LA INDUSTRIA <br>DEL PLÁSTICO</h1> 
       <img data-aos="zoom-out-up" class="img-fluid" src="img/header/flecha.png" alt="flecha blanca">
 	  </section>
   	<!-- Header end -->
