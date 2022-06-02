@@ -29,6 +29,7 @@
 	background: url('../img/header/header.jpg');
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	background-size: cover;
 	min-height: 295px;
 	display: flex;
 	flex-direction: column;
