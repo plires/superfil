@@ -301,7 +301,7 @@
 		  			</a>
 		  		</div>
 		  		<div class="col-6 col-lg-2">
-		  			<a target="_blank" rel="noopener" href="https://issuu.com/superfil/docs/catalogo_vialplast_2021_-_issuu">
+		  			<a target="_blank" rel="noopener" href="https://vialplast.com.ar/">
 		  				<img class="img-fluid" src="img/home/logo-vialplast-2.png" alt="logo vialplast">
 		  			</a>
 		  		</div>
