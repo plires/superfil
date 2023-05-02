@@ -133,7 +133,7 @@
 							 data-image="vialplast"
 							target="_blank" 
 							rel="noopener noreferrer" 
-							href="https://issuu.com/superfil/docs/catalogo_vialplast_2021_-_issuu">Vialplast
+							href="https://vialplast.com.ar/">Vialplast
 						</a>
 					</li>
 

@@ -264,7 +264,7 @@
 	  				</div>
 	  			</div>
   				
-  				<a href="https://issuu.com/superfil/docs/catalogo_vialplast_2021_-_issuu" target="_blank" rel="noopener noreferrer" class="transition btn btn-outline-primary">VER</a>
+  				<a href="https://vialplast.com.ar/" target="_blank" rel="noopener noreferrer" class="transition btn btn-outline-primary">VER</a>
 	  			
 	  		</div>
 	  	</div>
