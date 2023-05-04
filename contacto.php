@@ -103,17 +103,24 @@
           </a>
           <a 
             class="transition" 
-            href="https://api.whatsapp.com/send?phone=+5491157972255&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
+            href="https://api.whatsapp.com/send?phone=+5491158094444&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
             target="_blank"
             rel="noopener">
-            Whatsapp: <span>+54 9 11 4752 7297</span><br>
+            Whatsapp: <span>+54 9 11 5809-4444</span><br>
           </a>
           <a 
             class="transition" 
-            href="https://api.whatsapp.com/send?phone=+541138889308&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
+            href="https://api.whatsapp.com/send?phone=+5491138889308&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
             target="_blank"
             rel="noopener">
             Whatsapp: <span>+54 9 11 3888-9308</span><br>
+          </a>
+          <a 
+            class="transition" 
+            href="https://api.whatsapp.com/send?phone=+5491157972255&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
+            target="_blank"
+            rel="noopener">
+            Whatsapp: <span>+54 9 11 5797-2255</span><br>
           </a>
           <a 
             class="transition" 
