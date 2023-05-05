@@ -106,7 +106,7 @@
             href="https://api.whatsapp.com/send?phone=+5491158094444&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
             target="_blank"
             rel="noopener">
-            Whatsapp: <span>+54 9 11 5809-4444</span><br>
+            Whatsapp: <span>+54 9 11 5809-4444 (exclusivo para cielorrasos)</span><br>
           </a>
           <a 
             class="transition" 
@@ -134,10 +134,10 @@
             href="https://g.page/superfil-san-martin?share" 
             target="_blank"
             rel="noopener">
-            Dirección: <span>Calle 56 N° 4575 - San Martín (CP 1560)</span><br>
+            Dirección: <span>Calle 56 N° 4575 - San Martín (CP 1650)</span><br>
             Buenos Aires, Argentina.
           </a>
-          <p>Atención: <span>Lunes a Viernes de 9 a 18 hs.</span></p>
+          <p>Atención: <span>Lunes a Viernes de 8 a 18 hs.</span></p>
         </div>
       </div>
     </section>
