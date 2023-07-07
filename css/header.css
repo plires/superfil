@@ -336,6 +336,7 @@ header .rrss a i {
 		position: absolute;
 		right: 0;
 		top: -20px;
+		z-index: 2;
 	}
 
 	header .rrss_desktop a {
