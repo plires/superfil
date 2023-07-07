@@ -13,10 +13,10 @@
 		<nav>
 
 			<ul id="navigation">
-				<li><a class="trasition" id="btn_home" href="./">Home</a></li>
-				<li><a class="trasition" id="btn_empresa" href="./empresa.php">Empresa</a></li>
+				<li><a class="trasition" id="btn_home" href="/">Home</a></li>
+				<li><a class="trasition" id="btn_empresa" href="/empresa.php">Empresa</a></li>
 				<li><button class="trasition" id="btn_products">Productos</button></li>
-				<li><a class="trasition" id="btn_contacto" href="./contacto.php">Contacto</a></li>
+				<li><a class="trasition" id="btn_contacto" href="/contacto.php">Contacto</a></li>
 				<li class="rrss">
 					<a class="trasition" href="#" target="_blank" rel="noopener noreferrer">seguinos en <i class="fab fa-facebook-f"></i></a>
 				</li>

@@ -9,7 +9,7 @@
 			<div class="col-md-3">
 				<h5>MENÚ</h5>
 				<ul>
-					<li><a class="transition" href="./empresa.php">Empresa</a></li>
+					<li><a class="transition" href="/empresa.php">Empresa</a></li>
 					<li><a class="transition" href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>">Productos</a></li>
 				</ul>
 			</div>
@@ -60,7 +60,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="transition" href="./">&copy; <?= date('Y') ?> Superfil S.A.</a>
+						<a class="transition" href="/">&copy; <?= date('Y') ?> Superfil S.A.</a>
 					</li>
 				</ul>
 			</div>
