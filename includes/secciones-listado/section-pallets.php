@@ -18,12 +18,16 @@
 
       <?php foreach ($products as $key => $product): ?>
 
+        <?php
+          $code = strtolower(str_replace ( ' ' , '-' , $product['code'] ));
+        ?>
+
         <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
           <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
           <div class="background">
             <h2>MEDIDA <br><?= $product['code'] ?></h2>
 
-            <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
+            <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $code . '.html'  ?>" class="btn btn-primary transition">VER</a>
 
           </div>
         </div>

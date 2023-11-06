@@ -23,14 +23,18 @@
 
       <?php foreach ($products as $key => $product): ?>
 
+        <?php
+          $code = strtolower(str_replace ( ' ' , '-' , $product['code'] ));
+        ?>
+
         <!-- Destacar codigos 9017 y 9030 de cielorrasos -->
-        <?php if ($product['code'] == '9017' || $product['code'] == '9030'): ?>
+        <?php if ((int)$product['destacado']): ?>
 
           <div data-aos="zoom-in" class="col-12 col-md-6 m-auto contenido">
             <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
             <div class="background">
               <h2>CÓDIGO <br><?= $product['code'] ?></h2>
-              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary btn_destacado transition">VER</a>
+              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $code . '.html'  ?>" class="btn btn-primary btn_destacado transition">VER</a>
             </div>
           </div>
 
@@ -40,7 +44,7 @@
             <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
             <div class="background">
               <h2>CÓDIGO <br><?= $product['code'] ?></h2>
-              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $product['code'] . '.html'  ?>" class="btn btn-primary transition">VER</a>
+              <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $code . '.html'  ?>" class="btn btn-primary transition">VER</a>
             </div>
           </div>
 
