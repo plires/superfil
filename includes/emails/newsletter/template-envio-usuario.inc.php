@@ -23,7 +23,7 @@ $body = '
       <tr>
       <tr>
         <td align="center" valign="top">
-          <img src="https://librecomunicacion.net/clientes/superfil/logo-superfil-email.png" style="margin:0; padding:0; border:none; display:block;" border="0" alt="logo" /> 
+          <img src="https://superfil.com.ar/img/emails/logo-superfil-email.png" style="margin:0; padding:0; border:none; display:block;" border="0" alt="logo" /> 
         </td>
       </tr>
        <tr>

@@ -7,6 +7,7 @@ use \DrewM\MailChimp\MailChimp;
 use \DrewM\MailChimp\Batch;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
   class App 
     {
@@ -99,15 +100,18 @@ use PHPMailer\PHPMailer\Exception;
         $pass = EMAIL_PASS;  // Mi contraseña
 
         $mail = new PHPMailer();
-        $mail->IsSMTP();
-        $mail->SMTPAuth = true;
-        $mail->Port = EMAIL_PORT; 
-        $mail->IsHTML(true); 
-        $mail->CharSet = EMAIL_CHARSET;
 
-        $mail->Host = $smtpHost; 
-        $mail->Username = $user; 
-        $mail->Password = $pass;
+        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $mail->isSMTP();
+        $mail->Host       = $smtpHost;
+        $mail->SMTPAuth   = true;
+        $mail->Username   = $user;
+        $mail->Password   = $pass;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = EMAIL_PORT;
+        $mail->isHTML(true);
+        $mail->CharSet = EMAIL_CHARSET;
+        
         $mail->From = $emailShow; // Email desde donde envío el correo.
         $mail->FromName = $nameShow; // Nombre para mostrar en el envío del correo.
         $mail->AddAddress($emailDestino); // Esta es la dirección a donde enviamos los datos del formulario
@@ -121,13 +125,13 @@ use PHPMailer\PHPMailer\Exception;
             $mail->addBCC($emailBCC, $subject); // Copia del email
           }
 
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
-            )
-        );
+        // $mail->SMTPOptions = array(
+        //     'ssl' => array(
+        //         'verify_peer' => false,
+        //         'verify_peer_name' => false,
+        //         'allow_self_signed' => true
+        //     )
+        // );
 
 
         $exito = $mail->Send(); 
