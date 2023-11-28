@@ -1,0 +1,46 @@
+.consultar {
+  border-top: solid 2px var(--secondary-color);
+  border-bottom: solid 2px var(--secondary-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.consultar p {
+  color: var(--primary-color);
+}
+
+.consultar p span {
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .consultar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .consultar p {
+    text-align: left;
+    margin: 0;
+    max-width: 500px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

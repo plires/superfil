@@ -1,0 +1,84 @@
+.last_content {
+  margin-bottom: 0;
+  background-image: url('./../assets/img/tubos-instalacion.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.icon {
+  max-width: 75px !important;
+  margin-bottom: 12px;
+}
+
+.last_content p {
+  position: relative;
+  color: white;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.last_content p:after {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 3px;
+  background: var(--secondary-color);
+  left: 0;
+  top: 0;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .last_content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .last_content {
+    padding-top: 140px;
+    padding-bottom: 20px;
+  }
+
+  .icon {
+    max-width: 100% !important;
+  }
+
+  .last_content p {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .last_content p:after {
+    width: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .last_content {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .last_content {
+    padding-top: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .last_content {
+    padding-top: 300px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .last_content {
+    padding-top: 520px;
+    padding-bottom: 40px;
+  }
+}

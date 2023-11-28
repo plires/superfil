@@ -1,0 +1,104 @@
+/* Variables */
+:root {
+  --primary-color: rgba(0, 47, 99, 1);
+  --secondary-color: #4982ba;
+  --third-color: #726c6c;
+}
+/* Variables end */
+
+@font-face {
+  font-family: 'Lato';
+  src:
+    url('/fonts/Lato-Bold.woff2') format('woff2'),
+    url('/fonts/Lato-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src:
+    url('/fonts/Lato-Light.woff2') format('woff2'),
+    url('/fonts/Lato-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src:
+    url('/fonts/Lato-Regular.woff2') format('woff2'),
+    url('/fonts/Lato-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.transition {
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+}
+
+body {
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--third-color);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0 !important;
+  list-style: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+button {
+  color: white !important;
+  background: var(--primary-color) !important;
+  border: solid 1px var(--primary-color) !important;
+}
+
+button:hover {
+  color: var(--primary-color) !important;
+  background: white !important;
+  border: solid 1px var(--primary-color) !important;
+}
+
+/* Toast */
+.toast_custom button {
+  background: transparent !important;
+  color: black !important;
+  border: none !important;
+}
+/* Toast end */
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
