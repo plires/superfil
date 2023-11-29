@@ -6,7 +6,7 @@ const Icon = ({ image, title }) => {
       <img
         className='img-fluid'
         src={`./img/${image}`}
-        alt={`icono de ./img/${title}`}
+        alt={`icono de ${title}`}
       />
       <h3>{title}</h3>
     </div>

@@ -9,7 +9,7 @@ const LastContent = () => {
             <img
               className={`img-fluid ${styles.icon}`}
               src='./img/maquina.png'
-              alt='maquina obras tubos de PVC'
+              alt='maquina obras tubos y caños de PVC'
             />
             <p>
               Desarrollados para grandes <br />

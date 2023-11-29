@@ -1,0 +1,23 @@
+.not_found {
+  width: 100%;
+  height: 75vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_found h1 {
+  color: var(--primary-color);
+  font-size: 10rem;
+  font-weight: 700;
+}
+
+.not_found h3 {
+  margin-bottom: 30px;
+}
+
+.not_found button {
+  font-size: 1.5rem;
+}

@@ -1,12 +1,9 @@
+import { Routes, Route } from 'react-router-dom'
+import Tubos from './pages/Tubos'
+import Canos from './pages/Canos'
+import NotFound from './pages/NotFound'
 import Whatsapp from './components/Whatsapp'
 import Header from './components/Header'
-import FirstContent from './components/FirstContent'
-import ContentCaracteristicas from './components/ContentCaracteristicas'
-import ContentSlide from './components/ContentSlide'
-import Diametros from './components/Diametros'
-import ContentPresupuesto from './components/ContentPresupuesto'
-import ContentUsos from './components/ContentUsos'
-import LastContent from './components/LastContent'
 import Footer from './components/Footer'
 
 function App() {
@@ -14,13 +11,13 @@ function App() {
     <main>
       <Whatsapp />
       <Header />
-      <FirstContent />
-      <ContentCaracteristicas />
-      <ContentSlide />
-      <Diametros />
-      <ContentPresupuesto />
-      <ContentUsos />
-      <LastContent />
+
+      <Routes>
+        <Route path='/' element={<Tubos />} />
+        <Route path='/canos-pvc' element={<Canos />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+
       <Footer />
     </main>
   )

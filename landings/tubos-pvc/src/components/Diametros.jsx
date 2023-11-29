@@ -13,7 +13,7 @@ const Diametros = () => {
           <img
             className='img-fluid'
             src='./img/tubos-diametro-mobile.jpg'
-            alt='tubos diametro'
+            alt='tubos y caños de PVC - diametro'
           />
         </picture>
       </div>

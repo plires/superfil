@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 import styles from './formulario.module.css'
 
-export default function Formulario() {
+export default function Formulario({ formLocationOrigen, eventOrigen }) {
   const [loading, setLoading] = useState(false)
   const { executeRecaptcha } = useGoogleReCaptcha()
   const [isSubscribed, setIsSubscribed] = useState(true)
@@ -53,7 +53,6 @@ export default function Formulario() {
     if (isSubscribed) {
       values.newsletter = 'on'
     } else {
-      console.log('entra')
       delete values.newsletter
     }
 
@@ -82,8 +81,8 @@ export default function Formulario() {
         toast.success(responseData.msg_success)
 
         window.dataLayer.push({
-          formLocation: 'form_tubos_pvc',
-          event: 'send_form_tubos_pvc',
+          formLocation: formLocationOrigen,
+          event: eventOrigen,
         })
         resetForm()
         setMessage('')

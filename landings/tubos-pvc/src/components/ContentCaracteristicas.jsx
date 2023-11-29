@@ -5,21 +5,18 @@ import Consultar from './Consultar'
 
 import styles from './content-caracteristicas.module.css'
 
-const ContentCaracteristicas = () => {
+const ContentCaracteristicas = ({ title, word, pluralWord }) => {
   return (
     <section className={`container ${styles.content_caracteristicas}`}>
       <div className='row'>
         <div className='col-md-12'>
-          <Description />
+          <Description word={word} pluralWord={pluralWord} />
         </div>
       </div>
 
       <div className='row'>
         <div className='col-md-8 offset-md-2'>
-          <Subtitulo
-            data-aos='fade-up'
-            text='Características principales de los tubos de PVC'
-          />
+          <Subtitulo data-aos='fade-up' text={title} />
 
           <div data-aos='fade-up' className={`row ${styles.content_icons}`}>
             <div className='col-4'>
