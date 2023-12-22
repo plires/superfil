@@ -3,6 +3,10 @@
   padding-top: 30px;
 }
 
+.content_form {
+  position: relative;
+}
+
 .content_form form {
   position: relative;
   background: white;

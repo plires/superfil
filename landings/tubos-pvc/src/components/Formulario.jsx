@@ -5,6 +5,7 @@ import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import ErrorInput from './ErrorInput'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify'
+import Loading from './Loading'
 import 'react-toastify/dist/ReactToastify.css'
 
 import styles from './formulario.module.css'
@@ -86,8 +87,12 @@ export default function Formulario({ formLocationOrigen, eventOrigen }) {
         })
         resetForm()
         setMessage('')
+        setSubmitting(false)
+        setLoading(false)
       } else {
         responseData.errors.map(error => {
+          setSubmitting(false)
+          setLoading(false)
           return toast.error(error)
         })
       }
@@ -96,10 +101,9 @@ export default function Formulario({ formLocationOrigen, eventOrigen }) {
       toast.error(
         'Aparentemente en este momento no hay conexión con el servidor, por favor intente mas tarde.',
       )
+      setSubmitting(false)
+      setLoading(false)
     }
-
-    setSubmitting(false)
-    setLoading(false)
   }
 
   const initFormDefault = {
@@ -113,7 +117,7 @@ export default function Formulario({ formLocationOrigen, eventOrigen }) {
   return (
     <section className={styles.formulario}>
       <div className={styles.content_form}>
-        {loading && <div>Loading component</div>}
+        {loading && <Loading />}
 
         <ToastContainer className='toast_custom' />
 
