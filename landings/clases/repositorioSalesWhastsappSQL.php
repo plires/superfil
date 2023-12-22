@@ -16,24 +16,8 @@ class RepositorioSalesWhastsappSQL extends repositorioSalesWhastsapp
   {
 
     switch ($rubro) {
-      case 'Ceramicos':
-        return EMAIL_VENTAS_CERAMICOS;
-        break;
-
-      case 'Piso Vinilico':
-        return EMAIL_VENTAS_PISOS;
-        break;
-
-      case 'Porcelanatos':
-        return EMAIL_VENTAS_PORCELANATOS;
-        break;
-
-      case 'Deck Ecologico':
-        return EMAIL_VENTAS_DECKS;
-        break;
-
-      case 'Revestimientos de Paredes':
-        return EMAIL_VENTAS_REVESTIMIENTOS;
+      case 'Cielorrasos de PVC':
+        return EMAIL_VENTAS_CIELORRASOS;
         break;
       
       case 'Tubos de PVC':

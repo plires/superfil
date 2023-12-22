@@ -80,20 +80,8 @@ class RepositorioContactsSQL extends repositorioContacts
 
     switch ($rubro) {
 
-      case 'Ceramicos':
-        $emails = EMAIL_VENTAS_CERAMICOS;
-        break;
-      case 'Piso Vinilico':
-        $emails = EMAIL_VENTAS_PISOS;
-        break;
-      case 'Deck Ecologico':
-        $emails = EMAIL_VENTAS_DECKS;
-        break;
-      case 'Porcelanatos':
-        $emails = EMAIL_VENTAS_PORCELANATOS;
-        break;
-      case 'Revestimientos':
-        $emails = EMAIL_VENTAS_REVESTIMIENTOS;
+      case 'Cielorrasos de PVC':
+        return EMAIL_VENTAS_CIELORRASOS;
         break;
       case 'Tubos de PVC':
         $emails = EMAIL_VENTAS_TUBOS;
