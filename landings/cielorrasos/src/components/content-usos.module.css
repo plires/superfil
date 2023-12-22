@@ -1,0 +1,54 @@
+.usos {
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 12px;
+}
+
+.frase {
+  border-top: solid 3px var(--secondary-color);
+  border-bottom: solid 3px var(--secondary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.frase p {
+  margin-bottom: 0;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.frase p span {
+  font-weight: 700;
+}
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+  .frase {
+    padding: 20px 80px !important;
+  }
+
+  .frase p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+}

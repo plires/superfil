@@ -1,0 +1,43 @@
+.atributo_icon {
+  text-align: center;
+}
+
+.atributo_icon h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.atributo_icon img {
+  max-width: 100%;
+  margin-bottom: 8px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .atributo_icon img {
+    max-width: 75%;
+  }
+
+  .atributo_icon h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .atributo_icon h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

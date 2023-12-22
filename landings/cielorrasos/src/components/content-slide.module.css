@@ -1,0 +1,159 @@
+.content_slide {
+  margin-bottom: 60px;
+}
+
+.data {
+  text-align: center;
+}
+
+.data h3,
+.data p {
+  color: var(--primary-color);
+}
+
+.data h3 span {
+  font-weight: 700;
+}
+
+.data p {
+  margin-bottom: 0;
+}
+
+.data p span {
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .content_slide {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .faja {
+    background: var(--primary-color);
+  }
+
+  .column_content_slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .data h3,
+  .data p {
+    color: white;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .data h3 {
+    font-size: 1.25rem;
+    max-width: 330px;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .data p {
+    margin: 0;
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content_slide {
+    margin-bottom: 80px;
+  }
+
+  .content_slide h2 {
+    margin-bottom: 60px;
+  }
+
+  .faja {
+    height: 240px;
+  }
+
+  .column_content_slide {
+    margin-top: -22px !important;
+  }
+
+  .data {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -22px !important;
+  }
+
+  .data h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content_slide {
+    margin-bottom: 100px;
+  }
+
+  .faja {
+    height: 280px;
+  }
+
+  .column_content_slide {
+    margin-top: -27px !important;
+  }
+
+  .data {
+    margin-top: -27px !important;
+  }
+
+  .data h3 {
+    font-size: 1.75rem;
+  }
+
+  .data p {
+    font-size: 1.125rem;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .faja {
+    height: 330px;
+  }
+
+  .column_content_slide {
+    margin-top: -31px !important;
+  }
+
+  .data {
+    margin-top: -31px !important;
+  }
+
+  .data h3 {
+    font-size: 2.25rem;
+    max-width: 400px;
+    margin-bottom: 50px;
+  }
+
+  .data p {
+    font-size: 1.25rem;
+    max-width: 560px;
+  }
+}
+
+@media (min-width: 1600px) {
+}
