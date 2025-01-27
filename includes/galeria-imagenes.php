@@ -1,4 +1,5 @@
 <!-- Galeria de imagenes start -->
+<?php if (!empty($galery_images)): ?>
 <div class="container-fluid text-center mt-5">
   <div class="row">
     <div class="col-md-12">
@@ -6,23 +7,23 @@
     </div>
   </div>
 </div>
+<?php endif ?>
 
 <section class="galeria slider-g">
 
-
   <?php if (!empty($galery_images)): ?>
 
-    <?php foreach ($galery_images as $key => $galery_image): ?>
+  <?php foreach ($galery_images as $key => $galery_image): ?>
 
-      <?php 
+  <?php 
         $galery_alt = isset($lines_extra['name']) ? $lines_extra['name'] : 'superfil';
       ?>
 
-      <div>
-        <img src="img/productos/<?= $galery_image['url']  ?>" alt="Galería - <?= $galery_alt ?>">
-      </div>
-      
-    <?php endforeach ?>
+  <div>
+    <img src="img/productos/<?= $galery_image['url']  ?>" alt="Galería - <?= $galery_alt ?>">
+  </div>
+
+  <?php endforeach ?>
 
   <?php endif ?>
 

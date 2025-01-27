@@ -43,6 +43,22 @@
 	  <!-- Lineas -->
 	  <section class="lineas container">
 
+			<div class="row">
+	  		<div class="col-md-6">
+	  			<img data-aos="flip-left" class="img-fluid" src="img/home/vinyl-home.jpg" alt="linea vinyl panel">
+	  		</div>
+	  		<div data-aos="zoom-in" class="col-md-6">
+	  			<h2>LÍNEA<br>VINYL PANEL</h2>
+	  			<p>
+						Paneles de PVC foliados con acabado semibrillo. Diseñados exclusivamente para uso interior, destacan por su fácil instalación gracias a un sistema de encastre preciso y seguro, optimizando tiempos y costos en proyectos constructivos.
+	  			</p>
+	  			<div class="content_button">
+	  				<a href="<?= VINYL . '/' . VINYL_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
+	  			</div>
+	  			<div class="numero">1</div>
+	  		</div>
+	  	</div>
+
 	  	<div class="row">
 	  		<div class="col-md-6">
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/cielorraso-home.jpg" alt="linea cielorrasos">
@@ -55,11 +71,11 @@
 	  			<div class="content_button">
 	  				<a href="<?= CIELORRASO . '/' . CIELORRASO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">1</div>
+	  			<div class="numero">2</div>
 	  		</div>
 	  	</div>
 
-	  	<div class="row">
+			<div class="row">
 	  		<div class="col-md-6">
 	  			<img data-aos="flip-left" class="img-fluid" src="img/home/tubos-home.jpg" alt="linea tubos">
 	  		</div>
@@ -71,7 +87,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= TUBOS . '/' . TUBOS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">2</div>
+	  			<div class="numero">3</div>
 	  		</div>
 	  	</div>
 
@@ -87,7 +103,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= CAMARAS . '/' . CAMARAS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">3</div>
+	  			<div class="numero">4</div>
 	  		</div>
 	  	</div>
 
@@ -103,7 +119,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= JUNTAS . '/' . JUNTAS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">4</div>
+	  			<div class="numero">5</div>
 	  		</div>
 	  	</div>
 
@@ -123,7 +139,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= FURGONES . '/' . FURGONES_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">5</div>
+	  			<div class="numero">6</div>
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
@@ -135,7 +151,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= REVESTIMIENTO . '/' . REVESTIMIENTO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">6</div>
+	  			<div class="numero">7</div>
 	  		</div>
 	  	</div>
 
@@ -149,7 +165,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= PUBLICIDAD . '/' . PUBLICIDAD_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">7</div>
+	  			<div class="numero">8</div>
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
@@ -161,7 +177,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= POLICARBONATO . '/' . POLICARBONATO_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">8</div>
+	  			<div class="numero">9</div>
 	  		</div>
 
 	  	</div>
@@ -176,7 +192,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= ILUMINACION . '/' . ILUMINACION_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">9</div>
+	  			<div class="numero">10</div>
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
@@ -188,7 +204,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= LISTEX . '/' . LISTEX_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">10</div>
+	  			<div class="numero">11</div>
 	  		</div>
 	  	</div>
 
@@ -202,7 +218,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= TERMINACIONES . '/' . TERMINACIONES_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">11</div>
+	  			<div class="numero">12</div>
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
@@ -214,7 +230,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= NAUTICA . '/' . NAUTICA_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">12</div>
+	  			<div class="numero">13</div>
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
@@ -226,7 +242,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= GUARDACAMILLAS . '/' . GUARDACAMILLAS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">13</div>
+	  			<div class="numero">14</div>
 	  		</div>
 
 	  		<div data-aos="zoom-in" class="col-md-6">
@@ -238,7 +254,7 @@
 	  			<div class="content_button">
 	  				<a href="<?= PALLETS . '/' . PALLETS_URL . '.html' ?>" class="transition btn btn-outline-primary">VER</a>
 	  			</div>
-	  			<div class="numero">14</div>
+	  			<div class="numero">15</div>
 	  		</div>
 
 	  	</div>

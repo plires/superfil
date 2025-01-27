@@ -10,32 +10,34 @@
 
     <?php if (empty($products)): ?>
 
-      <div class="col-md-12">
-        <p>No hay productos para mostrar.</p>
-      </div>
+    <div class="col-md-12">
+      <p>No hay productos para mostrar.</p>
+    </div>
 
     <?php else: ?>
 
-      <?php foreach ($products as $key => $product): ?>
+    <?php foreach ($products as $key => $product): ?>
 
-        <?php
+    <?php
           $code = strtolower(str_replace ( ' ' , '-' , $product['code'] ));
         ?>
 
-        <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
-          <img class="img-fluid" src="img/productos/<?= $product['img'] ?>" alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
-          <div class="background">
-            <h2>CÓDIGO <br><?= $product['code'] ?></h2>
+    <div data-aos="zoom-in" class="col-6 col-md-4 col-lg-3 m-auto contenido">
+      <img class="img-fluid" src="./img/productos/<?= $product['img'] ?>"
+        alt="<?= $product['title'] ?> - <?= $product['code'] ?>">
+      <div class="background">
+        <h2>CÓDIGO <br><?= $product['code'] ?></h2>
 
-            <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $code . '.html'  ?>" class="btn btn-primary transition">VER</a>
+        <a href="<?= $product['line_rs'] .'/'. $product['url'] .'/'. $code . '.html'  ?>"
+          class="btn btn-primary transition">VER</a>
 
-          </div>
-        </div>
+      </div>
+    </div>
 
-      <?php endforeach ?>
+    <?php endforeach ?>
 
-      <!-- Icono Consulta -->
-      <?php include('./includes/icono-consulta-producto.php'); ?>
+    <!-- Icono Consulta -->
+    <?php include('./includes/icono-consulta-producto.php'); ?>
 
     <?php endif ?>
 
