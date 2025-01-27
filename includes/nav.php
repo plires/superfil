@@ -39,7 +39,7 @@
 					<li>
 						<a 
 							class="title_lines" data-image="vinyl" 
-							href="<?= VINYL . '/' . VINYL_URL . '.html' ?>">Línea Revestimiento Interior - Vinyl Panel
+							href="<?= VINYL . '/' . VINYL_URL . '.html' ?>">Línea Vinyl Panel
 						</a>
 					</li>
 
