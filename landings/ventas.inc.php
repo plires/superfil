@@ -26,6 +26,13 @@ define('GISELA', array(
     '11-5809-4444'
 ));
 
+define('MANUEL', array(
+    'manuel@superfil.com.ar',
+    'Manuel',
+    'https://api.whatsapp.com/send/?phone=5491157972255&text=Hola%20Manuel!%20Necesito%20hacer%20una%20consulta!&app_absent=0',
+    '11 5797-2255'
+));
+
 define('MARTIN_C', array(
     'martin@superfil.com.ar',
     'Martin',
@@ -36,9 +43,9 @@ define('MARTIN_C', array(
 //////////////////////////////////////////////////////////////////////
 /// Rotatividad de casillas segun rubros
 //////////////////////////////////////////////////////////////////////
-define('EMAIL_VENTAS_CIELORRASOS', array(GISELA));
+define('EMAIL_VENTAS_CIELORRASOS', array(GISELA, MANUEL));
 define('EMAIL_VENTAS_JUNTAS', array(NOELIA));
 define('EMAIL_VENTAS_PALLETS', array(NOELIA));
-define('EMAIL_VENTAS_TUBOS', array(NOELIA));
+define('EMAIL_VENTAS_TUBOS', array(NOELIA, MANUEL));
 define('EMAIL_VENTAS_BANOS', array(MARTIN_C));
 define('EMAIL_DEFAULT', array(MARTIN_C));
