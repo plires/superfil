@@ -157,7 +157,7 @@ use PHPMailer\PHPMailer\Exception;
         case 'Cliente':
           //ENVIOS
           $objectPhpMailer->setFrom($post['email'], $post['name']);
-          $objectPhpMailer->addAddress($destinationSales[0], $destinationSales[1] . ' - depisos.com'); //Add a recipient
+          $objectPhpMailer->addAddress($destinationSales[0], $destinationSales[1]); //Add a recipient
           $objectPhpMailer->addReplyTo($post['email'], $post['name']);
 
           if (EMAIL_BCC_MARTIN != '') {
@@ -168,9 +168,9 @@ use PHPMailer\PHPMailer\Exception;
         
         case 'Usuario':
           //ENVIOS
-          $objectPhpMailer->setFrom($destinationSales[0], $destinationSales[1] . ' - depisos.com');
+          $objectPhpMailer->setFrom($destinationSales[0], $destinationSales[1]);
           $objectPhpMailer->addAddress($post['email'], $post['name']); //Add a recipient
-          $objectPhpMailer->addReplyTo($destinationSales[0], $destinationSales[1] . ' - depisos.com');
+          $objectPhpMailer->addReplyTo($destinationSales[0], $destinationSales[1]);
           break;
 
       }
