@@ -50,17 +50,12 @@
 						</a>
 					</li>
 					<li>
-						<a class="transition" href="mailto:info@superfil.com.ar">
-							info@superfil.com.ar
+						<a class="transition" href="mailto:info@cantofil.com.ar">
+							info@cantofil.com.ar
 						</a>
 					</li>
 					<li>
-						<a class="transition" href="https://g.page/superfil-san-martin?share" target="_blank" rel="noopener">
-							Calle 56 N° 4575 - San Martín . (CP 1650)
-						</a>
-					</li>
-					<li>
-						<a class="transition" href="/">&copy; <?= date('Y') ?> Superfil S.A.</a>
+						<a class="transition" href="/">&copy; <?= date('Y') ?> Cantofil S.A.</a>
 					</li>
 				</ul>
 			</div>

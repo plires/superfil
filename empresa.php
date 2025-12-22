@@ -56,7 +56,7 @@
       <div class="row">
         <div class="col-md-12">
           <p data-aos="zoom-out-up">
-            Fundada en el año 1982, Superfil S.A. se dedica a la elaboración de molduras y perfiles por extrusión.
+            Fundada en el año 1982, Cantofil S.A. se dedica a la elaboración de molduras y perfiles por extrusión.
             Se encuentra ubicada en el partido de San Martín, provincia de Buenos Aires, República Argentina. La planta industrial, administración y ventas ocupan aproximadamente 7000 m2 y un plantel de 50 personas.
           </p>
 
@@ -107,7 +107,7 @@
             </p>
 
             <p>
-              Superfil S.A. cubre las necesidades de confección de matrices y demás elementos o dispositivos necesarios para la fabricación de sus productos.
+              Cantofil S.A. cubre las necesidades de confección de matrices y demás elementos o dispositivos necesarios para la fabricación de sus productos.
               Aseguramiento de la calidad se encarga de los controles necesarios para garantizar la calidad de sus productos.
             </p>  
           </div>
@@ -125,7 +125,7 @@
             </p>
 
             <p>
-              En Diciembre de 1995, Superfil S.A. fue seleccionada entre 700 empresas por la fundación AMIL Internacional, como una de las 20 empresas más emprendedoras en el ámbito del MERCOSUR.
+              En Diciembre de 1995, Cantofil S.A. fue seleccionada entre 700 empresas por la fundación AMIL Internacional, como una de las 20 empresas más emprendedoras en el ámbito del MERCOSUR.
             </p> 
             
           </div>

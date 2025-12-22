@@ -124,19 +124,12 @@
           </a>
           <a 
             class="transition" 
-            href="mailto:info@superfil.com.ar" 
+            href="mailto:info@cantofil.com.ar" 
             target="_blank"
             rel="noopener">
-            Email: <span>info@superfil.com.ar</span><br>
+            Email: <span>info@cantofil.com.ar</span><br>
           </a>
-          <a 
-            class="transition" 
-            href="https://g.page/superfil-san-martin?share" 
-            target="_blank"
-            rel="noopener">
-            Dirección: <span>Calle 56 N° 4575 - San Martín (CP 1650)</span><br>
-            Buenos Aires, Argentina.
-          </a>
+          
           <p>Atención: <span>Lunes a Viernes de 8 a 18 hs.</span></p>
         </div>
       </div>
@@ -147,7 +140,7 @@
     <section data-aos="fade-right" class="container-fluid mapa">
       <div class="row">
         <div class="col-md-12 p-0">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9029562427368!2d-58.548010684355646!3d-34.58132198046534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb77909fe60c3%3A0xee07063621d0f2d!2sSuperfil!5e0!3m2!1ses-419!2sar!4v1627352479458!5m2!1ses-419!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9083751847334!2d-58.54847262378737!3d-34.   581184872962446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb77909fe60c3%3A0x2da2b58e951c4344!2sCantofil!5e0!3m2!1ses!2sar!4v1766418985494!5m2!1ses!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
