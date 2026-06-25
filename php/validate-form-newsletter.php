@@ -39,9 +39,6 @@
 		  //Enviamos los mails al cliente y usuario
 		  $app = new App;
 
-		  // Registramos en Mailchimp el contacto
-		  $app->registerNewsletterInMailchimp(API_KEY_MAILCHIMP, LIST_ID, $_POST);
-
 		  $sendClient = $app->sendEmail('Cliente', 'Newsletter Cliente', $_POST);
 		  $sendUser = $app->sendEmail('Usuario', 'Newsletter Usuario', $_POST);
 

@@ -103,12 +103,18 @@ use PHPMailer\PHPMailer\SMTP;
 
         // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
-        $mail->Host       = $smtpHost;
-        $mail->SMTPAuth   = true;
-        $mail->Username   = $user;
-        $mail->Password   = $pass;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port       = EMAIL_PORT;
+        $mail->Host = $smtpHost;
+        $mail->Port = EMAIL_PORT;
+
+        if (EMAIL_PORT === 1025) {
+            $mail->SMTPAuth   = false;
+            $mail->SMTPSecure = '';
+        } else {
+            $mail->SMTPAuth   = true;
+            $mail->Username   = $user;
+            $mail->Password   = $pass;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        }
         $mail->isHTML(true);
         $mail->CharSet = EMAIL_CHARSET;
         

@@ -200,17 +200,22 @@ use PHPMailer\PHPMailer\Exception;
 
     }
 
-    public function setServerValuesToSendEmails($objectPhpMailer) 
+    public function setServerValuesToSendEmails($objectPhpMailer)
     {
 
-      // $objectPhpMailer->SMTPDebug  = 3;                    
-      $objectPhpMailer->Host       = $_ENV['SMTP'];                     
-      $objectPhpMailer->SMTPAuth   = true;                                   
-      $objectPhpMailer->Username   = $_ENV['EMAIL_CLIENT'];                    
-      $objectPhpMailer->Password   = $_ENV['PASSWORD'];                              
-      $objectPhpMailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
-      $objectPhpMailer->CharSet    = $_ENV['EMAIL_CHARSET'];
-      $objectPhpMailer->Port       = $_ENV['EMAIL_PORT'];
+      $objectPhpMailer->Host    = $_ENV['SMTP'];
+      $objectPhpMailer->CharSet = $_ENV['EMAIL_CHARSET'];
+      $objectPhpMailer->Port    = (int) $_ENV['EMAIL_PORT'];
+
+      if ((int) $_ENV['EMAIL_PORT'] === 1025) {
+        $objectPhpMailer->SMTPAuth   = false;
+        $objectPhpMailer->SMTPSecure = '';
+      } else {
+        $objectPhpMailer->SMTPAuth   = true;
+        $objectPhpMailer->Username   = $_ENV['EMAIL_CLIENT'];
+        $objectPhpMailer->Password   = $_ENV['PASSWORD'];
+        $objectPhpMailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+      }
 
       return $objectPhpMailer;
 
@@ -231,11 +236,7 @@ use PHPMailer\PHPMailer\Exception;
       // Setear Template y asunto de los mails
       $email_content = $this->setTemplateAndEmailSubject($template, $post, $destinationSales);
       
-      if ($_ENV['ENVIRONMENT'] === 'local') {
-        $mail->isSendmail();
-      } else {
-        $mail->isSMTP();
-      }
+      $mail->isSMTP();
 
       //SERVER SETTINGS
       $mail = $this->setServerValuesToSendEmails($objectPhpMailer);                                   
@@ -294,28 +295,19 @@ use PHPMailer\PHPMailer\Exception;
         BASE 
       );
 
-      if ( $_ENV['ENVIRONMENT'] === 'local' ) {
-        $arrContextOptions=array(
-          "ssl"=>array(
-              "verify_peer"=>false,
-              "verify_peer_name"=>false,
-          ),
-        ); 
-      } else {
-        $arrContextOptions=array(); 
-      }
+      $templatesDir = __DIR__ . '/../' . $post['path'] . '/includes/emails/contacts/';
       switch ($to) {
-        
+
         case 'to_client':
-          $template = file_get_contents( BASE . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));
+          $template = file_get_contents($templatesDir . 'contacts-to-client.php');
           break;
 
         case 'to_user':
-          $template = file_get_contents( BASE . 'includes/emails/contacts/contacts-to-user.php', false, stream_context_create($arrContextOptions));
+          $template = file_get_contents($templatesDir . 'contacts-to-user.php');
           break;
-        
+
         default:
-          $template = file_get_contents( BASE . 'includes/emails/contacts/contacts-to-client.php', false, stream_context_create($arrContextOptions));          
+          $template = file_get_contents($templatesDir . 'contacts-to-client.php');
           break;
 
       }

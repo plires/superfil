@@ -93,6 +93,7 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/aos/dist/aos.js"></script>
   <script src="node_modules/slick-carousel/slick/slick.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=<?= RECAPTCHA_KEY_SITE ?>"></script>
   <script src="js/formsNewsletter.js"></script>
   <script src="js/galeria.js"></script>
   <script src="js/app.js"></script>
