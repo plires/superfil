@@ -12,3 +12,5 @@
 **/favicons
 error_log
 landings/ventas.inc.php
+*.sql
+.atl/
