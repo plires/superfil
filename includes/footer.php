@@ -18,11 +18,6 @@
 				<h5>CONTACTO</h5>
 				<ul>
 					<li>
-						<a class="transition" href="tel:1147527297">
-							Tel. (+54) 11 4752 7297
-						</a>						
-					</li>
-					<li>
 						<a 
 					    class="transition" 
 					    href="https://api.whatsapp.com/send?phone=+5491158094444&text=Hola%20Superfil,%20Necesito%20hacer%20una%20consulta...%20" 
