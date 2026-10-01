@@ -85,6 +85,16 @@ export default function Formulario({ formLocationOrigen, eventOrigen }) {
           formLocation: formLocationOrigen,
           event: eventOrigen,
         })
+
+        window.portal
+          ?.lead({
+            name: values.name,
+            email: values.email,
+            phone: String(values.phone),
+            message: values.comments,
+          })
+          .catch(() => {})
+
         resetForm()
         setMessage('')
         setSubmitting(false)

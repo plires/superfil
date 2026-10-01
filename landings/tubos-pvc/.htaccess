@@ -1,4 +1,6 @@
 RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.superfil\.com\.ar$ [NC]
+RewriteRule ^ https://superfil.com.ar%{REQUEST_URI} [R=301,L]
 RewriteBase /landings/tubos-pvc/index.html
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
