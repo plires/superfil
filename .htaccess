@@ -24,18 +24,27 @@ Header unset X-UA-Compatible
 
 </FilesMatch>
 
-
 </IfModule>
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.superfil.com.ar [NC]
-RewriteRule ^(.*)$ http://superfil.com.ar/$1 [L,R=301]
+RewriteRule ^(.*)$ https://superfil.com.ar/$1 [L,R=301]
 
-RewriteCond %{REQUEST_URI} !^/towebmail/
-RewriteCond %{REQUEST_URI} !^/google-maps/superfil.html
+#RewriteCond %{REQUEST_URI} !^/towebmail/
+#RewriteCond %{REQUEST_URI} !^/google-maps/superfil.html
 RewriteRule ^(.+)/(.+).html/?$ listado-producto.php?linea_rs=$1&ruta=$2 [NC]
 RewriteRule ^(.+)/(.+)/(.+).html/?$ detalle-producto.php?linea_rs=$1&url=$2&codigo=$3 [L,NC]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php 
+RewriteCond %{HTTP_HOST} ^superfil\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.superfil\.ar$
+RewriteRule ^/?$ "https\:\/\/superfil\.com\.ar\/" [R=301,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
