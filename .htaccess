@@ -26,6 +26,11 @@ Header unset X-UA-Compatible
 
 </IfModule>
 
+# Never serve environment files (landings/.env holds credentials)
+<FilesMatch "^\.env">
+  Require all denied
+</FilesMatch>
+
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.superfil.com.ar [NC]
 RewriteRule ^(.*)$ https://superfil.com.ar/$1 [L,R=301]
