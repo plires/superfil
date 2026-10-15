@@ -44,13 +44,38 @@ use PHPMailer\PHPMailer\Exception;
       }
     }
 
+    // reCAPTCHA v3: a valid token is not enough, the visitor score and the action must match too
+    const RECAPTCHA_ACTION = 'form_contacto';
+    const RECAPTCHA_DEFAULT_MIN_SCORE = 0.5;
+
+    public function isHumanRecaptcha($recaptcha)
+    {
+
+      if ( !is_array($recaptcha) || empty($recaptcha['success']) ) {
+        return false;
+      }
+
+      $minScore = self::RECAPTCHA_DEFAULT_MIN_SCORE;
+      if ( isset($_ENV['RECAPTCHA_MIN_SCORE']) && is_numeric($_ENV['RECAPTCHA_MIN_SCORE']) ) {
+        $envScore = (float) $_ENV['RECAPTCHA_MIN_SCORE'];
+        if ( $envScore >= 0 && $envScore <= 1 ) {
+          $minScore = $envScore;
+        }
+      }
+
+      return isset($recaptcha['score'], $recaptcha['action'])
+        && (float) $recaptcha['score'] >= $minScore
+        && $recaptcha['action'] === self::RECAPTCHA_ACTION;
+
+    }
+
     public function validateForm($recaptcha, $require)
     {
 
       $errors = [];
-      
+
       // Verificamos si hay errores en el formulario
-      if ( !$recaptcha['success'] ){
+      if ( !$this->isHumanRecaptcha($recaptcha) ){
         array_push($errors, 'Error Recaptcha, volvé a intentar el envio por favor.');
       }
 
@@ -77,17 +102,24 @@ use PHPMailer\PHPMailer\Exception;
     public function verifyRecaptcha($token)
     {
 
+      if ( !is_string($token) || $token === '' ) {
+        return ['success' => false];
+      }
+
       $cu = curl_init();
       curl_setopt($cu, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
       curl_setopt($cu, CURLOPT_POST, 1);
-      curl_setopt($cu, CURLOPT_POSTFIELDS, http_build_query(array('secret' => $_ENV['RECAPTCHA_SECRET_KEY_V3'], 'response' => $token)));
+      curl_setopt($cu, CURLOPT_POSTFIELDS, http_build_query(array('secret' => $_ENV['RECAPTCHA_SECRET_KEY_V3'] ?? '', 'response' => $token)));
       curl_setopt($cu, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt($cu, CURLOPT_TIMEOUT, 10);
       $response = curl_exec($cu);
       curl_close($cu);
 
-      return $data = json_decode($response, true);
+      $data = is_string($response) ? json_decode($response, true) : null;
 
-    } 
+      return is_array($data) ? $data : ['success' => false];
+
+    }
 
     public function whatsappEnabled() 
     {
