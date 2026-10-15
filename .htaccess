@@ -35,6 +35,9 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.superfil.com.ar [NC]
 RewriteRule ^(.*)$ https://superfil.com.ar/$1 [L,R=301]
 
+# Landing juntas moved from /landing-2018/juntas to /landings/juntas (query string is kept)
+RewriteRule ^landing-2018/juntas(/.*)?$ /landings/juntas/ [NC,L,R=301]
+
 #RewriteCond %{REQUEST_URI} !^/towebmail/
 #RewriteCond %{REQUEST_URI} !^/google-maps/superfil.html
 RewriteRule ^(.+)/(.+).html/?$ listado-producto.php?linea_rs=$1&ruta=$2 [NC]
