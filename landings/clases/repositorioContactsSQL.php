@@ -1,7 +1,7 @@
 <?php
 
 require_once("repositorioContacts.php");
-require_once("../ventas.inc.php");
+require_once(__DIR__ . "/../ventas.inc.php");
 
 class RepositorioContactsSQL extends repositorioContacts
 {
@@ -86,6 +86,9 @@ class RepositorioContactsSQL extends repositorioContacts
       case 'Tubos de PVC':
         $emails = EMAIL_VENTAS_TUBOS;
         break;
+      case 'Juntas Waterstop':
+        $emails = EMAIL_VENTAS_JUNTAS;
+        break;
 
       default:
         $emails = EMAIL_DEFAULT;
@@ -128,8 +131,9 @@ class RepositorioContactsSQL extends repositorioContacts
     }
 
     // Si el usuario no hizo consultas y no esta en base de datos guardado (es una consulta con mail nuevo)
-    $sql = "select to_email from landings WHERE rubro='". $rubro ."' ORDER BY id DESC LIMIT 1"; // Obtenemos el ultimo registro del rubro
+    $sql = "select to_email from landings WHERE rubro = :rubro ORDER BY id DESC LIMIT 1"; // Obtenemos el ultimo registro del rubro
     $stmt = $this->conexion->prepare($sql);
+    $stmt->bindValue(':rubro', $rubro, PDO::PARAM_STR);
     $stmt->execute();
     $lastEmail = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -151,7 +155,7 @@ class RepositorioContactsSQL extends repositorioContacts
 
     }
 
-    if (!isset($emailTo)) { // si el ultimo registro no contiene un mail que figure dentro del array $salesEmails
+    if (empty($emailTo)) { // si el ultimo registro no contiene un mail que figure dentro del array $salesEmails
       $emailTo = $salesEmails[0]; // Asigno el primero de todos
     }
 
